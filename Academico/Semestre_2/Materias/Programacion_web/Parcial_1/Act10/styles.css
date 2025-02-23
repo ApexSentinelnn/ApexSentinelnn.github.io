@@ -23,7 +23,7 @@ h1 {
 
 /* Imagen con efecto de escala al pasar el mouse */
 .image {
-    width: 80%;
+    width: 800px;
     max-width: 900px;
     border-radius: 10px;
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
@@ -42,7 +42,7 @@ area {
 /* Animación de opacidad al cargar la página */
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 100%;
     }
     to {
         opacity: 1;
