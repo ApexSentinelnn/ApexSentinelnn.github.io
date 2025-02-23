@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1e1e1e, #3a3a3a);
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Imagen con efecto de zoom al pasar el cursor */
+.image {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.image-container:hover .image {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Resaltado dinámico */
+.highlight {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
