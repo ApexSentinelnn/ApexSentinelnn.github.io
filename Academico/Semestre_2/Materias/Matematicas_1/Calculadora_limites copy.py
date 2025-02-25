@@ -50,10 +50,10 @@ Instrucciones:
                 resultados[lado].append("Error")
 
     print("\n**************************************************")
-    print("*              Tabla de aproximaciones            *")
-    print("**************************************************")
-    print("*  Aproximación izquierda   |  Aproximación derecha  *")
-    print("**************************************************")
+    print("*              Tabla de aproximaciones             *")
+    print("****************************************************")
+    print("*  Aproximación izquierda   |  Aproximación derecha*")
+    print("****************************************************")
     
     for i in range(max(len(izq), len(der))):
         izq_val = f"{izq[i]:.8f}" if i < len(izq) else ""
