@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--LLenar el titulo y los metadatos-->
+    <head>
+        <title>Unidad 2 |   Activida 02</title>
+        <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+        <meta charset="utf-8">
+        <meta name="Autor" content="Noe Castillo Gaytan">
+        <meta name="Fecha" content="28/02/2025">
+        <meta name="Descripcion" content="Tablas con celdas combinadas">
+        <style>
+            table {
+                border-collapse: collapse;
+                margin: 20px;
+            }
+            td, th {
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        </style>
+    </head>
+<!--LLenamos el cuerpo de la pagina-->
+    <body>
+        <h1>Unidad #2    |   Actividad 02 :: Tema(Tablas)</h1>       
+        <h3>Tablas combinadas</h3>
+        <h3>Cuadro mágico</h3>
+        <p>Tabla sin formato</p>
+        
+    
+    <div class="container">
+        <!-- Primera Tabla -->
+        <table>
+            <tr>
+                <td rowspan="6">A</td>
+                <td rowspan="5">B</td>
+                <td rowspan="4">C</td>
+                <td rowspan="3">D</td>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td rowspan="2">H</td>
+                <td rowspan="3">I</td>
+                <td rowspan="4">J</td>
+                <td rowspan="5">K</td>
+                <td rowspan="6">L</td>
+                <td rowspan="7">M</td>
+            </tr>
+            <tr>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>GH</td>
+            </tr>
+            <tr>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td colspan="3">O</td>
+            </tr>
+            <tr>
+                <td colspan="5">P</td>
+            </tr>
+            <tr>
+                <td colspan="11">Q</td>
+            </tr>
+            <tr>
+                <td colspan="2">R</td>
+                <td>S</td>
+                <td>T</td>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td colspan="8">Y</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </table>
+    
+        <!-- Segunda Tabla -->
+        <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td rowspan="2">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td rowspan="2">J</td>
+                <td rowspan="2">K</td>
+                <td rowspan="2">L</td>
+                <td rowspan="2">M</td>
+            </tr>
+            <tr>
+                <td rowspan="2">G</td>
+                <td rowspan="2">H</td>
+                <td rowspan="2">I</td>
+            </tr>
+        </table>
+    
+        <!-- Tercera Tabla -->
+        <table>
+            <tr>
+                <td colspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td colspan="2">6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td colspan="3">8</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
