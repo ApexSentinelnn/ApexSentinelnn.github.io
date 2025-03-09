@@ -73,6 +73,3 @@ int main() {
 
     return 0;
 }
-
-git config --global user.name "ApexSentinelnn"
-git config --global user.email "noemaster1@gmail.com"
