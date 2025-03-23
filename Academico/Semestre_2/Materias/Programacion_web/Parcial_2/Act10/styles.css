@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1e1e1e, #3a3a3a);
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen con efecto de escala al pasar el mouse */
+.image {
+    width: 800px;
+    max-width: 900px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para las áreas del mapa */
+area {
+    outline: none;
+}
+
+/* Animación de opacidad al cargar la página */
+@keyframes fadeIn {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 1;
+    }
+}
