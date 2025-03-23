@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/noema/Programacion/Git/ApexSentinelnn/ApexSentinelnn.github.io/Academico/Semestre_2/Materia/Programacion_web/Parcial_1/Evaluacion/1.cpp",
-      "program": "c:/Users/noema/Programacion/Git/ApexSentinelnn/ApexSentinelnn.github.io/Academico/Semestre_2/Materia/Programacion_web/Parcial_1/Evaluacion/1.cpp/build/Debug/outDebug",
+      "cwd": "c:/Users/noema/Programacion/Git/ApexSentinelnn/ApexSentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_1/1",
+      "program": "c:/Users/noema/Programacion/Git/ApexSentinelnn/ApexSentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_1/1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

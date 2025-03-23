@@ -1,0 +1,20 @@
+body {
+    background-color: #f5eed0;
+}
+
+.listdes {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: .3%;
+}
+
+.tabinf {
+    border-color: black;
+    border-radius: 1%;
+    border-collapse: collapse;
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
