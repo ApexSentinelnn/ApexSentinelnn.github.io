@@ -1,85 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Unidad 1 | Actividad 06</title>
-    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
-    <meta charset="utf-8">
-    <meta name="Autor" content="Noe Castillo Gaytan.">
-    <meta name="Fecha" content="13 de febrero de 2025">
-    <meta name="Descripción" content="Widget">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.R.R. Tolkien</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #1a1a1a, #333);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+        }
+        .nav-list {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav-item {
+            position: relative;
+            padding: 12px 18px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            border-radius: 5px;
+        }
+        .nav-item:hover {
+            background: #444;
+            transform: scale(1.05);
+        }
+        .submenu, .subsubmenu {
+            display: none;
+            position: absolute;
+            background: rgba(51, 51, 51, 0.95);
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+            transition: opacity 0.3s, transform 0.2s;
+        }
+        .submenu {
+            top: 45px;
+            left: 0;
+        }
+        .subsubmenu {
+            top: 0;
+            left: 100%;
+        }
+        .submenu li, .subsubmenu li {
+            padding: 10px 20px;
+            list-style: none;
+            white-space: nowrap;
+            transition: background 0.3s;
+            position: relative;
+        }
+        .submenu li:hover, .subsubmenu li:hover {
+            background: #555;
+        }
+        .nav-item:hover .submenu,
+        .submenu li:hover .subsubmenu {
+            display: block;
+            opacity: 1;
+            transform: translateY(5px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Unidad 1 | Actividad 06 :: Tema (Widget)</h1>
-    <h3>Siglas</h3>
-
-    <details name="siglas">
-        <summary>OSI (Open Systems Interconnection)</summary>
-        <p>Modelo de referencia para la comunicación entre sistemas de red.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>IP (Internet Protocol)</summary>
-        <p>Representa la dirección lógica de un dispositivo; está formada por 4 números en un rango de 0 a 255.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>TCP (Transmission Control Protocol)</summary>
-        <p>Protocolo de control de transmisión orientado a la conexión.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>UDP (User Datagram Protocol)</summary>
-        <p>Protocolo sin conexión que envía datagramas sin verificar su entrega.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>SSH (Secure Shell)</summary>
-        <p>Protocolo para acceso seguro a sistemas remotos.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>FTP (File Transfer Protocol)</summary>
-        <p>Protocolo para la transferencia de archivos entre sistemas en una red.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>SMTP (Simple Mail Transfer Protocol)</summary>
-        <p>Protocolo para la transferencia de correo electrónico en formato simple.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>POP (Post Office Protocol)</summary>
-        <p>Servicio para acceder a la oficina postal virtual de correo electrónico.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>DHCP (Dynamic Host Configuration Protocol)</summary>
-        <p>Protocolo que asigna dinámicamente direcciones IP a dispositivos en una red.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>DNS (Domain Name System)</summary>
-        <p>Protocolo que traduce nombres de dominio en direcciones IP.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>HTTP (Hyper Text Transfer Protocol)</summary>
-        <p>Protocolo de transporte de archivos en formato HTML (páginas web).</p>
-    </details>
-
-    <details name="siglas">
-        <summary>ARP (Address Resolution Protocol)</summary>
-        <p>Protocolo que asocia direcciones IP con direcciones físicas MAC.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>MAC (Media Access Control)</summary>
-        <p>Dirección física única asignada a cada dispositivo de red.</p>
-    </details>
-
-    <details name="siglas">
-        <summary>LAN (Local Area Network)</summary>
-        <p>Red de área local que conecta dispositivos dentro de un espacio limitado.</p>
-    </details>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">Películas y Series
+                <ul class="submenu">
+                    <li>El Hobbit (Trilogía)
+                        <ul class="subsubmenu">
+                            <li>Un viaje inesperado</li>
+                            <li>La desolación de Smaug</li>
+                            <li>La batalla de los cinco ejércitos</li>
+                        </ul>
+                    </li>
+                    <li>El Señor de los Anillos (Trilogía)
+                        <ul class="subsubmenu">
+                            <li>La Comunidad del Anillo</li>
+                            <li>Las dos torres</li>
+                            <li>El retorno del Rey</li>
+                        </ul>
+                    </li>
+                    <li>Los Anillos de Poder
+                        <ul class="subsubmenu">
+                            <li>Temporada 1</li>
+                            <li>Temporada 2 (Próximamente)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">Bibliografía
+                <ul class="submenu">
+                    <li>El Hobbit</li>
+                    <li>El Señor de los Anillos</li>
+                    <li>El Silmarillion</li>
+                    <li>Cuentos inconclusos</li>
+                    <li>Los hijos de Húrin</li>
+                    <li>Beren y Lúthien</li>
+                    <li>La caída de Gondolin</li>
+                    <li>El libro de los cuentos perdidos</li>
+                </ul>
+            </li>
+            <li class="nav-item">Personajes
+                <ul class="submenu">
+                    <li>El Hobbit
+                        <ul class="subsubmenu">
+                            <li>Bilbo Bolsón</li>
+                            <li>Gandalf</li>
+                            <li>Thorin Escudo de Roble</li>
+                        </ul>
+                    </li>
+                    <li>El Señor de los Anillos
+                        <ul class="subsubmenu">
+                            <li>Frodo Bolsón</li>
+                            <li>Aragorn</li>
+                            <li>Legolas</li>
+                            <li>Gimli</li>
+                            <li>Gollum</li>
+                        </ul>
+                    </li>
+                    <li>Los Anillos de Poder
+                        <ul class="subsubmenu">
+                            <li>Galadriel</li>
+                            <li>Elrond</li>
+                            <li>Sauron</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">Premios
+                <ul class="submenu">
+                    <li>Oscars</li>
+                    <li>Globos de Oro</li>
+                    <li>BAFTA</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
