@@ -26,14 +26,24 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             nav.classList.remove('scrolled');
         }
-        
-        // Efecto parallax
-        const parallax = document.querySelector('.parallax-section');
-        if (parallax) {
-            const scrollPosition = window.pageYOffset;
-            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-        }
     }
+    
+    // Smooth scroll para los enlaces del nav
+    document.querySelectorAll('nav a, .footer-links a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            
+            // Actualizar la URL sin recargar la página
+            history.pushState(null, null, targetId);
+        });
+    });
     
     // Ejecutar al cargar y al hacer scroll
     checkScroll();
@@ -50,21 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     });
-    
-    // Animación de carga diferida para imágenes
-    const lazyLoad = () => {
-        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-        
-        lazyImages.forEach(img => {
-            if (img.getBoundingClientRect().top < window.innerHeight + 100) {
-                img.src = img.dataset.src;
-                img.removeAttribute('loading');
-            }
-        });
-    };
-    
-    window.addEventListener('scroll', lazyLoad);
-    lazyLoad();
     
     // Efecto para móviles en las tarjetas
     if (window.innerWidth <= 768) {
