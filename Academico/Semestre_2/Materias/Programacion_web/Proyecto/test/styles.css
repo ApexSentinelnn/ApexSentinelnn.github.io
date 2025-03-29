@@ -16,6 +16,38 @@
   box-sizing: border-box;
 }
 
+
+.sidebar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-dark) transparent;
+}
+
+/* WebKit */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Firefox */
+@supports (scrollbar-color: red blue) {
+  .sidebar {
+    scrollbar-color: var(--gold-dark) transparent;
+  }
+}
+
 body {
   font-family: "EB Garamond", serif;
   color: var(--text-dark);
@@ -27,9 +59,8 @@ body {
 /* Barra de navegación */
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
+  padding: 15px 50px;
   position: fixed;
   width: 100%;
   background-color: rgba(45, 55, 71, 0.9);
@@ -40,8 +71,26 @@ nav {
 }
 
 nav.scrolled {
-  padding: 15px 50px;
+  padding: 10px 50px;
   background-color: rgba(45, 55, 71, 0.98);
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1100;
+  color: var(--gold-light);
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  margin-right: 15px;
+}
+
+.menu-toggle:hover {
+  color: white;
 }
 
 .logo {
@@ -56,6 +105,7 @@ nav.scrolled {
 .nav-links {
   display: flex;
   gap: 35px;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -90,6 +140,170 @@ nav.scrolled {
   width: 100%;
 }
 
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 350px;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: 1001;
+  overflow-y: auto;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+  border-right: 1px solid var(--gold-dark);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-content {
+  padding: 80px 20px 30px;
+  color: var(--text-light);
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gold-dark);
+  transition: all 0.3s;
+}
+
+.sidebar-title:hover {
+  background-color: rgba(199, 125, 46, 0.1);
+}
+
+.sidebar-submenu {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.sidebar-submenu.active {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu>h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  padding: 8px 15px 8px 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.has-submenu>h3:hover {
+  background-color: rgba(199, 125, 46, 0.1);
+}
+
+.nested-submenu {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding-left: 20px;
+}
+
+.nested-submenu.active {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.nested-submenu h4 {
+  font-family: 'EB Garamond', serif;
+  color: #bdc3c7;
+  font-size: 1rem;
+  padding: 8px 15px 8px 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nested-submenu h4:hover {
+  color: var(--gold-light);
+  background-color: rgba(199, 125, 46, 0.1);
+}
+
+.fa-chevron-down,
+.fa-chevron-right {
+  transition: transform 0.3s;
+  font-size: 0.9rem;
+}
+
+.fa-chevron-down.active {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-right.active {
+  transform: rotate(90deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+/* Añade esto a tu archivo CSS */
+.sidebar a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: var(--gold-light);
+  padding-left: 5px;
+}
+
+.sidebar h3 a,
+.sidebar h4 a {
+  padding: 8px 15px;
+  display: block;
+}
+
+.sidebar h3 a {
+  padding-left: 25px;
+}
+
+.sidebar h4 a {
+  padding-left: 35px;
+}
+
+.sidebar-section li {
+  transition: background-color 0.3s;
+}
+
+.sidebar-section li:hover {
+  background-color: rgba(199, 125, 46, 0.1);
+}
+
 /* Sección Hero */
 .hero {
   height: 100vh;
@@ -100,8 +314,7 @@ nav.scrolled {
   padding: 0 10%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/test/resources/image/port.jpg?raw=true")
-      no-repeat center center;
+    url("https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/test/resources/image/port.jpg?raw=true") no-repeat center center;
   background-size: cover;
   color: var(--text-light);
   position: relative;
@@ -417,42 +630,6 @@ nav.scrolled {
   border-color: var(--accent-color);
 }
 
-/* Efecto parallax */
-.parallax-section {
-  height: 60vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.parallax-content {
-  background: rgba(45, 55, 71, 0.8);
-  padding: 50px;
-  border-radius: 10px;
-  max-width: 800px;
-  transform: scale(0.9);
-  opacity: 0;
-  transition: all 1s ease;
-  border: 1px solid var(--gold-dark);
-}
-
-.parallax-content h2 {
-  font-family: "Cinzel", serif;
-  color: var(--gold-light);
-}
-
-.parallax-content.animated {
-  transform: scale(1);
-  opacity: 1;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -530,10 +707,12 @@ footer {
 
 /* Animaciones personalizadas */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -548,6 +727,7 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -562,6 +742,7 @@ footer {
 .flip-card:nth-child(1) {
   animation-delay: 0.2s;
 }
+
 .flip-card:nth-child(2) {
   animation-delay: 0.4s;
 }
@@ -579,19 +760,15 @@ footer {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   nav {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 15px 20px;
   }
 
   .hero {

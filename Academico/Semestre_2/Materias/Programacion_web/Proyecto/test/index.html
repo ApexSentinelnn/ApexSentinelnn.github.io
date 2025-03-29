@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,53 +10,338 @@
     <meta name="Descripcion" content="Proyecto">
     <title>El Legado de J.R.R. Tolkien</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Barra de navegación horizontal -->
     <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="logo"><a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a></div>
         <div class="nav-links">
             <a href="#obras">OBRAS</a>
             <a href="#integrantes">INTEGRANTES</a>
             <a href="#legado">LEGADO</a>
             <a href="#contacto">CONTACTO</a>
+            <a href="Referencia.htnl">Referencias</a>
         </div>
     </nav>
-    
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="peliculas/hobbit/viaje.html">Un viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="peliculas/hobbit/desolacion.html">La desolación de Smaug</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="peliculas/hobbit/batalla.html">La batalla de los cinco ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="peliculas/sda/comunidad.html">La Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="peliculas/sda/torres.html">Las dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="peliculas/sda/rey.html">El retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="series/rop/temporada1.html">Temporada 1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="series/rop/temporada2.html">Temporada 2 (Próximamente)</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="inspiracion/nordica.html">Mitología nórdica</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="inspiracion/medieval.html">Literatura medieval</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="inspiracion/guerra.html">Experiencias en la Primera Guerra Mundial</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Bibliografía <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="libros/hobbit.html">El Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/sda.html">El Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/silmarillion.html">El Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/cuentos.html">Cuentos inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/hurin.html">Los hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/beren.html">Beren y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/gondolin.html">La caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="libros/cuentos-perdidos.html">El libro de los cuentos perdidos</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Personajes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Personajes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="personajes/hobbit/bilbo.html">Bilbo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/hobbit/gandalf.html">Gandalf</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/hobbit/thorin.html">Thorin Escudo de Roble</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="personajes/sda/frodo.html">Frodo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/sda/aragorn.html">Aragorn</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/sda/legolas.html">Legolas</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/sda/gimli.html">Gimli</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/sda/gollum.html">Gollum</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="personajes/rop/galadriel.html">Galadriel</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/rop/elrond.html">Elrond</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="personajes/rop/sauron.html">Sauron</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Diferencias con el libro -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Diferencias con el libro <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="diferencias/trama.html">Cambios en la trama</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="diferencias/personajes.html">Personajes añadidos o omitidos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="diferencias/adaptaciones.html">Adaptaciones visuales</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Efectos visuales -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Efectos visuales <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="efectos/tecnologia.html">Tecnología utilizada</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="efectos/diseno.html">Diseño de criaturas y escenarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="efectos/cgi.html">Innovaciones en CGI</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reconocimientos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Reconocimientos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="premios/literarios.html">Premios literarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="premios/cultura.html">Influencia en la cultura popular</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="premios/cine.html">Adaptaciones cinematográficas premiadas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Datos interesantes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Datos interesantes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="datos/lenguas.html">Lenguas creadas por Tolkien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="datos/mapas.html">Mapas de la Tierra Media</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="datos/influencia.html">Influencia en otros autores</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Detalles únicos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Detalles únicos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="detalles/simbolismo.html">Simbolismo en las obras</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="detalles/conexiones.html">Conexiones entre libros</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="detalles/referencias.html">Referencias históricas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Curiosidades <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="curiosidades/nombres.html">Inspiración para nombres</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="curiosidades/anecdotas.html">Anécdotas de la filmación</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="curiosidades/easter-eggs.html">Easter eggs en las películas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Premios -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Premios <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="premios/oscars.html">Oscars</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="premios/globos.html">Globos de Oro</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="premios/bafta.html">Premios BAFTA</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero inicio de la pagina -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <h1>El Legado de <span>J.R.R. Tolkien</span></h1>
-            <p class="section-text">"No todos los que vagan están perdidos" - Explorando el mundo literario del profesor que cambió la fantasía para siempre.</p>
+            <p class="section-text">"No todos los que vagan están perdidos" - Explorando el mundo literario del profesor
+                que cambió la fantasía para siempre.</p>
             <a href="#obras" class="btn">EXPLORAR OBRAS</a>
         </div>
-        
-        <div class="floating" style="position: absolute; top: 20%; left: 5%; width: 50px; height: 50px; background: rgba(199, 125, 46, 0.3); border-radius: 50%;"></div>
-        <div class="floating" style="position: absolute; bottom: 15%; right: 10%; width: 70px; height: 70px; background: rgba(90, 112, 136, 0.3); border-radius: 50%; animation-delay: 0.5s;"></div>
+
+        <div class="floating"
+            style="position: absolute; top: 20%; left: 5%; width: 50px; height: 50px; background: rgba(199, 125, 46, 0.3); border-radius: 50%;">
+        </div>
+        <div class="floating"
+            style="position: absolute; bottom: 15%; right: 10%; width: 70px; height: 70px; background: rgba(90, 112, 136, 0.3); border-radius: 50%; animation-delay: 0.5s;">
+        </div>
     </section>
-    
+
+    <!-- Seccion de obras destacables -->
     <section class="content-section" id="obras">
         <div class="section-content">
             <h2 class="section-title">Obras Maestras</h2>
-            <p class="section-text">El profesor Tolkien nos legó algunas de las obras más influyentes de la literatura fantástica, creando un universo completo con su propia mitología, lenguajes e historia.</p>
-            
+            <p class="section-text">El profesor Tolkien nos legó algunas de las obras más influyentes de la literatura
+                fantástica, creando un universo completo con su propia mitología, lenguajes e historia.</p>
+
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="https://as01.epimg.net/epik/imagenes/2020/03/28/portada/1585384112_802989_1585386362_noticia_normal.jpg" alt="El Señor de los Anillos" class="gallery-img">
+                    <img src="https://as01.epimg.net/epik/imagenes/2020/03/28/portada/1585384112_802989_1585386362_noticia_normal.jpg"
+                        alt="El Señor de los Anillos" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>El Señor de los Anillos</h3>
                         <p>La épica trilogía que definió un género</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.pinimg.com/736x/2e/f2/52/2ef252e501a45072b355094aa0d9edbf.jpg" alt="El Hobbit" class="gallery-img">
+                    <img src="https://i.pinimg.com/736x/2e/f2/52/2ef252e501a45072b355094aa0d9edbf.jpg" alt="El Hobbit"
+                        class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>El Hobbit</h3>
                         <p>Un viaje inesperado que comenzó todo</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://m.media-amazon.com/images/I/5167YEsQ6YL._SL500_.jpg" alt="El Silmarillion" class="gallery-img">
+                    <img src="https://m.media-amazon.com/images/I/5167YEsQ6YL._SL500_.jpg" alt="El Silmarillion"
+                        class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>El Silmarillion</h3>
                         <p>La mitología completa de la Tierra Media</p>
@@ -64,17 +350,19 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Seccion de los integrabtes colaboradores -->
     <section class="content-section" id="integrantes">
         <div class="section-content">
             <h2 class="section-title">Integrantes</h2>
             <p class="section-text">Conoce a los integrantes que crearon esta pagina.</p>
-            
+
             <div class="cards-container">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://i.pinimg.com/736x/52/0e/33/520e33d74a06f9139dd5b0441ecf8692.jpg" alt="Noe" class="profile-img">
+                            <img src="https://i.pinimg.com/736x/52/0e/33/520e33d74a06f9139dd5b0441ecf8692.jpg" alt="Noe"
+                                class="profile-img">
                             <h3 class="card-title">Noe</h3>
                             <p class="card-subtitle">Integrante.</p>
                             <p class="card-text">Estudiante.</p>
@@ -83,12 +371,13 @@
                         <div class="flip-card-back">
                             <h3 class="card-title">Noe Castillo</h3>
                             <p class="card-subtitle">Estudiante de la UPSLP</p>
-                            <p class="card-text">Estudiante la la UPSLP, cursa la carrera en ingenieria en tecnologias de la informacion.</p>
-                            <p class="card=-text"><b>Matricula: </b>187855</p>
-                            <p class="card=-text"><b>Nombre: </b>Noé Castillo Gaytán.</p>
-                            <p class="card=-text"><b>Semestre: </b>Segundo.</p>
-                            <p class="card=-text"><b>Carrera: </b>Ingeniria en tecnologias de la informacion.</p>
-                            <p class="card=-text"><b>Tema: </b>J.R.R TOLKIEN.</p>
+                            <p class="card-text">Estudiante la la UPSLP, cursa la carrera en ingenieria en tecnologias
+                                de la informacion.</p>
+                            <p class="card-text"><b>Matricula: </b>187855</p>
+                            <p class="card-text"><b>Nombre: </b>Noé Castillo Gaytán.</p>
+                            <p class="card-text"><b>Semestre: </b>Segundo.</p>
+                            <p class="card-text"><b>Carrera: </b>Ingeniria en tecnologias de la informacion.</p>
+                            <p class="card-text"><b>Tema: </b>J.R.R TOLKIEN.</p>
                             <div class="social-links">
                                 <a href="#" class="social-link">📜</a>
                                 <a href="#" class="social-link">✍️</a>
@@ -98,11 +387,12 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfhd_UC1KefSSMiBLIRlo_LElIwyAmDhyrg&s" alt="Miguel" class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfhd_UC1KefSSMiBLIRlo_LElIwyAmDhyrg&s"
+                                alt="Miguel" class="profile-img">
                             <h3 class="card-title">Miguel</h3>
                             <p class="card-subtitle">Integrante.</p>
                             <p class="card-text">Estudiante.</p>
@@ -111,12 +401,13 @@
                         <div class="flip-card-back">
                             <h3 class="card-title">Miguel</h3>
                             <p class="card-subtitle">Estudiante de la UPSLP</p>
-                            <p class="card-text">Estudiante la la UPSLP, cursa la carrera en ingenieria en tecnologias de la informacion.</p>
-                            <p class="card=-text"><b>Matricula: </b>187616</p>
-                            <p class="card=-text"><b>Nombre: </b>Miguel Angel Perez Gonsalez.</p>
-                            <p class="card=-text"><b>Semestre: </b>Segundo.</p>
-                            <p class="card=-text"><b>Carrera: </b>Ingeniria en tecnologias de la informacion.</p>
-                            <p class="card=-text"><b>Tema: </b>J.R.R TOLKIEN.</p>
+                            <p class="card-text">Estudiante la la UPSLP, cursa la carrera en ingenieria en tecnologias
+                                de la informacion.</p>
+                            <p class="card-text"><b>Matricula: </b>187616</p>
+                            <p class="card-text"><b>Nombre: </b>Miguel Angel Perez Gonsalez.</p>
+                            <p class="card-text"><b>Semestre: </b>Segundo.</p>
+                            <p class="card-text"><b>Carrera: </b>Ingeniria en tecnologias de la informacion.</p>
+                            <p class="card-text"><b>Tema: </b>J.R.R TOLKIEN.</p>
                             <div class="social-links">
                                 <a href="#" class="social-link">⚔️</a>
                                 <a href="#" class="social-link">🏰</a>
@@ -129,32 +420,43 @@
             </div>
         </div>
     </section>
-    
+
     <section class="content-section" id="legado">
         <div class="section-content">
             <h2 class="section-title">El Legado de Tolkien</h2>
-            <p class="section-text">La obra de J.R.R. Tolkien ha influenciado generaciones de escritores, artistas y cineastas, creando un género literario que perdura hasta nuestros días.</p>
-            
-            <div class="gallery" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-top: 50px;">
-                <div class="gallery-item" style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
-                    <div style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">100M+</div>
+            <p class="section-text">La obra de J.R.R. Tolkien ha influenciado generaciones de escritores, artistas y
+                cineastas, creando un género literario que perdura hasta nuestros días.</p>
+
+            <div class="gallery"
+                style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-top: 50px;">
+                <div class="gallery-item"
+                    style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
+                    <div
+                        style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">
+                        100M+</div>
                     <h3 style="margin-bottom: 15px; font-family: 'Cinzel', serif;">Libros Vendidos</h3>
                     <p>En más de 50 idiomas</p>
                 </div>
-                <div class="gallery-item" style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
-                    <div style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">6</div>
+                <div class="gallery-item"
+                    style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
+                    <div
+                        style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">
+                        6</div>
                     <h3 style="margin-bottom: 15px; font-family: 'Cinzel', serif;">Películas Épicas</h3>
                     <p>Basadas en su obra</p>
                 </div>
-                <div class="gallery-item" style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
-                    <div style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">14</div>
+                <div class="gallery-item"
+                    style="height: auto; background: var(--parchment); padding: 30px; text-align: center; border: 1px solid var(--gold-dark);">
+                    <div
+                        style="font-family: 'Cinzel', serif; font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;">
+                        14</div>
                     <h3 style="margin-bottom: 15px; font-family: 'Cinzel', serif;">Lenguas Creadas</h3>
                     <p>Con gramática y vocabulario completo</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <footer id="contacto">
         <div class="footer-content">
             <div class="footer-logo">TOLKIEN</div>
@@ -170,10 +472,11 @@
                 <a href="#" class="social-icon">🧙</a>
                 <a href="#" class="social-icon">⚔️</a>
             </div>
-            <p class="copyright">© .</p>
+            <p class="copyright">© 2023 El Legado de Tolkien. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
