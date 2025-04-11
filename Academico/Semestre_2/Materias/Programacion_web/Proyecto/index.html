@@ -29,6 +29,7 @@
             <a href="#integrantes">INTEGRANTES</a>
             <a href="#legado">LEGADO</a>
             <a href="#Referencias">REFERENCIAS</a>
+            <a href="#redes-sociales">Redes</a>
             <a href="#contacto">CONTACTO</a>
         </div>
     </nav>
@@ -371,7 +372,6 @@
                             <h3 class="card-title">Noe</h3>
                             <p class="card-subtitle">Integrante.</p>
                             <p class="card-text">Estudiante.</p>
-                            <a href="#" class="btn">Ver perfil</a>
                         </div>
                         <div class="flip-card-back">
                             <h3 class="card-title">Noe Castillo</h3>
@@ -401,7 +401,6 @@
                             <h3 class="card-title">Miguel</h3>
                             <p class="card-subtitle">Integrante.</p>
                             <p class="card-text">Estudiante.</p>
-                            <a href="#" class="btn">Ver perfil</a>
                         </div>
                         <div class="flip-card-back">
                             <h3 class="card-title">Miguel</h3>
@@ -525,6 +524,144 @@
         </div>
     </section>
 
+    <!-- Sección de redes sociales del legado de Tolkien -->
+    <section class="content-section" id="redes-sociales">
+        <div class="section-content">
+            <h2 class="section-title">El Legado de Tolkien en Redes</h2>
+            <p class="section-text">Aunque J.R.R. Tolkien vivió mucho antes de la era digital (1892-1973), su legado
+                perdura en diversas plataformas oficiales donde puedes seguir las últimas noticias, publicaciones y
+                eventos relacionados con su obra.</p>
+
+            <div class="social-media-container">
+                <div class="social-media-card">
+                    <div class="social-media-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Tolkien Estate</h3>
+                    <p>Página oficial gestionada por el Tolkien Estate, que protege y administra el legado literario del
+                        autor.</p>
+                    <a href="https://www.facebook.com/officialtolkien/" target="_blank" class="btn">Visitar</a>
+                </div>
+
+                <div class="social-media-card">
+                    <div class="social-media-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Tolkien Society</h3>
+                    <p>Organización educativa sin fines de lucro dedicada al estudio y promoción de la vida y obras de
+                        J.R.R. Tolkien.</p>
+                    <a href="https://www.tolkiensociety.org/" target="_blank" class="btn">Visitar</a>
+                </div>
+
+                <div class="social-media-card">
+                    <div class="social-media-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>HarperCollins Tolkien</h3>
+                    <p>Editores oficiales de los libros de Tolkien con actualizaciones sobre nuevas ediciones y
+                        publicaciones.</p>
+                    <a href="https://www.instagram.com/jrrtolkien/?hl=es" target="_blank" class="btn">Seguir</a>
+                </div>
+
+                <div class="social-media-card">
+                    <div class="social-media-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Tolkien Twitter</h3>
+                    <p>Cuenta oficial que comparte contenido sobre J.R.R. Tolkien, sus obras y adaptaciones.</p>
+                    <a href="https://twitter.com/tolkienofficial" target="_blank" class="btn">Seguir</a>
+                </div>
+
+                <div class="social-media-card">
+                    <div class="social-media-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bodleian Libraries</h3>
+                    <p>Biblioteca de Oxford que alberga importantes colecciones y archivos originales de Tolkien.</p>
+                    <a href="https://www.bodleian.ox.ac.uk/collections/tolkien-exhibition" target="_blank"
+                        class="btn">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Estilos para la sección de redes sociales */
+        .social-media-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-media-card {
+            background: var(--parchment);
+            padding: 30px;
+            text-align: center;
+            border: 1px solid var(--gold-dark);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-media-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-media-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            background: rgba(204, 177, 122, 0.15);
+            margin: 0 auto 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .social-media-card:hover .social-media-icon {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .social-media-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-color-dark);
+        }
+
+        .social-media-card p {
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .social-media-card .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .social-media-card .btn:hover {
+            background: var(--gold-dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .social-media-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
     <!--Footer section-->
     <footer id="contacto">
         <div class="footer-content">
