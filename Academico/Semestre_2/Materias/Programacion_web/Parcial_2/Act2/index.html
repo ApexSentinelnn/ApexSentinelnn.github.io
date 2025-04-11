@@ -2,21 +2,37 @@
 <html lang="es">
 <head>
     <!-- Título y Metadatos -->
-    <title>Unidad 1 | Actividad 02</title>
+    <title>Unidad 2 | Actividad 02</title>
     <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
     <meta charset="utf-8">
     <meta name="Autor" content="Noe Castillo Gaytan.">
-    <meta name="Fecha" content="11 de Febrero de 2025">
-    <meta name="Descripción" content="Títulos">
+    <meta name="Fecha" content="26 de Febrero de 2025">
+    <meta name="Descripción" content="Tablas HTML">
 </head>
 <body>
-    <!-- Título y contenido -->
-    <h1> Unidad 1 | Actividad 02 :: Tema (Títulos)</h1>
-    <h1> Título No. 1</h1>
-    <h2> Título No. 2</h2>
-    <h3> Título No. 3</h3>
-    <h4> Título No. 4</h4>
-    <h5> Título No. 5</h5>
-    <h6> Título No. 6</h6>
+    <h1>Unidad 2 | Actividad 02 :: Tema (Tablas)</h1>
+    <h3>Tablas con celdas combinadas</h3>
+    <table border = "5">
+        <tr align = "center"><th colspan="4">Tabla No.1</th></tr>
+        <tr align = "center"><td>A</td><td>B</td><td rowspan="4">C</td><td>D</td></tr>
+        <tr align = "center"><td rowspan="2">E</td><td>F</td><td rowspan="3">G</td></tr>
+        <tr align = "center"><td>H</td></tr>
+        <tr align = "center"><td>I</td><td>J</td></tr>
+    </table>
+    <br>
+    <table border="5">
+        <tfoot>
+            <tr align="center"><td colspan="4"><code><small>Ejemplo con thead, <br> tbody y tfoot</small></code></td></tr>
+        </tfoot>
+        <tbody>
+            <tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr align="center"><td rowspan="3">5</td><td>6</td><td colspan="2">7</td></tr>
+            <tr align="center"><td>8</td><td>9</td><td rowspan="2">10</td></tr>
+            <tr align="center"><td colspan="2">11</td></tr>
+        </tbody>
+        <thead>
+            <tr align="center"><td colspan="4">Tabla No. 2</td></tr>
+        </thead>
+    </table>
 </body>
 </html>

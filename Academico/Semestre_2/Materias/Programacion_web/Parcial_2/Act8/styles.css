@@ -1,0 +1,131 @@
+.efectoMenu{
+    height: 75%;
+    font-size: 75%;
+    transition: height 0.7s, font-size 0.7s;
+}
+
+.efectoMenu:hover{
+    height: 125%;
+    font-size: 125%;
+}
+
+.efectoMenu a {
+    text-decoration: none; color: crimson;
+
+}
+
+.transicionMenu a {
+    text-decoration: none; color: white;
+}
+
+.transicionMenu {
+    background-color: limegreen;
+    height: 20px; width: 100px;
+    border: 1px solid black;
+    transition: height 0.75s, width 0.75s; background-color: 0.75s;
+}
+
+.transicionMenu:hover {
+    background-color: deepskyblue;
+    height: 30px; width: 200px;
+}
+
+#element {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 1, 1, 30deg);
+    transition: transform 3s;
+    margin: 50px auto;
+}
+
+#element:hover, #element:focus {
+    transform: rotate3d(1, 1, 1, 180deg);
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    backface-visibility: inherit;
+    font-size: 60px;
+    color: black;
+}
+
+.front {
+    background: rgba(90, 90, 90, 0.7);
+    transform: translateZ(50px);
+}
+
+.back {
+    background: rgba(0, 210, 0, 0.7);
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.top {
+    background: rgba(210, 210, 0, 0.7);
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background: rgba(210, 0, 210, 0.7);
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.left {
+    background: rgba(0, 0, 210, 0.7);
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+    background: rgba(210, 0, 0, 0.7);
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+
+.barraProgreso {
+    height: 25px;width: 100%;
+    animation-timing-function: linear; 
+    animation-direction: reverse;
+    animation-name: progreso; 
+    animation-duration: 10s; 
+    animation-delay: 1.5s;
+
+}
+
+@keyframes progreso {
+    0% {background-color: red; width: 0%;}
+    50% {background-color: gold; width: 50%;}
+    100% {background-color: darkgreen; width: 100%;}
+}
+
+.rainvow {
+    width: 100px; 
+    height: 100%; 
+    color: white; 
+    border: 2px dashed black;
+    animation-name: rgb; 
+    animation-iteration-count: infinite;
+}
+
+.arcoiris {
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: 2px dashed black;
+    animation-name: rgb;
+    animation-duration: 5s; animation-iteration-count: infinite;
+}
+
+@keyframes rgb {
+    0% {background-color: green;}
+    16% {background-color: yellow;}
+    33% {background-color: orange;}
+    50% {background-color: red;}
+    67% {background-color: purple;}
+    82% {background-color: blue;}
+    100% {background-color: green;}
+}

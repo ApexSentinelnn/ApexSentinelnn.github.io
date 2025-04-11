@@ -1,156 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.R.R. Tolkien</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
-        }
-        .navbar {
-            background: linear-gradient(90deg, #1a1a1a, #333);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-        }
-        .nav-list {
-            display: flex;
-            gap: 20px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        .nav-item {
-            position: relative;
-            padding: 12px 18px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-            border-radius: 5px;
-        }
-        .nav-item:hover {
-            background: #444;
-            transform: scale(1.05);
-        }
-        .submenu, .subsubmenu {
-            display: none;
-            position: absolute;
-            background: rgba(51, 51, 51, 0.95);
-            padding: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-            transition: opacity 0.3s, transform 0.2s;
-        }
-        .submenu {
-            top: 45px;
-            left: 0;
-        }
-        .subsubmenu {
-            top: 0;
-            left: 100%;
-        }
-        .submenu li, .subsubmenu li {
-            padding: 10px 20px;
-            list-style: none;
-            white-space: nowrap;
-            transition: background 0.3s;
-            position: relative;
-        }
-        .submenu li:hover, .subsubmenu li:hover {
-            background: #555;
-        }
-        .nav-item:hover .submenu,
-        .submenu li:hover .subsubmenu {
-            display: block;
-            opacity: 1;
-            transform: translateY(5px);
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan">
+    <meta name="Fecha" content="15 de marzo de 2023">
+    <meta name="Descripción" content="Bootstrap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item">Películas y Series
-                <ul class="submenu">
-                    <li>El Hobbit (Trilogía)
-                        <ul class="subsubmenu">
-                            <li>Un viaje inesperado</li>
-                            <li>La desolación de Smaug</li>
-                            <li>La batalla de los cinco ejércitos</li>
-                        </ul>
-                    </li>
-                    <li>El Señor de los Anillos (Trilogía)
-                        <ul class="subsubmenu">
-                            <li>La Comunidad del Anillo</li>
-                            <li>Las dos torres</li>
-                            <li>El retorno del Rey</li>
-                        </ul>
-                    </li>
-                    <li>Los Anillos de Poder
-                        <ul class="subsubmenu">
-                            <li>Temporada 1</li>
-                            <li>Temporada 2 (Próximamente)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">Bibliografía
-                <ul class="submenu">
-                    <li>El Hobbit</li>
-                    <li>El Señor de los Anillos</li>
-                    <li>El Silmarillion</li>
-                    <li>Cuentos inconclusos</li>
-                    <li>Los hijos de Húrin</li>
-                    <li>Beren y Lúthien</li>
-                    <li>La caída de Gondolin</li>
-                    <li>El libro de los cuentos perdidos</li>
-                </ul>
-            </li>
-            <li class="nav-item">Personajes
-                <ul class="submenu">
-                    <li>El Hobbit
-                        <ul class="subsubmenu">
-                            <li>Bilbo Bolsón</li>
-                            <li>Gandalf</li>
-                            <li>Thorin Escudo de Roble</li>
-                        </ul>
-                    </li>
-                    <li>El Señor de los Anillos
-                        <ul class="subsubmenu">
-                            <li>Frodo Bolsón</li>
-                            <li>Aragorn</li>
-                            <li>Legolas</li>
-                            <li>Gimli</li>
-                            <li>Gollum</li>
-                        </ul>
-                    </li>
-                    <li>Los Anillos de Poder
-                        <ul class="subsubmenu">
-                            <li>Galadriel</li>
-                            <li>Elrond</li>
-                            <li>Sauron</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">Premios
-                <ul class="submenu">
-                    <li>Oscars</li>
-                    <li>Globos de Oro</li>
-                    <li>BAFTA</li>
-                </ul>
-            </li>
-        </ul>
+    <h2>Unidad 2 / Actividad 06: Tema (Bootstrap)</h2>
+
+    <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">UPBLP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oferta educativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Egresados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bolsa de trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <h2>Menú con tema de color</h2>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">&#127968;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">UPBLP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oferta educativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Egresados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bolsa de trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: deeppink;">
+        <a class="navbar-brand" href="#">&#127968;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav3">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">UPBLP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oferta educativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Egresados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bolsa de trabajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

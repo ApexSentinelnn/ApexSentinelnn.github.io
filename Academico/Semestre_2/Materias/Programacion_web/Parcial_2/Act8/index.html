@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--Llenar el Title y los Metadatos-->
     <title>Unidad 1 | Actividad 08</title>
@@ -8,43 +9,176 @@
     <meta name="Autor" content="Noe Castillo Gaytan.">
     <meta name="Fecha" content="17 de febrero de 2025">
     <meta name="Descripción" content="Imágenes">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #miEstilo {
+            border: 5px solid black;
+        }
+
+        #miEstilo th,
+        #miEstilo td {
+            border: 1px dotted gray
+        }
+
+        #miEstilo tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        .miEstilo {
+            border: 3px dashed navy;
+        }
+
+        .miEstilo th,
+        .miEstilo td {
+            border: 1px dotted dodgerblue
+        }
+
+        .miEstilo tr:nth-child(odd) {
+            background-color: dodgerblue;
+        }
+
+        .zoom:hover {
+            font-size: 25px;
+            background-color: palevioletred;
+        }
+    </style>
 </head>
+
 <body>
-    <!--Llenar el Título y pegar el contenido-->
-    <h1>Unidad 1 | Actividad 08 :: Tema (Imágenes)</h1>
-    <h3>Imágenes</h3>
+    <h1>Unidad 02 | Actividad 08 :: Tema (Efectos)</h1>
+    <h2>Tabla con estilo por ID</h2>
+    <table id="miEstilo">
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
-    <details name="imagen">
-        <summary>Logo en tamaño original</summary>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Logo Marvel 10 años">
-    </details>
+    <h2 class="zoom">Tabla con estilo por CLASS</h2>
+    <table class="miEstilo">
+        <tr class="zoom">
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr class="zoom">
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="zoom">
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="zoom">
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="zoom">
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="zoom">
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
-    <details name="imagen">
-        <summary>Logo en tamaño 150 píxeles</summary>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Logo Marvel 10 años" height="150px">
-    </details>
+    <h2>Menú con transición 1</h2>
+    &Int;<span class="efectoMenu"><a href="#">Menú No. 1</a></span>
+    &Int;<span class="efectoMenu"><a href="#">Menú No. 2</a></span>
+    &Int;<span class="efectoMenu"><a href="#">Menú No. 3</a></span>
+    &Int;<span class="efectoMenu"><a href="#">Menú No. 4</a></span>
+    &Int;<span class="efectoMenu"><a href="#">Menú No. 5</a></span>
+    &Int;
 
-    <details name="imagen">
-        <summary>Banner en tamaño original</summary>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Banner Marvel Studios 10 años">
-    </details>
+    <h2>Menú con transición 2</h2>
+    <div class="transicionMenu"><a href="#">Menú No. 1</a></div>
+    <div class="transicionMenu"><a href="#">Menú No. 2</a></div>
+    <div class="transicionMenu"><a href="#">Menú No. 3</a></div>
+    <div class="transicionMenu"><a href="#">Menú No. 4</a></div>
+    <div class="transicionMenu"><a href="#">Menú No. 5</a></div>
 
-    <details name="imagen">
-        <summary>Banner en tamaño 150 píxeles de alto</summary>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Banner Marvel Studios 10 años" height="150px">
-    </details>
-
-    <details name="imagen">
-        <summary>Banner en tamaño 300 píxeles de ancho</summary>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Banner Marvel Studios 10 años" width="300px">
-    </details>
-
-    <details name="imagen">
-        <summary>Imagen con título al pie</summary>
-        <figure>
-            <img src="https://hips.hearstapps.com/hmg-prod/images/marvel-cinematic-universe-ten-years-poster-1547113217.jpg" alt="Escudos y Logotipos" height="150px">
-            <figcaption>Escudos y Logotipos</figcaption>
-        </figure>
-    </details>
+    <h2>Animación</h2>
+    <div id="element">
+        <div class="face front">1</div>
+        <div class="face back">2</div>
+        <div class="face right">3</div>
+        <div class="face left">4</div>
+        <div class="face top">5</div>
+        <div class="face bottom">6</div>
+    </div>
+    <h3>Barra de Progreso</h3>
+    <div class="barraProgreso"> &nbsp;</div>
+    <h3>Rainbow</h3>
+    <div class="rainbow">Suavizado</div>
+    <div class="arcoiris">Normal</div>
 </body>
+
 </html>

@@ -1,0 +1,111 @@
+.tabla-colores-1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tabla-colores-1 td {
+    border: 1px solid transparent;
+    padding: 2px 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.c1 {
+    background-color: #ffb37d;
+}
+
+.c2 {
+    background-color: #b7fff9;
+}
+
+.c3 {
+    background-color: #e0e3ff;
+}
+
+.c4 {
+    background-color: #cdffcd;
+}
+
+.c5 {
+    background-color: #ffa5a3;
+}
+
+.c6 {
+    background-color: #b9ecf0;
+}
+
+.c7 {
+    background-color: #72c6c9;
+}
+
+.c8 {
+    background-color: #bb9975;
+}
+
+.tabla-colores-2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tabla-colores-2 td,
+.tabla-colores-2 th {
+    border: 1px solid black;
+    padding: 3px 16px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.c9 {
+    background-color: #ffe3b3;
+}
+
+.c10 {
+    background-color: #a9e4e8;
+}
+
+.c11 {
+    background-color: #dde0ff;
+}
+
+.c12 {
+    background-color: #cdffcd;
+}
+
+.c13 {
+    background-color: #adf5a0;
+}
+
+.c14 {
+    background-color: #ffa5a3;
+}
+
+.c15 {
+    background-color: #8fddfd;
+}
+
+.c16 {
+    background-color: #6dc4c7;
+}
+
+.c17 {
+    background-color: #a1a558;
+}
+
+/* Tabla Estructura */
+.tabla-estructura {
+    border-collapse: collapse;
+}
+
+.tabla-estructura td,
+.tabla-estructura th {
+    border: 1px solid black;
+    padding: 3px 14px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}

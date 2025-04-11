@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <!--LLenar el titulo y los metadatos-->
-    <head>
-        <title>Unidad # |   Activida #</title>
-        <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
-        <meta charset="utf-8">
-        <meta name="Autor" content="Noe Castillo Gaytan">
-        <meta name="Fecha" content="######">
-        <meta name="Descripcion" content="#####">
-        <style type="text/css">
-            h2{
-                color: rgb(185, 161, 161);
-            }
-            body{
-                font-family: monospace;
-            }
-            li{
-                text-decoration: none;  
-            }
-            a{
-                text-decoration: none;
-                color: gray;
-                text-transform:uppercase;
-            }
-            a:hover{
-                background-color: orange;
-                color: aliceblue;
-            }
-        </style>
-    </head>
-<!--LLenamos el cuerpo de la pagina-->
-    <body>
-        <h1>Unidad 2    |   Actividad 05 :: Tema(Menu)</h1>   
-        <h2>Menu de principal</h2>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">UPSLP</a></li>
-                <li><a href="">Conocenos</a></li>
-                <li><a href="">Oferta educativa</a></li>
-                <li><a href="">Egresados</a></li>
-                <li><a href="">Bolsa de trabajo</a></li>
-            </ul>
-        </nav>     
-    </body>
-</html>
+
+<head>
+    <title>Unidad # | Activida #</title>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan">
+    <meta name="Fecha" content="10 de Marzo de 2025">
+    <meta name="Descripcion" content="Menu">
+    <style>
+        h2 {
+            color: gray;
+        }
+
+        body {
+            font-family: monospace;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: white;
+            background-color: orangered;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li ul {
+            visibility: hidden;
+            display: none;
+            position: absolute;
+        }
+
+        ul li:hover>ul,
+        ul li ul:hover {
+            visibility: visible;
+            display: block;
+        }
+
+        li {
+            display: block;
+            float: left;
+            position: relative;
+        }
+
+        /*extra*/
+        ul {
+            margin: 0;
+            padding-left: 0;
+            border-top: 1px gray solid;
+        }
+
+        li {
+            padding: 0.5rem;
+            min-width: 5rem;
+            min-height: 1.5rem;
+        }
+
+        li:hover {
+            color: white;
+            background-color: orangered;
+        }
+
+        ul li ul {
+            margin-top: 1rem;
+            left: 0;
+            border-top: 2px orangered solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unidad 2 | Actividad 05 :: Tema (Menu)</h1>
+    <h2>Menú Principal</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">UPSLP &cudarrr;</a>
+                <ul>
+                    <li><a href="#">Nuestra Universidad</a></li>
+                    <li><a href="#">Modelo Académico</a></li>
+                    <li><a href="#">Directorio</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Conócenos &cudarrr;</a>x
+                <ul>
+                    <li><a href="#">Centros y Laboratorios</a></li>
+                    <li><a href="#">Extencion Universitaria</a></li>
+                    <li><a href="#">Cultura y Deportes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Oferta Educativa &cudarrr;</a>
+                <ul>
+                    <li><a href="#">Licenciatura en Administración</a></li>
+                    <li><a href="#">Ingenieria en Manufactura Avanzada</a></li>
+                    <li><a href="#">Ingenieria en Tecnologias de la Informacion e Innovacion Digital</a></li>
+                    <li><a href="#">Licenciatura en Negocios y Mercadotecnia</a></li>
+                    <li><a href="#">Licenciatura en Ingenieria Industrial</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Egresados</a></li>
+            <li><a href="#">Bolsa de Trabajo</a></li>
+        </ul>
+    </nav>
+</body>
+
+</HTML>

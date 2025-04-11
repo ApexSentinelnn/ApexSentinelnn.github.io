@@ -1,0 +1,104 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void llenar(int arr[], int tam, int **mat, int fil, int col);
+void modificar(int arr[], int tam, int **mat, int fil, int col);
+void ordenar(int arr[], int tam, int **mat, int fil, int col);
+void mostrar(int arr[], int tam, int **mat, int fil, int col);
+
+int main() {
+    int tam = 5, fil = 2, col = 3;
+    int arr[tam];
+    
+    int **mat = (int **)malloc(fil * sizeof(int *));
+    for (int i = 0; i < fil; i++) {
+        mat[i] = (int *)malloc(col * sizeof(int));
+    }
+
+    llenar(arr, tam, mat, fil, col);
+    mostrar(arr, tam, mat, fil, col);
+
+    modificar(arr, tam, mat, fil, col);
+    mostrar(arr, tam, mat, fil, col);
+
+    ordenar(arr, tam, mat, fil, col);
+    mostrar(arr, tam, mat, fil, col);
+    
+    for (int i = 0; i < fil; i++) {
+        free(mat[i]);
+    }
+    free(mat);
+
+    return 0;
+}
+
+void llenar(int arr[], int tam, int **mat, int fil, int col) {
+    srand(time(NULL));
+    
+    printf("Ingrese %d números enteros:\n", tam);
+    for (int i = 0; i < tam; i++) {
+        printf("Número [%d]: ", i);
+        scanf("%d", &arr[i]);
+    }
+    
+    for (int i = 0; i < fil; i++) {
+        for (int j = 0; j < col; j++) {
+            mat[i][j] = rand() % 31 + 50;
+        }
+    }
+}
+
+void modificar(int arr[], int tam, int **mat, int fil, int col) {
+    for (int i = 0; i < tam; i++) {
+        if (arr[i] % 3 == 0) {
+            arr[i] *= 4;
+        }
+    }
+    
+    for (int i = 0; i < fil; i++) {
+        for (int j = 0; j < col; j++) {
+            if (mat[i][j] % 2 != 0) {
+                mat[i][j] = 100;
+            }
+        }
+    }
+}
+
+void ordenar(int arr[], int tam, int **mat, int fil, int col) {
+    for (int i = 1; i < tam; i++) {
+        int clave = arr[i], j = i - 1;
+        while (j >= 0 && arr[j] > clave) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = clave;
+    }
+    
+    for (int i = 0; i < fil * col - 1; i++) {
+        for (int j = 0; j < fil * col - i - 1; j++) {
+            int f1 = j / col, c1 = j % col;
+            int f2 = (j + 1) / col, c2 = (j + 1) % col;
+            
+            if (mat[f1][c1] < mat[f2][c2]) {
+                int temp = mat[f1][c1];
+                mat[f1][c1] = mat[f2][c2];
+                mat[f2][c2] = temp;
+            }
+        }
+    }
+}
+
+void mostrar(int arr[], int tam, int **mat, int fil, int col) {
+    printf("\nArreglo unidimensional:\n");
+    for (int i = 0; i < tam; i++) {
+        printf("%d\t", arr[i]);
+    }
+    printf("\n\nMatriz bidimensional:\n");
+    for (int i = 0; i < fil; i++) {
+        for (int j = 0; j < col; j++) {
+            printf("%d\t", mat[i][j]);
+        }
+        printf("\n");
+    }
+}
