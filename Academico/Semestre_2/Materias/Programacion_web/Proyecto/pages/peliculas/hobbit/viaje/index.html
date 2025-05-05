@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_movies.css">
 </head>
 
 <body>
@@ -318,42 +319,63 @@
                     <span class="meta-item"><i class="fas fa-star"></i> 8.1/10</span>
                 </div>
 
-                <a href="#obras" class="btn-film">EXPLORAR OBRAS</a>
+                <a href="#obras" class="btn-film">EXPLORAR</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección: Sinopsis -->
+    <!-- Sección: Sinopsis (ampliada) -->
+     
     <section class="content-section" id="sinopsis">
         <div class="section-content">
-            <h2 class="section-title">Sinopsis</h2>
-            <p class="section-text">
-                Bilbo Bolsón, un hobbit tranquilo, es arrastrado a una épica misión para reclamar el reino enano de
-                Erebor del temible dragón Smaug. Acompañado por el mago Gandalf y 13 enanos liderados por Thorin Escudo
-                de Roble, Bilbo se embarca en un viaje lleno de peligros, donde encontrará a Gollum y el Anillo Único.
-            </p>
+            <!-- Títulos (H1, H2, H3) -->
+            <h1>El Hobbit: Un Viaje Inesperado</h1>
+            <h2>Una aventura épica en la Tierra Media</h2>
+            
+            <!-- Párrafos (3-5) -->
+            <p>En esta adaptación cinematográfica de la obra maestra de J.R.R. Tolkien, acompañamos a Bilbo Bolsón, un hobbit tranquilo que se ve arrastrado a una peligrosa misión para reclamar el Reino bajo la Montaña de las garras del temible dragón Smaug.</p>
+            
+            <p>Dirigida por Peter Jackson, esta película marca el inicio de la trilogía que expande el universo de El Señor de los Anillos, combinando tecnología innovadora con narrativa clásica.</p>
+            
+            <p>Con un reparto estelar liderado por Martin Freeman como Bilbo e Ian McKellen como Gandalf, la película recibió 3 nominaciones al Oscar y revolucionó el cine fantástico con su uso pionero de 48 fotogramas por segundo.</p>
+    
+            <!-- Lista (UL) -->
+            <h3>Elementos destacados</h3>
+            <ul class="featured-list">
+                <li><i class="fas fa-ring"></i> El descubrimiento del Anillo Único</li>
+                <li><i class="fas fa-dragon"></i> La legendaria batalla de Piedras del Trueno</li>
+                <li><i class="fas fa-mountain"></i> Impresionantes paisajes de Nueva Zelanda</li>
+                <li><i class="fas fa-music"></i> Banda sonora nominada al Oscar</li>
+            </ul>
+    
+            <!-- Tabla (TABLE) -->
+            <h3>Ficha técnica</h3>
+            <table class="movie-facts">
+                <tr>
+                    <th>Director</th>
+                    <td>Peter Jackson</td>
+                </tr>
+                <tr>
+                    <th>Guionistas</th>
+                    <td>Fran Walsh, Philippa Boyens, Peter Jackson</td>
+                </tr>
+                <tr>
+                    <th>Estreno</th>
+                    <td>14 de diciembre de 2012</td>
+                </tr>
+                <tr>
+                    <th>Duración</th>
+                    <td>169 minutos</td>
+                </tr>
+                <tr>
+                    <th>Presupuesto</th>
+                    <td>$200 millones</td>
+                </tr>
+            </table>
         </div>
     </section>
 
-    <!-- Sección del Tráiler -->
-    <section class="content-section" id="trailer">
-        <div class="section-content">
-            <h2 class="section-title">Tráiler Oficial</h2>
-            <div class="trailer-container">
-                <!-- Iframe de YouTube (reemplaza el ID del video) -->
-                <iframe src="https://www.youtube.com/embed/sI8OQRXhcZE?si=MNsPerT-FMdGGTby"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="youtube-embed"></iframe>
-
-                <!-- Decoración estilo pergamino -->
-                <div class="trailer-decoration"></div>
-            </div>
-            <p class="trailer-caption">Tráiler de "El Hobbit: Un Viaje Inesperado" (Warner Bros. Pictures)</p>
-        </div>
-    </section>
-
-    <!-- Carrusel de imágenes -->
+    <!--Carrusel-->
     <section class="content-section" id="galeria">
         <div class="section-content">
             <h2 class="section-title">Galería</h2>
@@ -381,61 +403,169 @@
                 <!-- Indicadores de puntos -->
                 <div class="carousel-dots"></div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- Sección: Personajes -->
-    <section class="content-section" id="personajes">
-        <div class="section-content">
-            <h2 class="section-title">Personajes Principales</h2>
-            <div class="cards-container">
-                <!-- Tarjeta 1: Bilbo -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="../../../resources/images/bilbo.jpg" alt="Bilbo Bolsón" class="profile-img">
-                            <h3 class="card-title">Bilbo Bolsón</h3>
-                            <p class="card-subtitle">Protagonista</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="card-text">Un hobbit pacífico que descubre su valentía y astucia durante la
-                                aventura.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tarjeta 2: Thorin -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="../../../resources/images/thorin.jpg" alt="Thorin" class="profile-img">
-                            <h3 class="card-title">Thorin</h3>
-                            <p class="card-subtitle">Líder de los enanos</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="card-text">Noble pero obstinado, busca recuperar su hogar y el tesoro de Erebor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div style="text-align: center;">
+                <a href="#trailer" class="btn">Ver Tráiler</a>
+                <a href="#personajes" class="btn">Conoce los Personajes</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Sección: Datos técnicos -->
-    <section class="content-section" id="datos">
+        </div>
+
+    </section>
+    <!-- Sección: Tráiler (estilo mejorado) -->
+    <section class="content-section dark-section" id="trailer">
         <div class="section-content">
-            <h2 class="section-title">Datos Técnicos</h2>
-            <div class="reference-card">
+            <h2 class="section-title">Tráiler Oficial</h2>
+            <p class="section-text">Revive la magia del viaje inesperado con el tráiler cinematográfico:</p>
+
+            <div class="trailer-container">
+                <iframe src="https://www.youtube.com/embed/SDnYMbYB-nU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="youtube-embed"></iframe>
+                <div class="trailer-decoration"></div>
+            </div>
+
+            <div class="trailer-links">
+                <h3>También disponible en:</h3>
                 <ul>
-                    <li><strong>Director:</strong> Peter Jackson</li>
-                    <li><strong>Año:</strong> 2012</li>
-                    <li><strong>Duración:</strong> 169 minutos</li>
-                    <li><strong>Premios:</strong> 3 nominaciones al Oscar</li>
+                    <li><a href="https://www.imdb.com/title/tt0903624/" target="_blank"><i class="fab fa-imdb"></i>
+                            IMDb</a></li>
+                    <li><a href="https://www.rottentomatoes.com/m/the_hobbit_an_unexpected_journey" target="_blank"><i
+                                class="fas fa-tomato"></i> Rotten Tomatoes</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i
+                                class="fab fa-youtube"></i> Canal Oficial</a></li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <!-- Sección: Personajes (con tabla) -->
+    <section class="content-section" id="personajes">
+        <div class="section-content">
+            <h2>Personajes Principales</h2>
+            <p>Conoce a los icónicos personajes que dan vida a esta aventura:</p>
+
+            <table class="characters-table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Actor</th>
+                        <th>Descripción</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bilbo Bolsón</td>
+                        <td>Martin Freeman</td>
+                        <td>Un hobbit reclutado para una aventura inesperada</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('bilbo')"></td>
+                    </tr>
+                    <tr>
+                        <td>Gandalf</td>
+                        <td>Ian McKellen</td>
+                        <td>El mago que organiza la expedición</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('gandalf')"></td>
+                    </tr>
+                    <tr>
+                        <td>Thorin</td>
+                        <td>Richard Armitage</td>
+                        <td>Líder de los enanos en busca de su hogar</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('thorin')"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Ventana flotante -->
+            <div id="details-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDetails()">&times;</span>
+                    <img id="modal-image" src="" alt="Detalle del personaje" class="modal-image">
+                    <p id="modal-quote" class="modal-quote"></p>
+                </div>
+            </div>
+
+
+            <h3>Otros personajes destacados:</h3>
+            <ol>
+                <li>Gollum (Andy Serkis)</li>
+                <li>Galadriel (Cate Blanchett)</li>
+                <li>Elrond (Hugo Weaving)</li>
+            </ol>
+
+            <a href="#galeria" class="btn">Ver Galería</a>
+        </div>
+    </section>
+
+    <!-- Sección: Producción -->
+    <section class="content-section" id="produccion">
+        <div class="section-content">
+            <h2>Datos de Producción</h2>
+            <h3>Un proyecto ambicioso</h3>
+
+            <p>La filmación utilizó tecnología revolucionaria para la época:</p>
+
+            <ul>
+                <li>Primera película en 48 fps</li>
+                <li>Uso extensivo de CGI y motion capture</li>
+                <li>Filmada simultáneamente con las secuelas</li>
+            </ul>
+
+            <h3>Localizaciones principales:</h3>
+            <table class="locations-table">
+                <tr>
+                    <th>Lugar</th>
+                    <th>Escena</th>
+                </tr>
+                <tr>
+                    <td>Nueva Zelanda</td>
+                    <td>Todas las localizaciones exteriores</td>
+                </tr>
+                <tr>
+                    <td>Estudios Stone Street</td>
+                    <td>Escenas de estudio</td>
+                </tr>
+            </table>
+
+            <a href="" target="_blank" class="btn">Conoce</a>
+        </div>
+    </section>
+
+    <!-- Sección: Recepción -->
+    <section class="content-section" id="recepcion">
+        <div class="section-content">
+            <h2>Recepción y Premios</h2>
+
+            <p>La película tuvo una excelente recepción tanto de crítica como de público:</p>
+
+            <h3>Premios principales</h3>
+            <table class="awards-table">
+                <tr>
+                    <th>Premio</th>
+                    <th>Categoría</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejores efectos visuales</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>BAFTA</td>
+                    <td>Mejor maquillaje</td>
+                    <td>Ganadora</td>
+                </tr>
+            </table>
+
+            <h3>Críticas destacadas:</h3>
+            <ul>
+                <li>"Una aventura visualmente impresionante" - The Guardian</li>
+                <li>"Martin Freeman es perfecto como Bilbo" - Rolling Stone</li>
+            </ul>
+
+            <a href="#contacto" class="btn">Comparte tu opinión</a>
+        </div>
+    </section>
+
     <!--Footer section-->
     <footer id="contacto">
         <div class="footer-content">
