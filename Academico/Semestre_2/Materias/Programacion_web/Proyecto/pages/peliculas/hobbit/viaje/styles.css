@@ -684,6 +684,63 @@ nav.scrolled {
   }
 }
 
+/* Seccion de tablas */
+/* Estilos para la tabla de personajes */
+/* Estilos para tablas */
+.characters-table, .locations-table, .awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-family: 'EB Garamond', serif;
+}
+
+.characters-table th, 
+.locations-table th,
+.awards-table th {
+  background-color: var(--gold-dark);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.characters-table td, 
+.locations-table td,
+.awards-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--gold-light);
+}
+
+.characters-table tr:nth-child(even),
+.locations-table tr:nth-child(even),
+.awards-table tr:nth-child(even) {
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
+/* Estilos para listas */
+.content-section ul, 
+.content-section ol {
+  margin: 20px 0;
+  padding-left: 30px;
+  line-height: 1.8;
+}
+
+.content-section li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para enlaces */
+.content-section a:not(.btn) {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-color);
+  transition: all 0.3s;
+}
+
+.content-section a:not(.btn):hover {
+  color: var(--gold-dark);
+  border-bottom-style: solid;
+}
+
 /* Secciones de contenido */
 .content-section {
   padding: 150px 10%;

@@ -180,3 +180,33 @@ function initCarousel() {
 
 // Inicializar al cargar la página
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+
+// ventana flotante de imagenes
+const details = {
+  bilbo: {
+      image: "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
+  }, 
+  gandalf: {
+      image: "https://th.bing.com/th/id/R.1de9fd651c8456e9f331519c24251a96?rik=IrS1Mgz4s4uDxA&riu=http%3a%2f%2fimages.wikia.com%2flotr%2fimages%2f8%2f8d%2fGandalf-2.jpg&ehk=Nm3tJ5SK6z6MbERxfYI6yqcd3virc6P6FuI9Uv1fxxw%3d&risl=&pid=ImgRaw&r=0",
+  },
+  thorin: {
+      image: "https://th.bing.com/th/id/R.372adfeb6b9678d4510cc8d3c217c430?rik=OTbScvAyebYrtw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33300000%2fThorin-thorin-oakenshield-33325333-777-1024.jpg&ehk=ouyqgG7qZYbEiDM19u3iz0TeExjdiga5vVS8u1F05Uo%3d&risl=&pid=ImgRaw&r=0",
+  }
+};
+
+function showDetails(character) {
+  const modal = document.getElementById('details-modal');
+  const image = document.getElementById('modal-image');
+  const quote = document.getElementById('modal-quote');
+
+  image.src = details[character].image;
+  quote.textContent = details[character].quote;
+
+  modal.style.display = 'block';
+}
+
+function closeDetails() {
+  const modal = document.getElementById('details-modal');
+  modal.style.display = 'none';
+}
