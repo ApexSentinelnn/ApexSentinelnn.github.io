@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor1" content="Noe Castillo Gaytan">
+    <meta name="Autor2" content="Miguel Angel Flores Gonzales">
+    <meta name="Fecha" content="27/03/25">
+    <meta name="Descripcion" content="Proyecto">
+    <title>Un viaje inesperado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo"><a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a></div>
+        <div class="nav-links">
+            <a href="#obras">OBRAS</a>
+            <a href="#integrantes">INTEGRANTES</a>
+            <a href="#legado">LEGADO</a>
+            <a href="#Referencias">REFERENCIAS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="redes.html">Redes</a>
+        </div>
+    </nav>
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/peliculas/hobbit/viaje/index.html">Un viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/peliculas/hobbit/desolacion/index.html">La desolación de Smaug</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/peliculas/hobbit/batalla/index.html">La batalla de los cinco
+                                        ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/peliculas/sda/comunidad/index.html">La Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/peliculas/sda/torres/index.html">Las dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/peliculas/sda/rey/index.html">El retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/series/rop/temporada1/index.html">Temporada 1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/series/rop/temporada2/index.html">Temporada 2 (Próximamente)</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/inspiracion/nordica/index.html">Mitología nórdica</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/inspiracion/medieval/index.html">Literatura medieval</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/inspiracion/guerra/index.html">Experiencias en la Primera Guerra Mundial</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Bibliografía <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/libros/hobbit/index.html">El Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/sda/index.html">El Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/silmarillion/index.html">El Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/cuentos/index.html">Cuentos inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/hurin/index.html">Los hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/beren/index.html">Beren y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/gondolin/index.html">La caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/libros/cuentos-perdidos/index.html">El libro de los cuentos perdidos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Personajes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Personajes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/personajes/hobbit/bilbo/index.html">Bilbo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/hobbit/gandalf/index.html">Gandalf</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/hobbit/thorin/index.html">Thorin Escudo de Roble</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/personajes/sda/frodo/index.html">Frodo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/sda/aragorn/index.html">Aragorn</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/sda/legolas/index.html">Legolas</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/sda/gimli/index.html">Gimli</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/sda/gollum/index.html">Gollum</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="/pages/personajes/rop/galadriel/index.html">Galadriel</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/rop/elrond/index.html">Elrond</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="/pages/personajes/rop/sauron/index.html">Sauron</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Diferencias con el libro -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Diferencias con el libro <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/diferencias/trama/index.html">Cambios en la trama</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/diferencias/personajes/index.html">Personajes añadidos o omitidos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/diferencias/adaptaciones/index.html">Adaptaciones visuales</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Efectos visuales -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Efectos visuales <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/efectos/tecnologia/index.html">Tecnología utilizada</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/efectos/diseno/index.html">Diseño de criaturas y escenarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/efectos/cgi/index.html">Innovaciones en CGI</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reconocimientos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Reconocimientos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/premios/literarios/index.html">Premios literarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/premios/cultura/index.html">Influencia en la cultura popular</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/premios/cine/index.html">Adaptaciones cinematográficas premiadas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Datos interesantes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Datos interesantes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/datos/lenguas/index.html">Lenguas creadas por Tolkien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/datos/mapas/index.html">Mapas de la Tierra Media</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/datos/influencia/index.html">Influencia en otros autores</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Detalles únicos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Detalles únicos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/detalles/simbolismo/index.html">Simbolismo en las obras</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/detalles/conexiones/index.html">Conexiones entre libros</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/detalles/referencias/index.html">Referencias históricas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Curiosidades <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/curiosidades/nombres/index.html">Inspiración para nombres</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/curiosidades/anecdotas/index.html">Anécdotas de la filmación</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/curiosidades/easter-eggs/index.html">Easter eggs en las películas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Premios -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Premios <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="/pages/premios/oscars/index.html">Oscars</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/premios/globos/index.html">Globos de Oro</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/pages/premios/bafta/index.html">Premios BAFTA</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero inicio de la pagina -->
+    <section class="hero hero-tolkien" id="inicio">
+        <div class="hero-film-content">
+            <div class="film-text-container">
+                <h1 class="film-title">El hobbit<br>Un viaje inesperado</h1>
+                <p class="film-subtitle">"No todos los que vagan están perdidos"<br>El mundo literario del profesor que
+                    cambió la fantasía para siempre.</p>
+
+                <div class="film-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> 169 min</span>
+                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2012</span>
+                    <span class="meta-item"><i class="fas fa-star"></i> 8.1/10</span>
+                </div>
+
+                <a href="#obras" class="btn-film">EXPLORAR OBRAS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Sinopsis -->
+    <section class="content-section" id="sinopsis">
+        <div class="section-content">
+            <h2 class="section-title">Sinopsis</h2>
+            <p class="section-text">
+                Bilbo Bolsón, un hobbit tranquilo, es arrastrado a una épica misión para reclamar el reino enano de
+                Erebor del temible dragón Smaug. Acompañado por el mago Gandalf y 13 enanos liderados por Thorin Escudo
+                de Roble, Bilbo se embarca en un viaje lleno de peligros, donde encontrará a Gollum y el Anillo Único.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección del Tráiler -->
+    <section class="content-section" id="trailer">
+        <div class="section-content">
+            <h2 class="section-title">Tráiler Oficial</h2>
+            <div class="trailer-container">
+                <!-- Iframe de YouTube (reemplaza el ID del video) -->
+                <iframe src="https://www.youtube.com/embed/sI8OQRXhcZE?si=MNsPerT-FMdGGTby"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="youtube-embed"></iframe>
+
+                <!-- Decoración estilo pergamino -->
+                <div class="trailer-decoration"></div>
+            </div>
+            <p class="trailer-caption">Tráiler de "El Hobbit: Un Viaje Inesperado" (Warner Bros. Pictures)</p>
+        </div>
+    </section>
+
+    <!-- Carrusel de imágenes -->
+    <section class="content-section" id="galeria">
+        <div class="section-content">
+            <h2 class="section-title">Galería</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://lamanodelextranjero.files.wordpress.com/2012/12/thorin-y-compaa.jpg"
+                            alt="Bilbo y los enanos" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>La compañía de Thorin</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/02/the-hobbit-bilbo-and-gollum.jpg"
+                            alt="Gollum" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>El encuentro con Gollum</h3>
+                        </div>
+                    </div>
+                    <!-- Añade más imágenes si necesitas -->
+                </div>
+                <!-- Botones de navegación -->
+                <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+                <!-- Indicadores de puntos -->
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección: Personajes -->
+    <section class="content-section" id="personajes">
+        <div class="section-content">
+            <h2 class="section-title">Personajes Principales</h2>
+            <div class="cards-container">
+                <!-- Tarjeta 1: Bilbo -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../../resources/images/bilbo.jpg" alt="Bilbo Bolsón" class="profile-img">
+                            <h3 class="card-title">Bilbo Bolsón</h3>
+                            <p class="card-subtitle">Protagonista</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Un hobbit pacífico que descubre su valentía y astucia durante la
+                                aventura.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2: Thorin -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../../resources/images/thorin.jpg" alt="Thorin" class="profile-img">
+                            <h3 class="card-title">Thorin</h3>
+                            <p class="card-subtitle">Líder de los enanos</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Noble pero obstinado, busca recuperar su hogar y el tesoro de Erebor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Datos técnicos -->
+    <section class="content-section" id="datos">
+        <div class="section-content">
+            <h2 class="section-title">Datos Técnicos</h2>
+            <div class="reference-card">
+                <ul>
+                    <li><strong>Director:</strong> Peter Jackson</li>
+                    <li><strong>Año:</strong> 2012</li>
+                    <li><strong>Duración:</strong> 169 minutos</li>
+                    <li><strong>Premios:</strong> 3 nominaciones al Oscar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Footer section-->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#obras">OBRAS</a>
+                <a href="#integrantes">INTEGRANTES</a>
+                <a href="#legado">LEGADO</a>
+                <a href="#contacto">CONTACTO</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon">📜</a>
+                <a href="#" class="social-icon">🦅</a>
+                <a href="#" class="social-icon">🧙</a>
+                <a href="#" class="social-icon">⚔️</a>
+            </div>
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

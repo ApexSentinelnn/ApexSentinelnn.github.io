@@ -314,7 +314,7 @@ nav.scrolled {
   padding: 0 10%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/port.jpg?raw=true") no-repeat center center;
+    url("resources\\image\\port.jpg") no-repeat center center;
   background-size: cover;
   color: var(--text-light);
   position: relative;
@@ -338,7 +338,7 @@ nav.scrolled {
 .hero h1 {
   font-family: "Cinzel", serif;
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.1;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -360,7 +360,7 @@ nav.scrolled {
 .btn {
   display: inline-block;
   margin-top: 40px;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background: transparent;
   color: var(--gold-light);
   border: 2px solid var(--gold-light);
@@ -395,6 +395,293 @@ nav.scrolled {
 
 .btn:hover::before {
   left: 0;
+}
+
+/* Hero estilo texto superpuesto  */
+.hero-tolkien {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+      url('resources\\image\\port.jpg') center/cover no-repeat;
+  padding: 0 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-film-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.film-text-container {
+  max-width: 600px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.film-title {
+  font-family: "Cinzel", serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.film-subtitle {
+  font-family: "EB Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--text-light);
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.film-meta {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "EB Garamond", serif;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.meta-item i {
+  color: var(--gold-light);
+}
+
+.btn-film {
+  display: inline-block;
+  padding: 15px 40px;
+  background: transparent;
+  color: var(--gold-light);
+  border: 2px solid var(--gold-light);
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-film:hover {
+  background: var(--gold-light);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de grano de película */
+.hero-tolkien::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../resources/images/film-grain.png');
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-tolkien {
+      height: 80vh;
+      padding: 0 5%;
+  }
+  
+  .film-title {
+      font-size: 2.8rem;
+  }
+  
+  .film-subtitle {
+      font-size: 1.1rem;
+  }
+  
+  .film-meta {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+/* Carrusel */
+/* Estilos del carrusel */
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--gold-dark);
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--gold-light);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(45, 55, 71, 0.5);
+  color: var(--gold-light);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-dots .dot.active {
+  background: var(--gold-light);
+}
+
+/* Estilos para la sección del tráiler */
+.trailer-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  border: 5px solid var(--gold-dark);
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background: #000;
+}
+
+.youtube-embed {
+  width: 100%;
+  height: 450px;
+  display: block;
+  border: none;
+}
+
+.trailer-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/old-map.png');
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.trailer-caption {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Efecto hover para el contenedor */
+.trailer-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.trailer-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid var(--gold-light);
+  border-radius: 8px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .youtube-embed {
+      height: 250px;
+  }
+  
+  .trailer-container {
+      border-width: 3px;
+  }
 }
 
 /* Secciones de contenido */
@@ -684,7 +971,7 @@ nav.scrolled {
 
 @media (max-width: 768px) {
   .references-container {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 

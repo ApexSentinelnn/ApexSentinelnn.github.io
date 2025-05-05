@@ -1,0 +1,53 @@
+====================== SISTEMA DE SORTEO ======================
+
+=== CONFIGURACION DE PRECIOS ===
+Basico: 25.00 | Premium: 50.00 | Oro: 100.00
+
+=== PREMIOS OCULTOS ===
+Posicion | Premio
+-----------------
+       2 | 235.00
+       5 | 125.00
+       7 | 70.00
+       8 | 175.00
+       9 | 10.00
+      12 | 200.00
+      15 | 100.00
+      18 | 160.00
+      21 | 70.00
+      22 | 130.00
+
+=== FONDOS RECAUDADOS ===
+Total: 25.00 (GANANCIA)
+
+=== BOLETOS VENDIDOS: 1 ===
+ID | Codigo | Nombre                | Tipo    | Precio | Premio  | Ganancia
+--------------------------------------------------------------------------
+1  | IQYFS  | Noe                  | Basico  |  25.00 |    0.00 |    25.00
+
+=== DETALLES DE BOLETOS ===
+Boleto #1 - Codigo: IQYFS
+  Nombre: Noe
+  Domicilio: sdasd
+  Tipo: Basico (25.00)
+  Numeros seleccionados: 7 
+  Premio ganado: 0.00
+
+###DATOS_TECNICOS###
+CONFIG
+25.00 50.00 100.00 123
+PREMIOS
+0.00 235.00 0.00 0.00 125.00 0.00 70.00 175.00 10.00 0.00 0.00 200.00 0.00 0.00 100.00 0.00 0.00 160.00 0.00 0.00 70.00 130.00 0.00 0.00 0.00 
+BOLETOS
+1
+Noe
+sdasd
+IQYFS
+Basico
+25.00
+1
+7 
+0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0.00
+FONDOS
+25.00
