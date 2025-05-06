@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor1" content="Noe Castillo Gaytan">
+    <meta name="Autor2" content="Miguel Angel Flores Gonzales">
+    <meta name="Fecha" content="27/03/25">
+    <meta name="Descripcion" content="Proyecto">
+    <title>Un viaje inesperado</title>
+    <!--icono -->
+    <link rel="icon" href="resources/ico/icono.png" type="image/png">
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_movies.css">
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/index.html"
+                style="text-decoration: none; margin-right: 10px;">
+                <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/ico/ico_house.png"
+                    style="height: 35px;" alt="img">
+            </a>
+            <a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a>
+        </div>
+        <div class="nav-links">
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#trailer">Trailer</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#produccion">Produccion</a>
+            <a href="#recepcion">Recepcion</a>
+            <a href="#Referencias">Referencias</a>
+        </div>
+    </nav>
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/viaje/index.html">Un viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/desolacion/index.html">La desolación de Smaug</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/batalla/index.html">La batalla de los cinco
+                                        ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/comunidad/index.html">La Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/torres/index.html">Las dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/rey/index.html">El retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/temporada1/index.html">Temporada 1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/temporada2/index.html">Temporada 2 (Próximamente)</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/nordica/index.html">Mitología nórdica</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/medieval/index.html">Literatura medieval</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/guerra/index.html">Experiencias en la Primera Guerra Mundial</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Bibliografía <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hobbit/index.html">El Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/sda/index.html">El Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/silmarillo/index.html">El Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos/index.html">Cuentos inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hurin/index.html">Los hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/beren/index.html">Beren y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/gondolin/index.html">La caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos-perdidos/index.html">El libro de los cuentos perdidos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Personajes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Personajes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/bilbo/index.html">Bilbo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/gandalf/index.html">Gandalf</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/thorin/index.html">Thorin Escudo de Roble</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/frodo/index.html">Frodo Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/aragon/index.html">Aragorn</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/legolas/index.html">Legolas</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/gimli/index.html">Gimli</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/gollum/index.html">Gollum</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/galadriel/index.html">Galadriel</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/elrond/index.html">Elrond</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/sauron/index.html">Sauron</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Diferencias con el libro -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Diferencias con el libro <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/trama/index.html">Cambios en la trama</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/personajes/index.html">Personajes añadidos o omitidos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/adaptaciones/index.html">Adaptaciones visuales</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Efectos visuales -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Efectos visuales <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/tecnologias/index.html">Tecnología utilizada</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/diseno/index.htmll">Diseño de criaturas y escenarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/cgi/index.html">Innovaciones en CGI</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reconocimientos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Reconocimientos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/literarios/index.html">Premios literarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/cultura/index.html">Influencia en la cultura popular</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/cine/index.html">Adaptaciones cinematográficas premiadas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Datos interesantes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Datos interesantes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/lenguas/index.html">Lenguas creadas por Tolkien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/mapas/index.html">Mapas de la Tierra Media</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/influencia/index.html">Influencia en otros autores</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Detalles únicos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Detalles únicos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/simbolos/index.html">Simbolismo en las obras</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/conexion/index.html">Conexiones entre libros</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/referencias/index.html">Referencias históricas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Curiosidades <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/nombres/index.html">Inspiración para nombres</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/anecdotas/index.html">Anécdotas de la filmación</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/easter-eggs/index.html">Easter eggs en las películas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Premios -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Premios <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/oscars/index.html">Oscars</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/globos/index.html">Globos de Oro</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/bafta/index.html">Premios BAFTA</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero inicio de la pagina -->
+    <section class="hero hero-tolkien" id="inicio">
+        <div class="hero-film-content">
+            <div class="film-text-container">
+                <h1 class="film-title">El hobbit<br>Un viaje inesperado</h1>
+                <p class="film-subtitle">"No todos los que vagan están perdidos"<br>El mundo literario del profesor que
+                    cambió la fantasía para siempre.</p>
+
+                <div class="film-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> 169 min</span>
+                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2012</span>
+                    <span class="meta-item"><i class="fas fa-star"></i> 8.1/10</span>
+                </div>
+
+                <a href="#sinopsis" class="btn-film">EXPLORAR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Sinopsis -->
+
+    <section class="content-section" id="sinopsis">
+        <div class="section-content">
+            <h1>El Hobbit: Un Viaje Inesperado</h1>
+            <h2>La aventura que comenzó todo</h2>
+    
+            <p>Bilbo Bolsón, un hobbit tranquilo y amante de la comodidad, se ve arrastrado a una épica misión por el mago Gandalf y una compañía de trece enanos liderados por Thorin Escudo de Roble. Su objetivo es reclamar el Reino bajo la Montaña y su tesoro, custodiado por el temible dragón Smaug.</p>
+    
+            <p>Esta primera entrega de la trilogía dirigida por Peter Jackson nos lleva desde la Comarca hasta las Tierras Salvajes, pasando por encuentros con trolls, elfos y la criatura más intrigante de la Tierra Media: Gollum.</p>
+    
+            <h3>Momentos clave</h3>
+            <ul class="featured-list">
+                <li><i class="fas fa-chess-knight"></i> La reunión inesperada en Bolsón Cerrado</li>
+                <li><i class="fas fa-utensils"></i> El juego de acertijos con Gollum</li>
+                <li><i class="fas fa-ring"></i> El descubrimiento del Anillo Único</li>
+                <li><i class="fas fa-mountain"></i> Las imponentes Montañas Nubladas</li>
+            </ul>
+    
+            <h3>Datos cinematográficos</h3>
+            <table class="movie-facts">
+                <tr>
+                    <th>Basada en</th>
+                    <td>El Hobbit de J.R.R. Tolkien (1937)</td>
+                </tr>
+                <tr>
+                    <th>Duración extendida</th>
+                    <td>182 minutos (versión extendida)</td>
+                </tr>
+                <tr>
+                    <th>Tecnología</th>
+                    <td>Primera película en 48 fps (HFR)</td>
+                </tr>
+                <tr>
+                    <th>Banda sonora</th>
+                    <td>Compuesta por Howard Shore</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!--Carrusel-->
+    <section class="content-section" id="galeria">
+        <div class="section-content">
+            <h2 class="section-title">Galería</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/originals/4e/9e/7d/4e9e7d0b8a9b1b8b8b8b8b8b8b8b8b8b.jpg" 
+                             alt="La compañía de Thorin" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>La compañía de Thorin</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.looper.com/img/gallery/the-untold-truth-of-gollum/intro-1594748963.jpg" 
+                             alt="Bilbo y Gollum" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>El juego de acertijos</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/05/The-Hobbit-An-Unexpected-Journey-Riddles-in-the-Dark.jpg" 
+                             alt="El Anillo Único" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>El descubrimiento del Anillo</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.denofgeek.com/wp-content/uploads/2022/03/The-Hobbit-An-Unexpected-Journey.jpg" 
+                             alt="Los trolls" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>Encuentro con los trolls</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Tráiler  -->
+<section class="content-section dark-section" id="trailer">
+    <div class="section-content">
+        <h2 class="section-title">Tráiler Oficial</h2>
+        <p class="section-text">El tráiler que anunció el regreso a la Tierra Media:</p>
+
+        <div class="trailer-container">
+            <iframe src="https://www.youtube.com/embed/TeH2Dnzyxws" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen class="youtube-embed"></iframe>
+        </div>
+
+        <div class="trailer-links">
+            <h3>Dónde ver la película:</h3>
+            <ul>
+                <li><a href="https://www.hbomax.com" target="_blank"><i class="fas fa-play-circle"></i> HBO Max</a></li>
+                <li><a href="https://www.amazon.com" target="_blank"><i class="fab fa-amazon"></i> Amazon Prime</a></li>
+                <li><a href="https://www.apple.com/apple-tv-plus/" target="_blank"><i class="fab fa-apple"></i> Apple TV</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección: Personajes-->
+    <section class="content-section" id="personajes">
+        <div class="section-content">
+            <h2 class="section-title">Personajes Principales</h2>
+            <p>Conoce a los icónicos personajes que dan vida a esta aventura:</p>
+
+            <table class="characters-table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Actor</th>
+                        <th>Descripción</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bilbo Bolsón</td>
+                        <td>Martin Freeman</td>
+                        <td>Un hobbit reclutado para una aventura inesperada</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('bilbo')"></td>
+                    </tr>
+                    <tr>
+                        <td>Gandalf</td>
+                        <td>Ian McKellen</td>
+                        <td>El mago que organiza la expedición</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('gandalf')"></td>
+                    </tr>
+                    <tr>
+                        <td>Thorin</td>
+                        <td>Richard Armitage</td>
+                        <td>Líder de los enanos en busca de su hogar</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('thorin')"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Ventana flotante -->
+            <div id="details-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDetails()">&times;</span>
+                    <img id="modal-image" src="" alt="Detalle del personaje" class="modal-image">
+                    <p id="modal-quote" class="modal-quote"></p>
+                </div>
+            </div>
+
+
+            <h3>La Compañía de Thorin:</h3>
+            <ul class="dwarves-list">
+                <li>Balin (Ken Stott)</li>
+                <li>Dwalin (Graham McTavish)</li>
+                <li>Fíli (Dean O'Gorman)</li>
+                <li>Kíli (Aidan Turner)</li>
+                <li>Óin (John Callen)</li>
+                <li>Glóin (Peter Hambleton)</li>
+                <li>Dori (Mark Hadlow)</li>
+                <li>Nori (Jed Brophy)</li>
+                <li>Ori (Adam Brown)</li>
+                <li>Bifur (William Kircher)</li>
+                <li>Bofur (James Nesbitt)</li>
+                <li>Bombur (Stephen Hunter)</li>
+            </ul>
+
+            <a href="#galeria" class="btn">Ver Galería</a>
+        </div>
+    </section>
+
+    <!-- Sección: Producción -->
+    <section class="content-section" id="produccion">
+        <div class="section-content">
+            <h2 class="section-title">Datos de Producción</h2>
+            <h3>Un proyecto ambicioso</h3>
+    
+            <p>La filmación utilizó tecnología revolucionaria para la época:</p>
+    
+            <ul>
+                <li>Primera película en 48 fps (High Frame Rate)</li>
+                <li>Uso extensivo de CGI y motion capture para Gollum y criaturas</li>
+                <li>Filmada simultáneamente con las secuelas (266 días de rodaje)</li>
+                <li>Se construyeron 95 sets diferentes en Nueva Zelanda</li>
+                <li>Se usaron cámaras RED Epic digitales 3D de última generación</li>
+            </ul>
+    
+            <h3>Localizaciones principales:</h3>
+            <table class="locations-table">
+                <tr>
+                    <th>Lugar</th>
+                    <th>Escena</th>
+                </tr>
+                <tr>
+                    <td>Matamata, Nueva Zelanda</td>
+                    <td>La Comarca (Bolsón Cerrado)</td>
+                </tr>
+                <tr>
+                    <td>Parque Nacional Tongariro</td>
+                    <td>Tierras Salvajes y Montañas Nubladas</td>
+                </tr>
+                <tr>
+                    <td>Estudios Stone Street, Wellington</td>
+                    <td>Interiores de Rivendel y cuevas de los trasgos</td>
+                </tr>
+                <tr>
+                    <td>Parque Regional de Waitomo</td>
+                    <td>Escenas del Bosque de los Trolls</td>
+                </tr>
+            </table>
+    
+        </div>
+    </section>
+
+    <!-- Sección: Recepción -->
+    <section class="content-section" id="recepcion">
+        <div class="section-content">
+            <h2 class="section-title">Recepción y Premios</h2>
+            <h3>Un éxito en taquilla</h3>
+    
+            <p>La película recaudó $1.017 billones mundialmente, siendo la 4ta más taquillera de 2012.</p>
+    
+            <h3>Premios destacados:</h3>
+            <table class="awards-table">
+                <tr>
+                    <th>Premio</th>
+                    <th>Categoría</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejor Maquillaje</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejor Diseño de Producción</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejores Efectos Visuales</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>BAFTA</td>
+                    <td>Mejor Maquillaje y Peluquería</td>
+                    <td>Ganadora</td>
+                </tr>
+            </table>
+    
+            <h3>Críticas destacadas:</h3>
+            <div class="reviews">
+                <blockquote>
+                    "Martin Freeman es el Bilbo perfecto, combinando comedia y coraje" - The Hollywood Reporter
+                </blockquote>
+                <blockquote>
+                    "Las escenas con Gollum son lo más destacado, mostrando el increíble avance en efectos digitales" - Variety
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!--referencias-->
+    <section class="content-section" id="Referencias">
+        <div class="section-content">
+            <h2 class="section-title">Referencias</h2>
+            <p class="section-text">Esta página utiliza los siguientes recursos externos:</p>
+    
+            <div class="references-container">
+                <div class="reference-card">
+                    <h3><i class="fas fa-image"></i> Imágenes utilizadas</h3>
+                    <table class="references-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Fuente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La compañía de Thorin</td>
+                                <td><a href="https://www.pinterest.com/pin/the-hobbit--330573551250224836/" target="_blank">Ver en Pinterest</a></td>
+                            </tr>
+                            <tr>
+                                <td>Bilbo y Gollum</td>
+                                <td><a href="https://www.looper.com/231843/the-untold-truth-of-gollum/" target="_blank">Ver en Looper</a></td>
+                            </tr>
+                            <tr>
+                                <td>El descubrimiento del Anillo</td>
+                                <td><a href="https://screenrant.com/hobbit-movie-riddles-dark-scene-changes-from-book/" target="_blank">Ver en ScreenRant</a></td>
+                            </tr>
+                            <tr>
+                                <td>Encuentro con los trolls</td>
+                                <td><a href="https://www.denofgeek.com/movies/the-hobbit-movies-ranked/" target="_blank">Ver en Den of Geek</a></td>
+                            </tr>
+                            <tr>
+                                <td>Portada de la película</td>
+                                <td><a href="https://www.imdb.com/title/tt0903624/" target="_blank">Ver en IMDb</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class="reference-card">
+                    <h3><i class="fas fa-book"></i> Fuentes de información</h3>
+                    <ul class="sources-list">
+                        <li><a href="https://www.tolkiensociety.org/" target="_blank">Tolkien Society</a> - Biografía y obras</li>
+                        <li><a href="https://www.warnerbros.com/movies/hobbit-unexpected-journey" target="_blank">Warner Bros.</a> - Datos oficiales de la película</li>
+                        <li><a href="https://www.theonering.net/" target="_blank">The One Ring.net</a> - Comunidad de fans</li>
+                    </ul>
+                </div>
+    
+                <div class="reference-card">
+                    <h3><i class="fas fa-video"></i> Material multimedia</h3>
+                    <ul class="sources-list">
+                        <li><a href="https://www.youtube.com/watch?v=TeH2Dnzyxws" target="_blank">Tráiler oficial</a> - YouTube</li>
+                        <li><a href="https://www.wetanz.com/the-hobbit" target="_blank">Weta Workshop</a> - Efectos especiales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#trailer">Trailer</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#produccion">Produccion</a>
+                <a href="#recepcion">Recepcion</a>
+                <a href="#Referencias">Referencias</a>
+            </div>
+
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
