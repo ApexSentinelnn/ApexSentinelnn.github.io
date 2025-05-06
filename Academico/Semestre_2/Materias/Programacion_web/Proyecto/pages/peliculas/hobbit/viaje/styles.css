@@ -743,7 +743,7 @@ nav.scrolled {
 
 /* Secciones de contenido */
 .content-section {
-  padding: 150px 10%;
+  padding: 20px 10%;
   min-height: 100vh;
   display: flex;
   align-items: center;
