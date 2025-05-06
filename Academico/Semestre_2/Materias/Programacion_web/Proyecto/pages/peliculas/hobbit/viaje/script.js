@@ -30,22 +30,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Smooth scroll para los enlaces del nav
-  document.querySelectorAll("nav a, .footer-links a").forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
+// Smooth scroll para los enlaces del nav (excluyendo el logo) y footer
+document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
+      
+      // Solo hacer scroll si es un hash (#) link
+      if (targetId.startsWith("#")) {
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+              window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: "smooth"
+              });
 
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: "smooth",
-      });
-
-      // Actualizar la URL sin recargar la página
-      history.pushState(null, null, targetId);
-    });
+              // Actualizar la URL sin recargar la página
+              history.pushState(null, null, targetId);
+          }
+      } else {
+          // Si no es un hash link, permitir el comportamiento normal
+          window.location.href = targetId;
+      }
   });
+});
 
   // Menú hamburguesa
   const menuToggle = document.getElementById("mobile-menu");
