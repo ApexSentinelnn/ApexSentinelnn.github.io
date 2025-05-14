@@ -195,13 +195,13 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 // ventana flotante de imagenes
 const details = {
   bilbo: {
-    image: "resources/image/bilbo.jpeg",
+    image: "https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/bilbo.jpeg?raw=true",
   },
   gandalf: {
-    image: "resources/image/gandalf.jpeg",
+    image: "https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/gandalf.jpeg?raw=true",
   },
   thorin: {
-    image: "resources/image/thorin.jpeg",
+    image: "https://github.com/ApexSentinelnn/ApexSentinelnn.github.io/blob/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/thorin.jpeg?raw=true",
   },
 };
 

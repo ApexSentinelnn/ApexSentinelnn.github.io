@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor1" content="Noe Castillo Gaytan">
+    <meta name="Autor2" content="Miguel Angel Flores Gonzales">
+    <meta name="Fecha" content="27/03/25">
+    <meta name="Descripcion" content="Proyecto">
+    <title>Un viaje inesperado</title>
+    <!--icono -->
+    <link rel="icon" href="resources/ico/icono.png" type="image/png">
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_movies.css">
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/index.html"
+                style="text-decoration: none; margin-right: 10px;">
+                <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/ico/ico_house.png"
+                    style="height: 35px;" alt="img">
+            </a>
+            <a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a>
+        </div>
+        <div class="nav-links">
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#trailer">Trailer</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#produccion">Produccion</a>
+            <a href="#recepcion">Recepcion</a>
+            <a href="#Referencias">Referencias</a>
+        </div>
+    </nav>
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/viaje/index.html">Un
+                                        viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/desolacion/index.html">La
+                                        desolación de Smaug</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/batalla/index.html">La
+                                        batalla de los cinco
+                                        ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/comunidad/index.html">La
+                                        Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/torres/index.html">Las
+                                        dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/rey/index.html">El
+                                        retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/temporada1/index.html">Temporada
+                                        1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/temporada2/index.html">Temporada
+                                        2 (Próximamente)</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/nordica/index.html">Mitología
+                                nórdica</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/medieval/index.html">Literatura
+                                medieval</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/guerra/index.html">Experiencias
+                                en la Primera Guerra Mundial</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Bibliografía <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hobbit/index.html">El
+                                Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/sda/index.html">El
+                                Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/silmarillo/index.html">El
+                                Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos/index.html">Cuentos
+                                inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hurin/index.html">Los
+                                hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/beren/index.html">Beren
+                                y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/gondolin/index.html">La
+                                caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos-perdidos/index.html">El
+                                libro de los cuentos perdidos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Personajes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Personajes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/bilbo/index.html">Bilbo
+                                        Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/gandalf/index.html">Gandalf</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/hobbit/thorin/index.html">Thorin
+                                        Escudo de Roble</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/frodo/index.html">Frodo
+                                        Bolsón</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/aragon/index.html">Aragorn</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/legolas/index.html">Legolas</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/gimli/index.html">Gimli</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/sda/gollum/index.html">Gollum</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/galadriel/index.html">Galadriel</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/elrond/index.html">Elrond</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/personajes/rop/sauron/index.html">Sauron</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Diferencias con el libro -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Diferencias con el libro <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/trama/index.html">Cambios
+                                en la trama</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/personajes/index.html">Personajes
+                                añadidos o omitidos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/diferencias/adaptaciones/index.html">Adaptaciones
+                                visuales</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Efectos visuales -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Efectos visuales <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/tecnologias/index.html">Tecnología
+                                utilizada</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/diseno/index.htmll">Diseño
+                                de criaturas y escenarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/efectos/cgi/index.html">Innovaciones
+                                en CGI</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reconocimientos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Reconocimientos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/literarios/index.html">Premios
+                                literarios</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/cultura/index.html">Influencia
+                                en la cultura popular</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/cine/index.html">Adaptaciones
+                                cinematográficas premiadas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Datos interesantes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Datos interesantes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/lenguas/index.html">Lenguas
+                                creadas por Tolkien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/mapas/index.html">Mapas
+                                de la Tierra Media</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/influencia/index.html">Influencia
+                                en otros autores</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Detalles únicos -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Detalles únicos <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/simbolos/index.html">Simbolismo
+                                en las obras</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/conexion/index.html">Conexiones
+                                entre libros</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/detalles/referencias/index.html">Referencias
+                                históricas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Curiosidades <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/nombres/index.html">Inspiración
+                                para nombres</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/anecdotas/index.html">Anécdotas
+                                de la filmación</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/easter-eggs/index.html">Easter
+                                eggs en las películas</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Premios -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Premios <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/oscars/index.html">Oscars</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/globos/index.html">Globos
+                                de Oro</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/premios/bafta/index.html">Premios
+                                BAFTA</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero inicio de la pagina -->
+<section class="hero hero-tolkien" id="inicio">
+    <div class="hero-film-content">
+        <div class="film-text-container">
+            <h1 class="film-title">El Silmarillion<br><span>La historia de la Tierra Media</span></h1>
+            <p class="film-subtitle">"Desde la música de los Ainur<br>hasta el fin de la Tercera Edad"</p>
+
+            <div class="film-meta">
+                <span class="meta-item"><i class="fas fa-book-open"></i> Obra póstuma</span>
+                <span class="meta-item"><i class="fas fa-calendar-alt"></i> Publicado en 1977</span>
+                <span class="meta-item"><i class="fas fa-star"></i> 4.7/5 (Goodreads)</span>
+            </div>
+
+            <a href="#sinopsis" class="btn-film">EXPLORAR</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Sinopsis -->
+<section class="content-section" id="sinopsis">
+    <div class="section-content">
+        <h1>El Silmarillion</h1>
+        <h2>El libro fundamental de la mitología tolkiniana</h2>
+
+        <p>Compilado y publicado póstumamente por Christopher Tolkien, <em>El Silmarillion</em> narra la historia legendaria de la Tierra Media desde su creación hasta el final de la Tercera Edad. La obra incluye cinco partes principales: <em>Ainulindalë</em> (la creación del universo), <em>Valaquenta</em> (descripción de los Valar), <em>Quenta Silmarillion</em> (la historia de los Silmarils), <em>Akallabêth</em> (la caída de Númenor) y <em>De los Anillos de Poder</em> (eventos que llevan a El Señor de los Anillos).</p>
+
+        <h3>Contenidos destacados:</h3>
+        <ul class="featured-list">
+            <li><i class="fas fa-gem"></i> La forja de los Silmarils por Fëanor</li>
+            <li><i class="fas fa-cloud"></i> La historia de Beren y Lúthien</li>
+            <li><i class="fas fa-tower"></i> La caída de Gondolin</li>
+            <li><i class="fas fa-crown"></i> El ascenso y caída de Númenor</li>
+            <li><i class="fas fa-ring"></i> Los orígenes de Sauron y los Anillos</li>
+            <li><i class="fas fa-dragon"></i> Las guerras contra Morgoth</li>
+        </ul>
+
+        <h3>Datos clave</h3>
+        <table class="movie-facts">
+            <tr>
+                <th>Autor</th>
+                <td>J.R.R. Tolkien (editado por Christopher Tolkien)</td>
+            </tr>
+            <tr>
+                <th>Género</th>
+                <td>Mitología/Épica fantástica</td>
+            </tr>
+            <tr>
+                <th>Páginas</th>
+                <td>365 (edición estándar)</td>
+            </tr>
+            <tr>
+                <th>Precuela de</th>
+                <td>El Hobbit y El Señor de los Anillos</td>
+            </tr>
+            <tr>
+                <th>Primera edición</th>
+                <td>15 de septiembre de 1977</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!--Carrusel-->
+<section class="content-section" id="galeria">
+    <div class="section-content">
+        <h2 class="section-title">Galería</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="resources\\image\\silmarillion_cover.jpg" alt="Portada de El Silmarillion" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Edición especial ilustrada</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\silmarillion_map.jpg" alt="Mapa de Beleriand" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Mapa de Beleriand</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\silmarillion_art.jpg" alt="Arte conceptual" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Los Dos Árboles de Valinor</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\silmarillion_tolkien.jpg" alt="Tolkien escribiendo" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Manuscritos originales</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Tráiler  -->
+<section class="content-section dark-section" id="trailer">
+    <div class="section-content">
+        <h2 class="section-title">Documental</h2>
+        <p class="section-text">Un vistazo a la creación de la obra:</p>
+
+        <div class="trailer-container">
+            <iframe src="https://www.youtube.com/embed/1XEJA-l3A9I?si=HinRGj5mjj7l9-CE" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="youtube-embed"></iframe>
+        </div>
+
+        <div class="trailer-links">
+            <h3>Dónde adquirir el libro:</h3>
+            <ul>
+                <li><a href="https://www.amazon.com/Silmarillion-J-R-Tolkien/dp/0618391118" target="_blank"><i class="fab fa-amazon"></i> Amazon</a></li>
+                <li><a href="https://www.bookdepository.com/Silmarillion-J-R-R-Tolkien/9780261102736" target="_blank"><i class="fas fa-book"></i> Book Depository</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Personajes-->
+<section class="content-section" id="personajes">
+    <div class="section-content">
+        <h2 class="section-title">Personajes Principales</h2>
+        <p>Las figuras clave de la mitología:</p>
+
+        <table class="characters-table">
+            <thead>
+                <tr>
+                    <th>Personaje</th>
+                    <th>Raza</th>
+                    <th>Descripción</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fëanor</td>
+                    <td>Elfo Noldor</td>
+                    <td>Creador de los Silmarils</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('feanor')"></td>
+                </tr>
+                <tr>
+                    <td>Morgoth</td>
+                    <td>Vala caído</td>
+                    <td>Primer Señor Oscuro</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('morgoth')"></td>
+                </tr>
+                <tr>
+                    <td>Beren</td>
+                    <td>Humano</td>
+                    <td>Amante de Lúthien</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('beren')"></td>
+                </tr>
+                <tr>
+                    <td>Lúthien</td>
+                    <td>Elfa</td>
+                    <td>Hija de Thingol y Melian</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('luthien')"></td>
+                </tr>
+                <tr>
+                    <td>Túrin Turambar</td>
+                    <td>Humano</td>
+                    <td>Tragedia de los Hijos de Húrin</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('turin')"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Otros personajes importantes:</h3>
+        <ul class="dwarves-list">
+            <li>Eärendil - El marinero que llevó un Silmaril al cielo</li>
+            <li>Galadriel - Joven princesa Noldor</li>
+            <li>Elrond - Medio elfo, futuro señor de Rivendel</li>
+            <li>Thingol - Rey de Doriath</li>
+            <li>Melian - Maia, madre de Lúthien</li>
+        </ul>
+
+        <a href="#galeria" class="btn">Ver Galería</a>
+    </div>
+</section>
+
+<!-- Sección: Producción -->
+<section class="content-section" id="produccion">
+    <div class="section-content">
+        <h2 class="section-title">Historia de la obra</h2>
+        <h3>La gran obra inconclusa de Tolkien</h3>
+
+        <p>Datos sobre la creación y publicación:</p>
+
+        <ul>
+            <li>Tolkien trabajó en esta obra desde 1914 hasta su muerte en 1973</li>
+            <li>Originalmente concebido como colección de mitos y leyendas</li>
+            <li>Christopher Tolkien dedicó 4 años a compilar y editar el material</li>
+            <li>Incluye textos escritos en diferentes épocas (desde 1917)</li>
+            <li>El mapa de Beleriand fue dibujado por Christopher Tolkien</li>
+            <li>Publicado inicialmente con ilustraciones de Tolkien</li>
+        </ul>
+
+        <h3>Estructura del libro:</h3>
+        <table class="locations-table">
+            <tr>
+                <th>Parte</th>
+                <th>Contenido</th>
+            </tr>
+            <tr>
+                <td>Ainulindalë</td>
+                <td>La música de los Ainur y creación de Eä</td>
+            </tr>
+            <tr>
+                <td>Valaquenta</td>
+                <td>Descripción de los Valar y Maiar</td>
+            </tr>
+            <tr>
+                <td>Quenta Silmarillion</td>
+                <td>Historia de los Silmarils (principal)</td>
+            </tr>
+            <tr>
+                <td>Akallabêth</td>
+                <td>Caída de Númenor</td>
+            </tr>
+            <tr>
+                <td>De los Anillos</td>
+                <td>Eventos previos a El Señor de los Anillos</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Sección: Recepción -->
+<section class="content-section" id="recepcion">
+    <div class="section-content">
+        <h2 class="section-title">Recepción y Legado</h2>
+        <h3>La piedra angular de la mitología</h3>
+
+        <p>Considerado esencial para entender el universo de Tolkien, aunque inicialmente desconcertó a algunos lectores.</p>
+
+        <h3>Premios y reconocimientos:</h3>
+        <table class="awards-table">
+            <tr>
+                <th>Reconocimiento</th>
+                <th>Año</th>
+            </tr>
+            <tr>
+                <td>Locus Award (Mejor Fantasía)</td>
+                <td>1978</td>
+            </tr>
+            <tr>
+                <td>Incluido en lista "100 mejores novelas" (BBC)</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>Premio Mythopoeic (obra mitopoética)</td>
+                <td>1981</td>
+            </tr>
+        </table>
+
+        <h3>Opiniones destacadas:</h3>
+        <div class="reviews">
+            <blockquote>
+                "El equivalente mitológico de El Señor de los Anillos - una obra maestra" - The Times
+            </blockquote>
+            <blockquote>
+                "Requiere paciencia, pero recompensa con una profundidad mitológica única" - The Guardian
+            </blockquote>
+            <blockquote>
+                "La obra más personal y ambiciosa de Tolkien" - Christopher Tolkien
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!--referencias-->
+<section class="content-section" id="Referencias">
+    <div class="section-content">
+        <h2 class="section-title">Referencias</h2>
+        <p class="section-text">Esta página utiliza los siguientes recursos externos:</p>
+
+        <div class="references-container">
+            <div class="reference-card">
+                <h3><i class="fas fa-image"></i> Imágenes utilizadas</h3>
+                <table class="references-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Fuente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portada del libro</td>
+                            <td><a href="https://www.tolkien.co.uk/" target="_blank">Tolkien Estate</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mapa de Beleriand</td>
+                            <td><a href="https://www.tolkiensociety.org/" target="_blank">Tolkien Society</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ilustraciones</td>
+                            <td><a href="https://www.harpercollins.com/products/the-silmarillion-jrr-tolkien" target="_blank">HarperCollins</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-book"></i> Fuentes de información</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.tolkiengateway.net/wiki/The_Silmarillion" target="_blank">Tolkien Gateway</a></li>
+                    <li><a href="https://www.tolkienestate.com/" target="_blank">Tolkien Estate</a></li>
+                    <li><a href="https://www.theonering.net/" target="_blank">The One Ring.net</a></li>
+                </ul>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-video"></i> Material multimedia</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.youtube.com/watch?v=9GNiodlD1Xo" target="_blank">Documental sobre Tolkien</a> - YouTube</li>
+                    <li><a href="https://www.audible.com/pd/The-Silmarillion-Audiobook/B002V5BQJQ" target="_blank">Audiolibro</a> - Audible</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer section-->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#trailer">Trailer</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#produccion">Produccion</a>
+                <a href="#recepcion">Recepcion</a>
+                <a href="#Referencias">Referencias</a>
+            </div>
+
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

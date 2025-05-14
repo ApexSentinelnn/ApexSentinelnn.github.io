@@ -1,0 +1,25 @@
+Registro 1
+Nombre: Noeas
+Edad: 1
+Sueldo: 4.00
+
+Registro 2
+Nombre: sadasd4
+Edad: 40
+Sueldo: 443.00
+
+Registro 3
+Nombre: asdsad
+Edad: 7
+Sueldo: 546434.00
+
+Registro 4
+Nombre: sdadas
+Edad: 8
+Sueldo: 4534.00
+
+Registro 5
+Nombre: asdadq
+Edad: 6
+Sueldo: 654654.00
+
