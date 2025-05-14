@@ -1,0 +1,45 @@
+###DATOS_TECNICOS###
+CONFIG
+30.00 60.00 110.00
+PREMIOS
+240.00 185.00 0.00 40.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 65.00 15.00 0.00 0.00 0.00 0.00 0.00 210.00 160.00 210.00 0.00 25.00 50.00 0.00 
+BOLETOS
+4
+"Jhidarty "
+"dasdd"
+"XMCEX"
+"Oro"
+100.00
+5
+12 16 23 22 1 
+1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 1 0 0 
+245.00
+"Nohemi Castillo Gaytan"
+"Carrillo Puerto 7"
+"NEZXI"
+"Oro"
+100.00
+5
+4 7 11 17 21 
+0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 
+210.00
+"Juan Castillo Gaytan"
+"jesus carranza numero 14 "
+"AZRII"
+"Basico"
+25.00
+1
+5 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+150.00
+"Noe castillo"
+"Andador rubi 8"
+"IUUIR"
+"Premium"
+60.00
+3
+5 10 15 
+0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 
+50.00
+FONDOS
+285.00

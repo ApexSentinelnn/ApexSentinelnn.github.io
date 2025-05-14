@@ -30,31 +30,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-// Smooth scroll para los enlaces del nav (excluyendo el logo) y footer
-document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href");
-      
-      // Solo hacer scroll si es un hash (#) link
-      if (targetId.startsWith("#")) {
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-              window.scrollTo({
-                  top: targetElement.offsetTop - 80,
-                  behavior: "smooth"
-              });
+  // Smooth scroll para los enlaces del nav (excluyendo el logo) y footer
+  document
+    .querySelectorAll(".nav-links a, .footer-links a")
+    .forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
 
-              // Actualizar la URL sin recargar la página
-              history.pushState(null, null, targetId);
+        // Solo hacer scroll si es un hash (#) link
+        if (targetId.startsWith("#")) {
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Actualizar la URL sin recargar la página
+            history.pushState(null, null, targetId);
           }
-      } else {
+        } else {
           // Si no es un hash link, permitir el comportamiento normal
           window.location.href = targetId;
-      }
-  });
-});
+        }
+      });
+    });
 
   // Menú hamburguesa
   const menuToggle = document.getElementById("mobile-menu");
@@ -141,81 +143,80 @@ document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
 //Carrusel
 // Carrusel de imágenes
 function initCarousel() {
-  const carousel = document.querySelector('.carousel-inner');
-  const items = document.querySelectorAll('.carousel-item');
-  const dotsContainer = document.querySelector('.carousel-dots');
+  const carousel = document.querySelector(".carousel-inner");
+  const items = document.querySelectorAll(".carousel-item");
+  const dotsContainer = document.querySelector(".carousel-dots");
   let currentIndex = 0;
 
   // Crear indicadores de puntos
   items.forEach((_, index) => {
-      const dot = document.createElement('span');
-      dot.classList.add('dot');
-      if (index === 0) dot.classList.add('active');
-      dot.addEventListener('click', () => goToSlide(index));
-      dotsContainer.appendChild(dot);
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    if (index === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => goToSlide(index));
+    dotsContainer.appendChild(dot);
   });
 
   // Botones de navegación
-  document.querySelector('.prev').addEventListener('click', () => {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-      updateCarousel();
+  document.querySelector(".prev").addEventListener("click", () => {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+    updateCarousel();
   });
 
-  document.querySelector('.next').addEventListener('click', () => {
-      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-      updateCarousel();
+  document.querySelector(".next").addEventListener("click", () => {
+    currentIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+    updateCarousel();
   });
 
   // Actualizar carrusel
   function updateCarousel() {
-      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-      document.querySelectorAll('.dot').forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentIndex);
-      });
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    document.querySelectorAll(".dot").forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
   }
 
   // Navegar a slide específico
   function goToSlide(index) {
-      currentIndex = index;
-      updateCarousel();
+    currentIndex = index;
+    updateCarousel();
   }
 
   // Auto-avance (opcional)
   setInterval(() => {
-      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-      updateCarousel();
+    currentIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+    updateCarousel();
   }, 10000);
 }
 
 // Inicializar al cargar la página
-document.addEventListener('DOMContentLoaded', initCarousel);
-
+document.addEventListener("DOMContentLoaded", initCarousel);
 
 // ventana flotante de imagenes
 const details = {
   bilbo: {
-      image: "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
-  }, 
+    image: "resources/image/bilbo.jpeg",
+  },
   gandalf: {
-      image: "https://th.bing.com/th/id/R.1de9fd651c8456e9f331519c24251a96?rik=IrS1Mgz4s4uDxA&riu=http%3a%2f%2fimages.wikia.com%2flotr%2fimages%2f8%2f8d%2fGandalf-2.jpg&ehk=Nm3tJ5SK6z6MbERxfYI6yqcd3virc6P6FuI9Uv1fxxw%3d&risl=&pid=ImgRaw&r=0",
+    image: "resources/image/gandalf.jpeg",
   },
   thorin: {
-      image: "https://th.bing.com/th/id/R.372adfeb6b9678d4510cc8d3c217c430?rik=OTbScvAyebYrtw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33300000%2fThorin-thorin-oakenshield-33325333-777-1024.jpg&ehk=ouyqgG7qZYbEiDM19u3iz0TeExjdiga5vVS8u1F05Uo%3d&risl=&pid=ImgRaw&r=0",
-  }
+    image: "resources/image/thorin.jpeg",
+  },
 };
 
 function showDetails(character) {
-  const modal = document.getElementById('details-modal');
-  const image = document.getElementById('modal-image');
-  const quote = document.getElementById('modal-quote');
+  const modal = document.getElementById("details-modal");
+  const image = document.getElementById("modal-image");
+  const quote = document.getElementById("modal-quote");
 
   image.src = details[character].image;
   quote.textContent = details[character].quote;
 
-  modal.style.display = 'block';
+  modal.style.display = "block";
 }
 
 function closeDetails() {
-  const modal = document.getElementById('details-modal');
-  modal.style.display = 'none';
+  const modal = document.getElementById("details-modal");
+  modal.style.display = "none";
 }

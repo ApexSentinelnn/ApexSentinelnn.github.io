@@ -13,6 +13,11 @@
 #define MAGENTA "\033[35m"
 #define CYAN "\033[36m"
 #define BOLD "\033[1m"
+#define ROC_BRIGHT "\033[91m"   // Rojo brillante
+#define VERD_BRIGHT "\033[92m"  // Verde brillante
+#define AMAR_BRIGHT "\033[93m"  // Amarillo brillante
+#define CYAN_BRIGHT "\033[96m"  // Cyan brillante
+
 
 // Valores
 #define MAXBOL 100 // Maximo de boletos
@@ -51,22 +56,6 @@ int totBlts = 0;        // Total de boletos vendidos
 float premiosGlobales[TAMTAB] = {0}; // Premios ocultos
 float fondRec = 0.0;    // Fondos recaudados
 
-// Prototipos de funciones
-void limpbuf();
-void impMat();
-void genCod(char *cod);
-void iniPglob();
-void mosTabJug(int tablero[]);
-void guardarDatos();
-void cargarDatos();
-int verificarPassword();
-void ventaBlts();
-void consulBltsVend();
-void conPre();
-void FonRec();
-void eliminarBoleto();
-void Config();
-void casos();
 
 // Limpia el buffer de entrada
 void limpbuf() {
@@ -76,20 +65,20 @@ void limpbuf() {
 
 // Imprime informacion de matriculas
 void impMat() {
-    printf("\n" BOLD "|============================================================|\n" RESET);
+    printf("\n" AMAR_BRIGHT "|============================================================|\n" RESET);
     printf(BOLD "|                     Matriculas de Estudiantes              |\n" RESET);
-    printf(BOLD "|============================================================|\n" RESET);
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "Matricula", "Nombre");
-    printf(AZUL "|------------|------------------------------------------|\n" RESET);
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "187855", "Castillo Gaytan Noe");
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "187339", "Tristan Contreras David Alejandro");
-    printf(BOLD "|============================================================|\n" RESET);
+    printf(AMAR_BRIGHT "|============================================================|\n" RESET);
+    printf(CYAN_BRIGHT "| %-10s | %-45s |\n" RESET, "Matricula", "Nombre");
+    printf(CYAN_BRIGHT "|------------|------------------------------------------|\n" RESET);
+    printf(CYAN_BRIGHT "| %-10s | %-45s |\n" RESET, "187855", "Castillo Gaytan Noe");
+    printf(CYAN_BRIGHT "| %-10s | %-45s |\n" RESET, "187339", "Tristan Contreras David Alejandro");
+    printf(AMAR_BRIGHT "|============================================================|\n" RESET);
 }
 
-// Genera un codigo unico para el boleto
+//codigo unico para el boleto
 void genCod(char *cod) {
     for (int i = 0; i < 5; i++) {
-        cod[i] = (char)('A' + rand() % 26); // Conversión explícita a char
+        cod[i] = (char)('A' + rand() % 26); // Conversión
     }
     cod[5] = '\0';
 }
@@ -110,12 +99,12 @@ void iniPglob() {
         }
         if (!repetido) {
             usados[i++] = pos;
-            premiosGlobales[pos] = (float)(5.0 + (rand() % 50) * 5.0); // Conversión explícita a float
+            premiosGlobales[pos] = (float)(5.0 + (rand() % 50) * 5.0); // Conversión
         }
     }
 }
 
-// Muestra el tablero del jugador
+//tablero del jugador
 void mosTabJug(int tablero[]) {
     printf("\n" CYAN "--- Tu tablero ---\n" RESET);
     for (int i = 0; i < TAMTAB; i++) {
@@ -156,16 +145,16 @@ void guardarDatos() {
     // Guardar datos para el público con formato mejorado
     FILE *archivoPublico = fopen(FILENAME, "w");
     if (archivoPublico == NULL) {
-        printf("Error al abrir el archivo para guardar datos públicos.\n");
+        printf("Error al abrir el archivo para guardar datos publicos.\n");
         return;
     }
 
-    // Cabecera para lectura humana con formato mejorado
+    // Cabecera para lectura humana
     fprintf(archivoPublico, "╔═══════════════════════════════════════════════════════════════════╗\n");
     fprintf(archivoPublico, "║                     SISTEMA DE SORTEO OFICIAL                     ║\n");
     fprintf(archivoPublico, "╚═══════════════════════════════════════════════════════════════════╝\n\n");
     
-    // Sección de configuración de precios con formato mejorado
+    // Sección de configuración de precios
     fprintf(archivoPublico, "╔══════════════════════ CONFIGURACIÓN DE PRECIOS ═══════════════════╗\n");
     fprintf(archivoPublico, "║                                                                   ║\n");
     fprintf(archivoPublico, "║  ◆ Básico:  $%.2f                                                 ║\n", preBas);
@@ -174,7 +163,7 @@ void guardarDatos() {
     fprintf(archivoPublico, "║                                                                   ║\n");
     fprintf(archivoPublico, "╚═══════════════════════════════════════════════════════════════════╝\n\n");
     
-    // Sección de premios ocultos con formato mejorado
+    // Sección de premios ocultos
     fprintf(archivoPublico, "╔════════════════════════ PREMIOS DISPONIBLES ════════════════════════╗\n");
     fprintf(archivoPublico, "║                                                                     ║\n");
     fprintf(archivoPublico, "║  Posición  |  Premio ($)                                            ║\n");
@@ -195,7 +184,7 @@ void guardarDatos() {
     fprintf(archivoPublico, "║                                                                     ║\n");
     fprintf(archivoPublico, "╚═════════════════════════════════════════════════════════════════════╝\n\n");
     
-    // Sección de fondos recaudados con formato mejorado
+    // Sección de fondos
     fprintf(archivoPublico, "╔═══════════════════════ FONDOS RECAUDADOS ════════════════════════╗\n");
     fprintf(archivoPublico, "║                                                                   ║\n");
     fprintf(archivoPublico, "║  Total: $%.2f %s                                          ║\n", 
@@ -203,7 +192,7 @@ void guardarDatos() {
     fprintf(archivoPublico, "║                                                                   ║\n");
     fprintf(archivoPublico, "╚═══════════════════════════════════════════════════════════════════╝\n\n");
     
-    // Sección de boletos vendidos con formato mejorado
+    // Sección de boletos vendidos
     fprintf(archivoPublico, "╔═══════════════════════ BOLETOS VENDIDOS: %d ═══════════════════════╗\n", totBlts);
     
     if (totBlts > 0) {
@@ -235,221 +224,217 @@ void guardarDatos() {
     strftime(fechaHora, sizeof(fechaHora), "%d/%m/%Y %H:%M:%S", infoTiempo);
     
     fprintf(archivoPublico, "Reporte generado: %s\n", fechaHora);
-    fprintf(archivoPublico, "© Sistema de Sorteo - Todos los derechos reservados\n");
+    fprintf(archivoPublico, "© Sistema de Sorteo (Tu suerte apremia) - Todos los derechos reservados\n");
     
     fclose(archivoPublico);
 
     // Guardar datos técnicos para el administrador
-    FILE *archivoTecnico = fopen(FILENAME_ADMIN, "w");
-    if (archivoTecnico == NULL) {
-        printf("Error al abrir el archivo para guardar datos técnicos.\n");
+    FILE *archivoT = fopen(FILENAME_ADMIN, "w");
+    if (archivoT == NULL) {
+        printf("Error al abrir el archivo para guardar datos tecnicos.\n");
         return;
     }
 
-    fprintf(archivoTecnico, "###DATOS_TECNICOS###\n");
+    fprintf(archivoT, "###DATOS_TECNICOS###\n");
     
     // Guardar configuración
-    fprintf(archivoTecnico, "CONFIG\n");
-    fprintf(archivoTecnico, "%.2f %.2f %.2f\n", preBas, prePrem, preOro);
+    fprintf(archivoT, "CONFIG\n");
+    fprintf(archivoT, "%.2f %.2f %.2f\n", preBas, prePrem, preOro);
     
     // Guardar premios globales
-    fprintf(archivoTecnico, "PREMIOS\n");
+    fprintf(archivoT, "PREMIOS\n");
     for (int i = 0; i < TAMTAB; i++) {
-        fprintf(archivoTecnico, "%.2f ", premiosGlobales[i]);
+        fprintf(archivoT, "%.2f ", premiosGlobales[i]);
     }
-    fprintf(archivoTecnico, "\n");
+    fprintf(archivoT, "\n");
     
     // Guardar información de boletos
-    fprintf(archivoTecnico, "BOLETOS\n");
-    fprintf(archivoTecnico, "%d\n", totBlts);
+    fprintf(archivoT, "BOLETOS\n");
+    fprintf(archivoT, "%d\n", totBlts);
     
     for (int i = 0; i < totBlts; i++) {
-        // Escribir strings con comillas para evitar problemas con espacios
-        fprintf(archivoTecnico, "\"%s\"\n", bltsVend[i].nom);
-        fprintf(archivoTecnico, "\"%s\"\n", bltsVend[i].dom);
-        fprintf(archivoTecnico, "\"%s\"\n", bltsVend[i].cod);
-        fprintf(archivoTecnico, "\"%s\"\n", bltsVend[i].tipo);
-        fprintf(archivoTecnico, "%.2f\n", bltsVend[i].precio);
-        fprintf(archivoTecnico, "%d\n", bltsVend[i].catnum);
+        //  strings con comillas para  problemas con espacios
+        fprintf(archivoT, "\"%s\"\n", bltsVend[i].nom);
+        fprintf(archivoT, "\"%s\"\n", bltsVend[i].dom);
+        fprintf(archivoT, "\"%s\"\n", bltsVend[i].cod);
+        fprintf(archivoT, "\"%s\"\n", bltsVend[i].tipo);
+        fprintf(archivoT, "%.2f\n", bltsVend[i].precio);
+        fprintf(archivoT, "%d\n", bltsVend[i].catnum);
         
-        // Escribir números seleccionados
+        //  números seleccionados
         for (int j = 0; j < bltsVend[i].catnum; j++) {
-            fprintf(archivoTecnico, "%d ", bltsVend[i].numbol[j]);
+            fprintf(archivoT, "%d ", bltsVend[i].numbol[j]);
         }
-        fprintf(archivoTecnico, "\n");
+        fprintf(archivoT, "\n");
         
-        // Escribir tablero
+        //  tablero
         for (int j = 0; j < TAMTAB; j++) {
-            fprintf(archivoTecnico, "%d ", bltsVend[i].tablero[j]);
+            fprintf(archivoT, "%d ", bltsVend[i].tablero[j]);
         }
-        fprintf(archivoTecnico, "\n");
+        fprintf(archivoT, "\n");
         
-        fprintf(archivoTecnico, "%.2f\n", bltsVend[i].premioGanado);
+        fprintf(archivoT, "%.2f\n", bltsVend[i].premioGanado);
     }
     
-    // Guardar fondos
-    fprintf(archivoTecnico, "FONDOS\n");
-    fprintf(archivoTecnico, "%.2f\n", fondRec);
+    //  fondos
+    fprintf(archivoT, "FONDOS\n");
+    fprintf(archivoT, "%.2f\n", fondRec);
     
-    fclose(archivoTecnico);
+    fclose(archivoT);
 
-    // Guardar contraseña en archivo separado
+    //  contraseña en archivo separado
     FILE *passFile = fopen(PASSWORD_FILE, "w");
     if (passFile != NULL) {
-        fprintf(passFile, "%s", PASSWORD);  // Eliminada la \n para evitar problemas al cargar
+        fprintf(passFile, "%s", PASSWORD);
         fclose(passFile);
     } else {
-        printf("Error al guardar la contraseña.\n");
+        printf("Error al guardar la contrasena.\n");
     }
     
     printf("Todos los datos guardados correctamente.\n");
 }
 
-// Cargar datos desde el archivo
+// Cargar datos
 void cargarDatos() {
-    // Intentar cargar la contraseña primero
     FILE *passFile = fopen(PASSWORD_FILE, "r");
     if (passFile != NULL) {
         if (fgets(PASSWORD, sizeof(PASSWORD), passFile) != NULL) {
-            // Eliminar el salto de línea si existe
             PASSWORD[strcspn(PASSWORD, "\n")] = 0;
-            printf("Contraseña cargada correctamente.\n");
+            printf("Contrasena cargada correctamente.\n");
         } else {
-            printf("Error al leer la contraseña.\n");
+            printf("Error al leer la contrasena.\n");
         }
         fclose(passFile);
     } else {
-        printf("No se encontró archivo de contraseña. Se usará la contraseña predeterminada.\n");
+        printf("No se encontro archivo de contrasena. Se usara la contrasena predeterminada.\n");
     }
 
-    // Intentar cargar datos técnicos
-    FILE *archivoTecnico = fopen(FILENAME_ADMIN, "r");
-    if (archivoTecnico == NULL) {
-        printf("No se encontró archivo de datos técnicos. Se creará uno nuevo al guardar.\n");
+    FILE *archivoT = fopen(FILENAME_ADMIN, "r");
+    if (archivoT == NULL) {
+        printf("No se encontro archivo de datos tecnicos. Se creara uno nuevo al guardar.\n");
         return;
     }
 
     char buffer[500];
 
-    // Verificar encabezado
-    if (fgets(buffer, sizeof(buffer), archivoTecnico) == NULL || strcmp(buffer, "###DATOS_TECNICOS###\n") != 0) {
-        printf("Error: Formato de archivo inválido.\n");
-        fclose(archivoTecnico);
+    if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "###DATOS_TECNICOS###\n") != 0) {
+        printf("Error: Formato de archivo invalido.\n");
+        fclose(archivoT);
         return;
     }
 
     // Leer configuración
-    if (fgets(buffer, sizeof(buffer), archivoTecnico) == NULL || strcmp(buffer, "CONFIG\n") != 0) {
-        printf("Error: Formato de configuración inválido.\n");
-        fclose(archivoTecnico);
+    if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "CONFIG\n") != 0) {
+        printf("Error: Formato de configuración invalido.\n");
+        fclose(archivoT);
         return;
     }
     
-    if (fscanf(archivoTecnico, "%f %f %f\n", &preBas, &prePrem, &preOro) != 3) {
-        printf("Error al leer la configuración de precios.\n");
-        fclose(archivoTecnico);
+    if (fscanf(archivoT, "%f %f %f\n", &preBas, &prePrem, &preOro) != 3) {
+        printf("Error al leer la configuracion de precios.\n");
+        fclose(archivoT);
         return;
     }
 
     // Leer premios globales
-    if (fgets(buffer, sizeof(buffer), archivoTecnico) == NULL || strcmp(buffer, "PREMIOS\n") != 0) {
-        printf("Error: Formato de premios inválido.\n");
-        fclose(archivoTecnico);
+    if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "PREMIOS\n") != 0) {
+        printf("Error: Formato de premios invalido.\n");
+        fclose(archivoT);
         return;
     }
     
     for (int i = 0; i < TAMTAB; i++) {
-        if (fscanf(archivoTecnico, "%f", &premiosGlobales[i]) != 1) {
+        if (fscanf(archivoT, "%f", &premiosGlobales[i]) != 1) {
             printf("Error al leer los premios globales.\n");
-            fclose(archivoTecnico);
+            fclose(archivoT);
             return;
         }
     }
-    fscanf(archivoTecnico, "\n");  // Consumir el salto de línea
+    fscanf(archivoT, "\n");
 
     // Leer boletos
-    if (fgets(buffer, sizeof(buffer), archivoTecnico) == NULL || strcmp(buffer, "BOLETOS\n") != 0) {
-        printf("Error: Formato de boletos inválido.\n");
-        fclose(archivoTecnico);
+    if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "BOLETOS\n") != 0) {
+        printf("Error: Formato de boletos invalido.\n");
+        fclose(archivoT);
         return;
     }
     
-    if (fscanf(archivoTecnico, "%d\n", &totBlts) != 1) {
+    if (fscanf(archivoT, "%d\n", &totBlts) != 1) {
         printf("Error al leer el total de boletos.\n");
-        fclose(archivoTecnico);
+        fclose(archivoT);
         return;
     }
 
     for (int i = 0; i < totBlts; i++) {
         // Leer nombre
-        leerCadenaConComillas(archivoTecnico, bltsVend[i].nom, sizeof(bltsVend[i].nom));
+        leerCadenaConComillas(archivoT, bltsVend[i].nom, sizeof(bltsVend[i].nom));
         
         // Leer domicilio
-        leerCadenaConComillas(archivoTecnico, bltsVend[i].dom, sizeof(bltsVend[i].dom));
+        leerCadenaConComillas(archivoT, bltsVend[i].dom, sizeof(bltsVend[i].dom));
 
         // Leer código
-        leerCadenaConComillas(archivoTecnico, bltsVend[i].cod, sizeof(bltsVend[i].cod));
+        leerCadenaConComillas(archivoT, bltsVend[i].cod, sizeof(bltsVend[i].cod));
 
         // Leer tipo
-        leerCadenaConComillas(archivoTecnico, bltsVend[i].tipo, sizeof(bltsVend[i].tipo));
+        leerCadenaConComillas(archivoT, bltsVend[i].tipo, sizeof(bltsVend[i].tipo));
 
         // Leer precio
-        if (fscanf(archivoTecnico, "%f\n", &bltsVend[i].precio) != 1) {
+        if (fscanf(archivoT, "%f\n", &bltsVend[i].precio) != 1) {
             printf("Error al leer el precio del boleto %d.\n", i+1);
-            fclose(archivoTecnico);
+            fclose(archivoT);
             return;
         }
 
         // Leer cantidad de números
-        if (fscanf(archivoTecnico, "%d\n", &bltsVend[i].catnum) != 1) {
-            printf("Error al leer la cantidad de números del boleto %d.\n", i+1);
-            fclose(archivoTecnico);
+        if (fscanf(archivoT, "%d\n", &bltsVend[i].catnum) != 1) {
+            printf("Error al leer la cantidad de numeros del boleto %d.\n", i+1);
+            fclose(archivoT);
             return;
         }
 
         // Leer números seleccionados
         for (int j = 0; j < bltsVend[i].catnum; j++) {
-            if (fscanf(archivoTecnico, "%d", &bltsVend[i].numbol[j]) != 1) {
-                printf("Error al leer los números seleccionados del boleto %d.\n", i+1);
-                fclose(archivoTecnico);
+            if (fscanf(archivoT, "%d", &bltsVend[i].numbol[j]) != 1) {
+                printf("Error al leer los numeros seleccionados del boleto %d.\n", i+1);
+                fclose(archivoT);
                 return;
             }
         }
-        fscanf(archivoTecnico, "\n");  // Consumir el salto de línea
+        fscanf(archivoT, "\n");
 
         // Leer tablero
         for (int j = 0; j < TAMTAB; j++) {
-            if (fscanf(archivoTecnico, "%d", &bltsVend[i].tablero[j]) != 1) {
+            if (fscanf(archivoT, "%d", &bltsVend[i].tablero[j]) != 1) {
                 printf("Error al leer el tablero del boleto %d.\n", i+1);
-                fclose(archivoTecnico);
+                fclose(archivoT);
                 return;
             }
         }
-        fscanf(archivoTecnico, "\n");  // Consumir el salto de línea
+        fscanf(archivoT, "\n");
 
         // Leer premio ganado
-        if (fscanf(archivoTecnico, "%f\n", &bltsVend[i].premioGanado) != 1) {
+        if (fscanf(archivoT, "%f\n", &bltsVend[i].premioGanado) != 1) {
             printf("Error al leer el premio ganado del boleto %d.\n", i+1);
-            fclose(archivoTecnico);
+            fclose(archivoT);
             return;
         }
     }
 
     // Leer fondos recaudados
-    if (fgets(buffer, sizeof(buffer), archivoTecnico) == NULL || strcmp(buffer, "FONDOS\n") != 0) {
-        printf("Error: Formato de fondos inválido.\n");
-        fclose(archivoTecnico);
+    if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "FONDOS\n") != 0) {
+        printf("Error: Formato de fondos invalido.\n");
+        fclose(archivoT);
         return;
     }
     
-    if (fscanf(archivoTecnico, "%f\n", &fondRec) != 1) {
+    if (fscanf(archivoT, "%f\n", &fondRec) != 1) {
         printf("Error al leer los fondos recaudados.\n");
-        fclose(archivoTecnico);
+        fclose(archivoT);
         return;
     }
 
-    fclose(archivoTecnico);
-    printf("Datos técnicos cargados correctamente.\n");
+    fclose(archivoT);
+    printf("Datos tecnicos cargados correctamente.\n");
 }
 
 // Verificar contraseña
@@ -692,8 +677,13 @@ void Config() {
         printf("6. Cargar datos\n");
         printf("7. Volver al menu\n");
         printf("Opcion: ");
-        scanf("%d", &opcion);
-        switch (opcion) {
+        if (scanf("%d",&opcion) != 1){
+            printf("Entrada invalida. Ingrese un numero.\n");
+            int cc;
+            while ((cc = getchar()) != '\n' && cc != EOF);
+            opcion = 0;
+        }else{
+            switch (opcion) {
             case 1:
                 printf("Nuevo precio Basico: "); scanf("%f", &preBas);
                 printf("Nuevo precio Premium: "); scanf("%f", &prePrem);
@@ -744,6 +734,7 @@ void Config() {
                 return;
             default:
                 printf("Opcion no valida.\n");
+            }
         }
     } while (opcion != 7);
 }
@@ -763,8 +754,13 @@ void casos() {
         printf("5. Config\n");
         printf("6. Salir\n");
         printf("Opcion: ");
-        scanf("%d", &opc);
-        switch (opc) {
+        if (scanf("%d",&opc) != 1){
+            printf("Entrada invalida. Ingrese un numero.\n");
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
+            opc = 0;
+        }else{
+            switch (opc) {
             case 1: ventaBlts(); break;
             case 2: consulBltsVend(); break;
             case 3: conPre(); break;
@@ -772,6 +768,7 @@ void casos() {
             case 5: Config(); break;
             case 6: printf("Guardando datos y saliendo...\n"); guardarDatos(); break;
             default: printf("Opcion no valida.\n");
+        }
         }
     } while (opc != 6);
 }
