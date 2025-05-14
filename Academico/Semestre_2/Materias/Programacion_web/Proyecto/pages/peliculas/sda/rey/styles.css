@@ -314,7 +314,7 @@ nav.scrolled {
   padding: 0 10%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("resources\\image\\port.jpg") no-repeat center center;
+    url("resources\\image\\port.avif") no-repeat center center;
   background-size: cover;
   color: var(--text-light);
   position: relative;

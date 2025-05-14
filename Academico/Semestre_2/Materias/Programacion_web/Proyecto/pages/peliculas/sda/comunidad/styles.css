@@ -404,7 +404,7 @@ nav.scrolled {
   align-items: center;
   background: 
       linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-      url('resources\\image\\port.jpg') center/cover no-repeat;
+      url('resources\\image\\port.jpeg') center/cover no-repeat;
   padding: 0 10%;
   position: relative;
   overflow: hidden;
