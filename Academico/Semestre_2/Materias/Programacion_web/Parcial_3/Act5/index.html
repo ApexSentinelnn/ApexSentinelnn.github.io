@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--LLenar el titulo y los metadatos-->
+
+<head>
+    <title>Unidad 3 | Activida 5</title>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan">
+    <meta name="Fecha" content="20 de Mayo de 2025">
+    <meta name="Descripcion" content="Formulario">
+    
+</head>
+
+<body>
+    <div class="container">
+    <h1>Actividad 5 (Tema Formulario)</h1>
+    <form id="miFormulario" action="/registro" method="post">
+        <fieldset>
+            <legend>Registro de Usuario / Legend</legend>
+
+            <div class="form-group row">
+                <label for="txtNombre" class="col-md-4 col-form-label">Nombre</label>
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="+"></i></span>
+                        <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Noe Castillo" required>
+                    </div>
+                    <span class="help-block">Escribe tu nombre completo</span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="passClave" class="col-md-4 col-form-label">Password</label>
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="+"></i></span>
+                        <input type="password" class="form-control" id="passClave" name="passClave" placeholder="Debe tener al menos 6 símbolos (únicamente letras y dígitos)" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="txtTelefono" class="col-md-4 col-form-label">Teléfono</label>
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon">+52</span>
+                        <input type="text" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="(444) 123 4567" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="txtCorreo" class="col-md-4 col-form-label">Correo electrónico</label>
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ejemplo" type="text" required>
+                        <span class="input-group-addon">@upalp.edu.mx</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="txtMensaje" class="col-md-4 col-form-label">Mensaje</label>
+                <div class="col-md-8">
+                    <textarea class="form-control" id="txtMensaje" name="txtMensaje" placeholder="Escribe tu mensaje / textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-8 offset-md-4">
+                    <input type="submit" class="btn btn-success" id="btnEnviar" name="btnEnviar" value="Enviar">
+                    <input type="reset" class="btn btn-warning" id="btnBorrar" name="btnBorrar" value="Borrar">
+                    <button class="btn btn-danger">Danger</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const formulario = document.getElementById('miFormulario');
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío automático del formulario
+
+            const nombre = document.getElementById('txtNombre').value;
+            const telefono = document.getElementById('txtTelefono').value;
+            const correo = document.getElementById('txtCorreo').value;
+            const mensaje = document.getElementById('txtMensaje').value;
+
+            alert(`Nombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${correo}\nMensaje: ${mensaje}`);
+        });
+    });
+</script>
+</body>
+
+</HTML>

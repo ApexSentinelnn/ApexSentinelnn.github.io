@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 1 | Actividad 07</title>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan.">
+     <meta name="fecha" content="13 de mayo de 2025">
+    <meta name="descripcion" content="JavaScript">
+</head>
+<body>
+    <div class="container">
+        <h1>Unidad 3 | Actividad 07 :: Tema (JavaScript)</h1>
+        <form class="form-horizontal" name="frmControles" action="#" method="post" onsubmit="funcionControles()">
+            <fieldset>
+                <legend>Controles</legend>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="groupRadio">Elige el tamaño</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label for="groupRadio-0">
+                                <input type="radio" name="groupRadio" id="groupRadio-0" value="50" checked="checked">
+                                Combo pequeño
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="groupRadio-1">
+                                <input type="radio" name="groupRadio" id="groupRadio-1" value="125">
+                                Combo mediano
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="groupRadio-2">
+                                <input type="radio" name="groupRadio" id="groupRadio-2" value="150">
+                                Combo grande
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="groupCheck">Elige ingredientes</label>
+                    <div class="col-md-4">
+                        <div class="checkbox">
+                            <label for="groupCheck-0">
+                                <input type="checkbox" name="groupCheck" id="groupCheck-0" value="1">
+                                Queso
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="groupCheck-1">
+                                <input type="checkbox" name="groupCheck" id="groupCheck-1" value="2">
+                                Jamón
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="groupCheck-2">
+                                <input type="checkbox" name="groupCheck" id="groupCheck-2" value="3">
+                                Tocino
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="groupCheck-3">
+                                <input type="checkbox" name="groupCheck" id="groupCheck-3" value="4">
+                                Champiñón
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="groupCheck-4">
+                                <input type="checkbox" name="groupCheck" id="groupCheck-4" value="5">
+                                Pepperoni
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectBasic">Elige complemento</label>
+                    <div class="col-md-4">
+                        <select id="selectBasic" name="selectBasic" class="form-control">
+                            <option value="0">Ninguno</option>
+                            <option value="1">Papas</option>
+                            <option value="2">Brownies</option>
+                            <option value="3">Refresco</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectMultiple">Elige otras opciones</label>
+                    <div class="col-md-4">
+                        <select id="selectMultiple" name="selectMultiple" class="form-control" multiple="multiple">
+                            <option value="1">Mayonesa</option>
+                            <option value="2">Catsup</option>
+                            <option value="3">Mostaza</option>
+                            <option value="4">Ranch</option>
+                            <option value="5">Pepinillos</option>
+                            <option value="6">Jalapeños</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varFile">Archivo</label>
+                    <div class="col-md-4">
+                        <input type="file" id="varFile" name="varFile" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varColor">Color</label>
+                    <div class="col-md-4">
+                        <input type="color" id="varColor" name="varColor" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varDate">Fecha</label>
+                    <div class="col-md-4">
+                        <input type="date" id="varDate" name="varDate" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varTime">Tiempo</label>
+                    <div class="col-md-4">
+                        <input type="time" id="varTime" name="varTime" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varWeek">Semana</label>
+                    <div class="col-md-4">
+                        <input type="week" id="varWeek" name="varWeek" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varMonth">Mes</label>
+                    <div class="col-md-4">
+                        <input type="month" id="varMonth" name="varMonth" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varNumber">Número</label>
+                    <div class="col-md-4">
+                        <input type="number" id="varNumber" name="varNumber" class="form-control" min="0" max="100" step="10" value="50">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="varRange">Rango</label>
+                    <div class="col-md-4">
+                        <input type="range" id="varRange" name="varRange" class="form-control" min="0" max="100" step="1" value="50">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="btnEnviar"></label>
+                    <div class="col-md-4">
+                        <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-primary" value="Enviar">
+                        <input type="reset" id="btnReiniciar" name="btnReiniciar" class="btn btn-info" value="Reiniciar">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>

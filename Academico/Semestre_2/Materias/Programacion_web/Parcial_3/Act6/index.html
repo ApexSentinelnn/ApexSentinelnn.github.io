@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan">
+    <meta name="Fecha" content="13 de marzo">
+       <meta name="Fecha" content="12 de mayo de 2025">
+        <meta name="Descripcion" content="JavaScript">
+        <style>
+            p {background-color: rgb(16, 252, 8); color: rgb(0, 104, 165); border: 2px;}
+        </style>
+        <script>
+            function funcionClic(){
+                document.getElementById("varParrafo").innerHTML += "Hola mundo!! [Click]<br>";
+            }
+            function funcionDoble(){
+                document.getElementById("varParrafo").innerHTML += "Hola mundo!! [DobleClick]<br>";
+            }
+            function validarAcceso(){
+                if(navigator.cookieEnabled == true){alert("Bienvenido a mi sitio web!!!");}
+            }
+            function mouseOver(obj){
+                obj.style.backgroundColor = "Black";
+            }
+            function mouseOver(obj){
+                obj.style.backgroundColor = "Navy";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Unidad 3 | Actividad 06 :: Tema(JavaScript)</h1>
+        <h3>Presiona el boton para ejecutar la funcion</h3>
+        <button onclick="funcionClic()" ondblclick="funcionDoble()">Accion</button>
+        <p id="varParrafo" onmouseover="mosueOver(this)" onmouseout="mouseOut(this)"></p>
+    </body>
+</html>

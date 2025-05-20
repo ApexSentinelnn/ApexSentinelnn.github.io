@@ -67,12 +67,12 @@ void limpbuf() {
 // Imprime informacion de matriculas
 void impMat() {
     printf("\n" BOLD "|============================================================|\n" RESET);
-    printf(BOLD "|                     Matriculas de Estudiantes              |\n" RESET);
+    printf(BOLD "|               Matriculas de Estudiantes                    |\n" RESET);
     printf(BOLD "|============================================================|\n" RESET);
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "Matricula", "Nombre");
-    printf(AZUL "|------------|------------------------------------------|\n" RESET);
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "187855", "Castillo Gaytan Noe");
-    printf(AZUL "| %-10s | %-40s |\n" RESET, "187339", "Tristan Contreras David Alejandro");
+    printf(BOLD "| %-10s | %-45s |\n" RESET, "Matricula", "Nombre");
+    printf(BOLD "|------------|-----------------------------------------------|\n|" RESET);
+    printf(VERD " 187855     " RESET); printf(BOLD "|" RESET); printf(VERD " Castillo Gaytan Noe                          " RESET);printf(BOLD " |\n|" RESET);
+    printf(VERD " 187339     " RESET); printf(BOLD "|" RESET); printf(VERD " TRISTAN CONTRERAS DAVID ALEJANDRO            " RESET);printf(BOLD " |\n" RESET);
     printf(BOLD "|============================================================|\n" RESET);
 }
 
@@ -107,7 +107,7 @@ void iniPglob() {
 
 //tablero del jugador
 void mosTabJug(int tablero[]) {
-    printf("\n" CYAN "--- Tu tablero ---\n" RESET);
+    printf("\n" CYAN "\n--- Tu tablero ---\n" RESET);
     for (int i = 0; i < TAMTAB; i++) {
         if (i % 5 == 0) printf("\n");
         if (tablero[i] == 1)
@@ -146,7 +146,7 @@ void guardarDatos() {
     // Guardar datos para el público con formato mejorado
     FILE *archivoPublico = fopen(FILENAME, "w");
     if (archivoPublico == NULL) {
-        printf("Error al abrir el archivo para guardar datos publicos.\n");
+        printf(AMAR "Error al abrir el archivo para guardar datos publicos.\n" RESET);
         return;
     }
 
@@ -242,7 +242,7 @@ void guardarDatos() {
     // Guardar datos técnicos para el administrador
     FILE *archivoT = fopen(FILENAME_ADMIN, "w");
     if (archivoT == NULL) {
-        printf("Error al abrir el archivo para guardar datos tecnicos.\n");
+        printf(AMAR "Error al abrir el archivo para guardar datos tecnicos.\n" RESET);
         return;
     }
 
@@ -304,10 +304,10 @@ void guardarDatos() {
         fprintf(passFile, "%s", PASSWORD);
         fclose(passFile);
     } else {
-        printf("Error al guardar la contrasena.\n");
+        printf(AMAR "Error al guardar la contrasena.\n" RESET);
     }
 
-    printf("Todos los datos guardados correctamente.\n");
+    printf(CYAN "Todos los datos guardados correctamente.\n" RESET);
 }
 
 // Cargar datos
@@ -316,52 +316,52 @@ void cargarDatos() {
     if (passFile != NULL) {
         if (fgets(PASSWORD, sizeof(PASSWORD), passFile) != NULL) {
             PASSWORD[strcspn(PASSWORD, "\n")] = 0;
-            printf("Contrasena cargada correctamente.\n");
+            printf(CYAN "Contrasena cargada correctamente.\n" RESET);
         } else {
-            printf("Error al leer la contrasena.\n");
+            printf(ROC "Error al leer la contrasena.\n" RESET);
         }
         fclose(passFile);
     } else {
-        printf("No se encontro archivo de contrasena. Se usara la contrasena predeterminada.\n");
+        printf(CYAN "No se encontro archivo de contrasena. Se usara la contrasena predeterminada.\n" RESET);
     }
 
     FILE *archivoT = fopen(FILENAME_ADMIN, "r");
     if (archivoT == NULL) {
-        printf("No se encontro archivo de datos tecnicos. Se creara uno nuevo al guardar.\n");
+        printf(CYAN "No se encontro archivo de datos tecnicos. Se creara uno nuevo al guardar.\n");
         return;
     }
 
     char buffer[500];
 
     if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "###DATOS_TECNICOS###\n") != 0) {
-        printf("Error: Formato de archivo invalido.\n");
+        printf(AMAR "Error: Formato de archivo invalido.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     // Leer configuración
     if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "CONFIG\n") != 0) {
-        printf("Error: Formato de configuración invalido.\n");
+        printf(AMAR "Error: Formato de configuración invalido.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     if (fscanf(archivoT, "%f %f %f\n", &preBas, &prePrem, &preOro) != 3) {
-        printf("Error al leer la configuracion de precios.\n");
+        printf(AMAR "Error al leer la configuracion de precios.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     // Leer premios globales
     if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "PREMIOS\n") != 0) {
-        printf("Error: Formato de premios invalido.\n");
+        printf(AMAR "Error: Formato de premios invalido.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     for (int i = 0; i < TAMTAB; i++) {
         if (fscanf(archivoT, "%f", &premiosGlobales[i]) != 1) {
-            printf("Error al leer los premios globales.\n");
+            printf(AMAR "Error al leer los premios globales.\n" RESET);
             fclose(archivoT);
             return;
         }
@@ -370,13 +370,13 @@ void cargarDatos() {
 
     // Leer boletos
     if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "BOLETOS\n") != 0) {
-        printf("Error: Formato de boletos invalido.\n");
+        printf(AMAR "Error: Formato de boletos invalido.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     if (fscanf(archivoT, "%d\n", &totBlts) != 1) {
-        printf("Error al leer el total de boletos.\n");
+        printf(AMAR "Error al leer el total de boletos.\n" RESET);
         fclose(archivoT);
         return;
     }
@@ -396,14 +396,14 @@ void cargarDatos() {
 
         // Leer precio
         if (fscanf(archivoT, "%f\n", &bltsVend[i].precio) != 1) {
-            printf("Error al leer el precio del boleto %d.\n", i+1);
+            printf(AMAR "Error al leer el precio del boleto %d.\n" RESET, i+1);
             fclose(archivoT);
             return;
         }
 
         // Leer cantidad de números
         if (fscanf(archivoT, "%d\n", &bltsVend[i].catnum) != 1) {
-            printf("Error al leer la cantidad de numeros del boleto %d.\n", i+1);
+            printf(AMAR "Error al leer la cantidad de numeros del boleto %d.\n" RESET, i+1);
             fclose(archivoT);
             return;
         }
@@ -411,7 +411,7 @@ void cargarDatos() {
         // Leer números seleccionados
         for (int j = 0; j < bltsVend[i].catnum; j++) {
             if (fscanf(archivoT, "%d", &bltsVend[i].numbol[j]) != 1) {
-                printf("Error al leer los numeros seleccionados del boleto %d.\n", i+1);
+                printf(AMAR "Error al leer los numeros seleccionados del boleto %d.\n" RESET, i+1);
                 fclose(archivoT);
                 return;
             }
@@ -421,7 +421,7 @@ void cargarDatos() {
         // Leer tablero
         for (int j = 0; j < TAMTAB; j++) {
             if (fscanf(archivoT, "%d", &bltsVend[i].tablero[j]) != 1) {
-                printf("Error al leer el tablero del boleto %d.\n", i+1);
+                printf(AMAR "Error al leer el tablero del boleto %d.\n" RESET, i+1);
                 fclose(archivoT);
                 return;
             }
@@ -430,7 +430,7 @@ void cargarDatos() {
 
         // Leer premio ganado
         if (fscanf(archivoT, "%f\n", &bltsVend[i].premioGanado) != 1) {
-            printf("Error al leer el premio ganado del boleto %d.\n", i+1);
+            printf(AMAR "Error al leer el premio ganado del boleto %d.\n" RESET, i+1);
             fclose(archivoT);
             return;
         }
@@ -442,28 +442,28 @@ void cargarDatos() {
 
     // Leer fondos recaudados
     if (fgets(buffer, sizeof(buffer), archivoT) == NULL || strcmp(buffer, "FONDOS\n") != 0) {
-        printf("Error: Formato de fondos invalido.\n");
+        printf(AMAR "Error: Formato de fondos invalido.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     if (fscanf(archivoT, "%f\n", &fondRec) != 1) {
-        printf("Error al leer los fondos recaudados.\n");
+        printf(AMAR "Error al leer los fondos recaudados.\n" RESET);
         fclose(archivoT);
         return;
     }
 
     fclose(archivoT);
-    printf("Datos tecnicos cargados correctamente.\n");
+    printf(CYAN "Datos tecnicos cargados correctamente.\n" RESET);
 }
 
 // Verificar contraseña
 int verificarPassword() {
     char pass[20];
-    printf(AMAR "Ingrese la contrasena para acceder a configuraciones: " RESET);
+    printf("Ingrese la contrasena para acceder a configuraciones: ");
     scanf("%s", pass);
     if (strcmp(pass, PASSWORD) == 0) {
-        printf(VERD "Acceso concedido.\n" RESET);
+        printf(CYAN "Acceso concedido.\n" RESET);
         return 1;
     } else {
         printf(ROC "Contrasena incorrecta. Acceso denegado.\n" RESET);
@@ -474,7 +474,7 @@ int verificarPassword() {
 // Realiza la venta de boletos
 void ventaBlts() {
     if (totBlts >= MAXBOL) {
-        printf("Ya no hay mas boletos disponibles.\n");
+        printf(AMAR "Ya no hay mas boletos disponibles.\n" RESET);
         return;
     }
 
@@ -501,7 +501,7 @@ void ventaBlts() {
         printf("Opcion: ");
         if (scanf("%d", &cat) != 1) {
             limpbuf();
-            printf("Entrada invalida.\n");
+            printf(ROC "Entrada invalida.\n" RESET);
             continue;
         }
 
@@ -522,7 +522,7 @@ void ventaBlts() {
                 intentos = 5;
                 break;
             default:
-                printf("Opcion no valida.\n");
+                printf(ROC "Opcion no valida.\n" RESET);
                 cat = 0;
         }
     } while (cat == 0);
@@ -539,11 +539,11 @@ void ventaBlts() {
             printf("Seleccione numero (1-%d): ", TAMTAB);
             if (scanf("%d", &sel) != 1 || sel < 1 || sel > TAMTAB) {
                 limpbuf();
-                printf("Numero invalido.\n");
+                printf(ROC "Numero invalido.\n" RESET);
                 continue;
             }
             if (nuevo.tablero[sel - 1] == 1) {
-                printf("Ya seleccionaste ese numero.\n");
+                printf(ROC "Ya seleccionaste ese numero.\n" RESET);
                 continue;
             }
             break;
@@ -554,10 +554,10 @@ void ventaBlts() {
 
         float premio = premiosGlobales[sel - 1];
         if (premio > 0) {
-            printf("¡Ganaste $%.2f!\n", premio);
+            printf("Ganaste: ");printf(MAGENTA " $%.2f\n" RESET, premio);
             nuevo.premioGanado += premio;
         } else {
-            printf("Sin premio en esta casilla.\n");
+            printf(AMAR " Sin premio en esta casilla.\n" RESET);
         }
     }
 
@@ -565,8 +565,8 @@ void ventaBlts() {
     bltsVend[totBlts++] = nuevo;
     fondRec += nuevo.precio;
 
-    printf("\nRegistro completo.\nCodigo: %s\n", nuevo.cod);
-    printf("Premio total ganado: $%.2f\n", nuevo.premioGanado);
+    printf(CYAN "\nRegistro completo.\nCodigo: %s\n" RESET, nuevo.cod);
+    printf("Premio total ganado:"); printf(MAGENTA " $%.2f\n" RESET, nuevo.premioGanado);
 
     // Guardar datos actualizados
     guardarDatos();
@@ -578,68 +578,78 @@ void consulBltsVend() {
 
 
     if (totBlts == 0) {
-        printf("No hay boletos vendidos.\n");
+        printf(AMAR "No hay boletos vendidos.\n" RESET);
         return;
     }
 
-    printf("\n| %-5s | %-15s | %-15s | %-5s | %-7s |\n", "ID", "Nombre", "Domicilio", "Codigo", "Tipo");
-    printf("----------------------------------------------------------------\n");
+
+    printf("\n\n---------------------------------------------------------------------------------------\n");
+    printf("|                           CONSULTA BOLETOS VENDIDOS                                 |");
+    printf("\n|-------------------------------------------------------------------------------------|");
+    printf("\n| %-5s | %-15s | %-15s | %-5s | %-7s | %-20s |\n", "ID", "Nombre", "Domicilio", "Codigo", "Tipo", "Fecha");
+    printf("|-------|-----------------|-----------------|--------|---------|----------------------|\n");
     for (int i = 0; i < totBlts; i++) {
-        printf("| %-5d | %-15s | %-15s | %-5s | %-7s | %-30s |\n", i+1,
+        printf("| %-5d | %-15s | %-14s  | %-6s | %-7s | %-20s |\n", i+1,
                bltsVend[i].nom, bltsVend[i].dom, bltsVend[i].cod, bltsVend[i].tipo, bltsVend[i].horaVenta);
     }
+    printf("---------------------------------------------------------------------------------------\n");
 }
 
 // Consulta premios ganados
 void conPre() {
     if (totBlts == 0) {
-        printf("No hay boletos vendidos.\n");
+        printf(AMAR "No hay boletos vendidos.\n" RESET);
         return;
     }
-
-    printf("\n| %-5s | %-15s | %-5s | %-7s | Premio |\n", "ID", "Nombre", "Codigo", "Tipo");
-    printf("--------------------------------------------------\n");
+    printf("\n\n--------------------------------------------------------\n");
+    printf("|              CONSULTA PREMIOS GANADOS                |\n");
+    printf("|------------------------------------------------------|");
+    printf("\n| %-5s | %-15s | %-5s | %-7s | Premio  |\n", "ID", "Nombre", "Codigo", "Tipo");
+    printf("|-------|-----------------|--------|---------|---------|\n");
     for (int i = 0; i < totBlts; i++) {
-        printf("| %-5d | %-15s | %-5s | %-7s | $%.2f |\n", i+1,
+        printf("| %-5d | %-15s | %-6s | %-7s | $%6.2f |\n", i+1,
                bltsVend[i].nom, bltsVend[i].cod,
                bltsVend[i].tipo, bltsVend[i].premioGanado);
     }
+    printf("--------------------------------------------------------\n");
 }
 
 // Muestra fondos recaudados
 void FonRec() {
     if (totBlts == 0) {
-        printf("No hay boletos vendidos.\n");
+        printf(AMAR "No hay boletos vendidos.\n" RESET);
         return;
     }
 
     float totalIngresos = 0.0;
     float totalPremios = 0.0;
-
-    printf("\n| %-5s | %-6s | %-6s | %-9s | %-6s | %-8s |\n", "ID", "Codigo", "Tipo", "Inversion", "Premio", "Ganancia");
-    printf("----------------------------------------------------------\n");
+    printf("-------------------------------------------------------------\n");
+    printf("|                CONSULTA FONDOS RECAUDADOS                 |\n");
+    printf("|-----------------------------------------------------------|");
+    printf("\n| %-5s | %-6s | %-8s | %-9s | %-6s | %-8s |\n", "ID", "Codigo", "Tipo", "Inversion", "Premio", "Ganancia");
+    printf("|-----------------------------------------------------------|\n");
     for (int i = 0; i < totBlts; i++) {
         float gan = bltsVend[i].precio - bltsVend[i].premioGanado;
         totalIngresos += bltsVend[i].precio;
         totalPremios += bltsVend[i].premioGanado;
 
-        printf("| %-5d | %-6s | %-6s | %9.2f | %6.2f | %8.2f |\n", i+1,
+        printf("| %-5d | %-6s | %-8s | %9.2f | %6.2f | %8.2f |\n", i+1,
                bltsVend[i].cod, bltsVend[i].tipo,
                bltsVend[i].precio, bltsVend[i].premioGanado, gan);
     }
-    printf("----------------------------------------------------------\n");
+    printf("-------------------------------------------------------------\n");
 
     float totalGanancia = totalIngresos - totalPremios;
     printf("Total de ventas: %.2f\n", totalIngresos);
     printf("Total de premios: %.2f\n", totalPremios);
-    printf("Balance total: %.2f (%s)\n", totalGanancia,
+    printf("Balance total:"); printf(MAGENTA " %.2f (%s)\n" RESET, totalGanancia,
            (totalGanancia < 0 ? "PERDIDA" : "GANANCIA"));
 }
 
 // Eliminar un boleto
 void eliminarBoleto() {
     if (totBlts == 0) {
-        printf("No hay boletos que eliminar.\n");
+        printf(AMAR "No hay boletos que eliminar.\n" RESET);
         return;
     }
 
@@ -648,12 +658,20 @@ void eliminarBoleto() {
 
     int id;
     printf("\nIngrese el ID del boleto a eliminar (1-%d): ", totBlts);
-    scanf("%d", &id);
+
+
+    if (scanf("%d", &id) < 1 || id > totBlts){
+        limpbuf();
+        printf(ROC "ID invalido.\n" RESET);
+        return;
+                }
+
+    /*scanf("%d", &id);
 
     if (id < 1 || id > totBlts) {
         printf("ID invalido.\n");
         return;
-    }
+    }*/
 
     int idx = id - 1;
 
@@ -661,18 +679,19 @@ void eliminarBoleto() {
     char conf;
     printf("\n¿Esta seguro que desea eliminar el boleto con codigo %s a nombre de %s? (S/N): ",
            bltsVend[idx].cod, bltsVend[idx].nom);
+
     getchar(); // Limpiar buffer
     scanf("%c", &conf);
 
     if (conf != 'S' && conf != 's') {
-        printf("Operacion cancelada.\n");
+        printf(ROC "Operacion cancelada.\n" RESET);
         return;
     }
 
     // Actualizar fondos recaudados
     fondRec -= bltsVend[idx].precio;
 
-    printf("Boleto con codigo %s a nombre de %s eliminado.\n",
+    printf(CYAN "Boleto con codigo %s a nombre de %s eliminado.\n" RESET,
            bltsVend[idx].cod, bltsVend[idx].nom);
 
     // Desplazar elementos para eliminar
@@ -695,7 +714,7 @@ void Config() {
 
     int opcion;
     float Or_bas,Or_Prem,Or_Oro;
-    char ultimaMod[50];
+
 
 
 
@@ -711,14 +730,14 @@ void Config() {
         printf("7. Volver al menu\n");
         printf("Opcion: ");
         if (scanf("%d",&opcion) != 1){
-            printf("Entrada invalida. Ingrese un numero.\n");
+            printf(ROC "Entrada invalida. Ingrese un numero.\n" RESET);
             int cc;
             while ((cc = getchar()) != '\n' && cc != EOF);
             opcion = 0;
         }else{
             switch (opcion) {
             case 1:
-                printf("\nUltima modificacion: %s",ultimaMod);
+
                printf("\n--- Precio actual|| Basico: %.2f || Premium: %.2f || Oro: %.2f  ---\n",preBas,prePrem,preOro);
                 printf("Nuevo precio Basico: ");
                 Or_bas=preBas;
@@ -727,7 +746,7 @@ void Config() {
 
                 if (scanf("%f", &preBas) !=1){
                     limpbuf();
-                    printf("Precio invalido.\n");
+                    printf(ROC "Precio invalido.\n" RESET);
 
                     break;
 
@@ -738,7 +757,7 @@ void Config() {
                     preBas=Or_bas;
 
                     limpbuf();
-                    printf("Precio invalido.\n");
+                    printf(ROC "Precio invalido.\n" RESET);
 
                     break;
                 }
@@ -752,13 +771,13 @@ void Config() {
                     limpbuf();
 
 
-                    printf("Precio invalido.\n");
+                    printf(ROC "Precio invalido.\n" RESET);
 
                     break;
                 }
 
 
-                printf("...Precios actualizados...\n");
+                printf(CYAN "...Precios actualizados...\n" RESET);
 
                 guardarDatos();
                 break;
@@ -767,7 +786,7 @@ void Config() {
                 limpbuf();
                 fgets(PASSWORD, sizeof(PASSWORD), stdin);
                 PASSWORD[strcspn(PASSWORD, "\n")] = 0;
-                printf("Contrasena actualizada.\n");
+                printf(CYAN "Contrasena actualizada.\n" RESET);
                 guardarDatos();
                 break;
             case 3:
@@ -779,10 +798,10 @@ void Config() {
                     totBlts = 0;
                     fondRec = 0;
                     iniPglob();
-                    printf("Sistema reiniciado completamente.\n");
+                    printf(CYAN "Sistema reiniciado completamente.\n" RESET);
                     guardarDatos();
                 } else {
-                    printf("Operacion cancelada.\n");
+                    printf(ROC "Operacion cancelada.\n" RESET);
                 }
                 break;
             case 4:
@@ -798,13 +817,13 @@ void Config() {
                 if (conf == 'S' || conf == 's') {
                     cargarDatos();
                 } else {
-                    printf("Operacion cancelada.\n");
+                    printf(ROC "Operacion cancelada.\n" RESET);
                 }
                 break;
             case 7:
                 return;
             default:
-                printf("Opcion no valida.\n");
+                printf(ROC "Opcion no valida.\n" RESET);
             }
         }
     } while (opcion != 7);
@@ -826,7 +845,7 @@ void casos() {
         printf("6. Salir\n");
         printf("Opcion: ");
         if (scanf("%d",&opc) != 1){
-            printf("Entrada invalida. Ingrese un numero.\n");
+            printf(ROC "Entrada invalida. Ingrese un numero.\n" RESET);
             int c;
             while ((c = getchar()) != '\n' && c != EOF);
             opc = 0;
@@ -837,8 +856,8 @@ void casos() {
             case 3: conPre(); break;
             case 4: FonRec(); break;
             case 5: Config(); break;
-            case 6: printf("Guardando datos y saliendo...\n"); guardarDatos(); break;
-            default: printf("Opcion no valida.\n");
+            case 6: printf(CYAN "Guardando datos y saliendo...\n" RESET); guardarDatos(); break;
+            default: printf(ROC "Opcion no valida.\n" RESET);
         }
         }
     } while (opc != 6);

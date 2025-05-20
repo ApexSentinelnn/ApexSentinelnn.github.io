@@ -1,0 +1,7 @@
+REPORTE DE PRODUCTOS (ARCHIVO)
+Producto                 Existencias    Precios   FormaVenta
+------------------------------------------------------------
+Camara de seguridad      29             302       Contado
+Contacto WI-FI           21             574       Tiempo diferido
+Foco Led Multicolor      27             382       Contado
+Bocina Bluetooth         29             521       Tiempo diferido

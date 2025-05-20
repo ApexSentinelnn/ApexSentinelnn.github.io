@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Título y Metadatos -->
+    <title>Unidad 1 | Actividad 04</title>
+    <link rel="icon" type="image/x-icon" href="https://ApexSentinelnn.github.io/Recursos/Logo/ico_pageall.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Noe Castillo Gaytan.">
+    <meta name="Fecha" content="07 de mayo de 2025">
+    <meta name="Descripción" content="JavaScript">
+    <style>
+        li { text-transform: uppercase; color: rgb(0, 0, 0); background-color: rgb(204, 247, 170); }
+    </style>
+</head>
+<body>
+    <h1>Unidad 3 :: Actividad 04 :: Tema (JavaScript)</h1>
+    <ol>
+        <li id="valor_1"><strong>UPSLP</strong></li>
+        <li id="valor_2"></li>
+        <li id="valor_3"></li>
+        <li id="valor_4"></li>
+        <li id="valor_5"></li>
+        <li id="valor_6"></li>
+        <li id="valor_7"><strong>ITEM</strong></li>
+        <li id="valor_8"></li>
+        <li id="valor_9"></li>
+        <li id="valor_10"></li>
+    </ol>
+
+    <script>
+        document.getElementById("valor_2").textContent = "UCEM";
+
+        let textTemp = document.getElementById("valor_1").textContent;
+        document.getElementById("valor_3").textContent = textTemp + " { }";
+
+        let varTemp = document.getElementById("valor_7").textContent;
+        document.getElementById("valor_8").textContent = varTemp;
+        document.getElementById("valor_9").innerText = varTemp;
+        document.getElementById("valor_10").innerHTML = varTemp;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Noe Castillo Gaytan">
+    <meta name="matricula" content="187855">
+    <meta name="fecha" content="2025-05-19">
+    <meta name="descripcion" content="Calculadora simple en JavaScript(Examen practico)">
+    <title>Calculadora JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>JavaScript</h1>
+                <fieldset>
+                    <legend>Calculadora</legend>
+                    <form id="calculatorForm">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Primer operando</label>
+                            <div class="col-md-5">
+                                <input id="operand1" type="text" placeholder="Operador No. 1"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Operación</label>
+                            <div class="col-md-5">
+                                <select id="operation" class="form-control">
+                                    <option value="">--- Selecciona ---</option>
+                                    <option value="suma">Suma [ + ]</option>
+                                    <option value="resta">Resta [ - ]</option>
+                                    <option value="multiplica">Multiplica [ × ]</option>
+                                    <option value="divide">Divide [ ÷ ]</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Segundo operando</label>
+                            <div class="col-md-5">
+                                <input id="operand2" type="text" placeholder="Operador No. 2"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button id="calculateBtn" type="button" class="btn btn-primary">Calcular</button>
+                                <button id="resetBtn" type="button" class="btn btn-info">Reiniciar</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Resultado</label>
+                            <div class="col-md-5">
+                                <input id="result" type="text" placeholder="Resultado" class="form-control input-md"
+                                    readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <div class="color-group">
+                                    <label>OK</label>
+                                    <input id="okColor" type="color" value="#90EE90">
+
+                                    <label>Empty</label>
+                                    <input id="emptyColor" type="color" value="#D3D3D3">
+
+                                    <label>Positive</label>
+                                    <input id="positiveColor" type="color" value="#ADD8E6">
+
+                                    <label>Negative</label>
+                                    <input id="negativeColor" type="color" value="#FFC0CB">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
