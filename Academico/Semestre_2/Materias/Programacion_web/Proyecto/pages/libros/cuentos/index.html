@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor1" content="Noe Castillo Gaytan">
+    <meta name="Autor2" content="Miguel Angel Flores Gonzales">
+    <meta name="Fecha" content="27/03/25">
+    <meta name="Descripcion" content="Proyecto">
+    <title>El silmarillo</title>
+    <!--icono -->
+    <link rel="icon" href="resources/ico/icono.png" type="image/png">
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_movies.css">
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/index.html"
+                style="text-decoration: none; margin-right: 10px;">
+                <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/ico/ico_house.png"
+                    style="height: 35px;" alt="img">
+            </a>
+            <a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a>
+        </div>
+        <div class="nav-links">
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#trailer">Trailer</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#produccion">Produccion</a>
+            <a href="#recepcion">Recepcion</a>
+            <a href="#Referencias">Referencias</a>
+        </div>
+    </nav>
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/viaje/index.html">Un
+                                        viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/desolacion/index.html">La
+                                        desolación de Smaug</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/batalla/index.html">La
+                                        batalla de los cinco
+                                        ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/comunidad/index.html">La
+                                        Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/torres/index.html">Las
+                                        dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/rey/index.html">El
+                                        retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/rop/temporada1/index.html">Temporada
+                                        1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/rop/temporada2/index.html">Temporada
+                                        2 (Próximamente)</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/nordica/index.html">Mitología
+                                nórdica</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/medieval/index.html">Literatura
+                                medieval</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/guerra/index.html">Experiencias
+                                en la Primera Guerra Mundial</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Bibliografía <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hobbit/index.html">El
+                                Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/sda/index.html">El
+                                Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/silmarillo/index.html">El
+                                Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos/index.html">Cuentos
+                                inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hurin/index.html">Los
+                                hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/beren/index.html">Beren
+                                y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/gondolin/index.html">La
+                                caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos-perdidos/index.html">El
+                                libro de los cuentos perdidos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Datos interesantes -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Datos interesantes <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/lenguas/index.html">Lenguas
+                                creadas por Tolkien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/mapas/index.html">Mapas
+                                de la Tierra Media</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/datos/influencia/index.html">Influencia
+                                en otros autores</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Curiosidades <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/nombres/index.html">Inspiración
+                                para nombres</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/anecdotas/index.html">Anécdotas
+                                de la filmación</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/curiosidades/easter-eggs/index.html">Easter
+                                eggs en las películas</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero inicio de la pagina -->
+<section class="hero hero-tolkien" id="inicio">
+    <div class="hero-film-content">
+        <div class="film-text-container">
+            <h1 class="film-title">Cuentos Inconclusos<br><span>Los secretos de la Tierra Media</span></h1>
+            <p class="film-subtitle">"Relatos fragmentarios que amplían<br>el legendarium tolkiniano"</p>
+
+            <div class="film-meta">
+                <span class="meta-item"><i class="fas fa-book-open"></i> Compilación póstuma</span>
+                <span class="meta-item"><i class="fas fa-calendar-alt"></i> Publicado en 1980</span>
+                <span class="meta-item"><i class="fas fa-star"></i> 4.2/5 (Goodreads)</span>
+            </div>
+
+            <a href="#sinopsis" class="btn-film">EXPLORAR</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Sinopsis -->
+<section class="content-section" id="sinopsis">
+    <div class="section-content">
+        <h1>Cuentos Inconclusos</h1>
+        <h2>El puzzle incompleto del universo tolkiniano</h2>
+
+        <p>Editado por Christopher Tolkien, esta obra recoge relatos, ensayos y fragmentos que amplían historias mencionadas en <em>El Silmarillion</em> y <em>El Señor de los Anillos</em>. Organizado en cuatro partes cronológicas, incluye versiones alternativas, detalles geopolíticos y narraciones interrumpidas que profundizan en la Segunda y Tercera Edad.</p>
+
+        <h3>Contenidos destacados:</h3>
+        <ul class="featured-list">
+            <li><i class="fas fa-pen-fancy"></i> Versión extendida de "De Tuor y su llegada a Gondolin"</li>
+            <li><i class="fas fa-ring"></i> Historia de los Istari (Magos) y los Palantiri</li>
+            <li><i class="fas fa-chess-queen"></i> "La búsqueda de Erebor" (versión de Gandalf)</li>
+            <li><i class="fas fa-map-marked-alt"></i> Descripción detallada de Númenor</li>
+            <li><i class="fas fa-horse"></i> "Los Drúedain" (hombres salvajes de los bosques)</li>
+            <li><i class="fas fa-battle-axe"></i> Batallas de los vados del Isen</li>
+        </ul>
+
+        <h3>Datos clave</h3>
+        <table class="movie-facts">
+            <tr>
+                <th>Autor</th>
+                <td>J.R.R. Tolkien (editado por Christopher Tolkien)</td>
+            </tr>
+            <tr>
+                <th>Género</th>
+                <td>Relatos/Mitología fantástica</td>
+            </tr>
+            <tr>
+                <th>Páginas</th>
+                <td>472 (edición estándar)</td>
+            </tr>
+            <tr>
+                <th>Relación</th>
+                <td>Complementa Silmarillion y ESDLA</td>
+            </tr>
+            <tr>
+                <th>Primera edición</th>
+                <td>2 octubre 1980</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!--Carrusel-->
+<section class="content-section" id="galeria">
+    <div class="section-content">
+        <h2 class="section-title">Galería</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="resources\\image\\cuentos-portada.jpg" alt="Portada de Cuentos Inconclusos" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Edición ilustrada por Ted Nasmith</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\numenor-map.jpg" alt="Mapa de Númenor" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Mapa detallado de Númenor</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\gandalf-saruman.jpg" alt="Los Magos" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Los Istari (Magos)</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources\\image\\tolkien-notes.jpg" alt="Notas originales" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Manuscrito con anotaciones</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Documental -->
+<section class="content-section dark-section" id="trailer">
+    <div class="section-content">
+        <h2 class="section-title">Documental</h2>
+        <p class="section-text">Sobre el proceso de compilación:</p>
+
+        <div class="trailer-container">
+            <iframe src="https://www.youtube.com/embed/9GNiodlD1Xo" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="youtube-embed"></iframe>
+        </div>
+
+        <div class="trailer-links">
+            <h3>Dónde adquirir el libro:</h3>
+            <ul>
+                <li><a href="https://www.amazon.com/Unfinished-Tales-Numenor-Middle-earth/dp/0261103628" target="_blank"><i class="fab fa-amazon"></i> Amazon</a></li>
+                <li><a href="https://www.bookdepository.com/Unfinished-Tales-J-R-R-Tolkien/9780261103627" target="_blank"><i class="fas fa-book"></i> Book Depository</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Personajes-->
+<section class="content-section" id="personajes">
+    <div class="section-content">
+        <h2 class="section-title">Personajes Relevantes</h2>
+        <p>Figuras únicas o ampliadas en estos relatos:</p>
+
+        <table class="characters-table">
+            <thead>
+                <tr>
+                    <th>Personaje</th>
+                    <th>Raza/Origen</th>
+                    <th>Relato</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tuor</td>
+                    <td>Humano</td>
+                    <td>Llegada a Gondolin</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('tuor')"></td>
+                </tr>
+                <tr>
+                    <td>Celebrimbor</td>
+                    <td>Elfo Noldor</td>
+                    <td>Los Anillos de Poder</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('celebrimbor')"></td>
+                </tr>
+                <tr>
+                    <td>Alatar y Pallando</td>
+                    <td>Magos Azules</td>
+                    <td>Los Istari</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('magos-azules')"></td>
+                </tr>
+                <tr>
+                    <td>Tar-Aldarion</td>
+                    <td>Rey de Númenor</td>
+                    <td>La esposa del marinero</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('aldarion')"></td>
+                </tr>
+                <tr>
+                    <td>Ghân-buri-Ghân</td>
+                    <td>Drúadan</td>
+                    <td>Los Pueblos Salvajes</td>
+                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                            onclick="showDetails('ghân')"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Otros personajes destacados:</h3>
+        <ul class="unfinished-list">
+            <li>Ungoliant - La gran araña oscura</li>
+            <li>Isildur - Muerte ampliada</li>
+            <li>Galadriel y Celeborn - Historia temprana</li>
+            <li>Los Nazgûl - Orígenes y nombres</li>
+            <li>Elrohir y Elladan - Hijos de Elrond</li>
+        </ul>
+
+        <a href="#galeria" class="btn">Ver Galería</a>
+    </div>
+</section>
+
+<!-- Sección: Producción -->
+<section class="content-section" id="produccion">
+    <div class="section-content">
+        <h2 class="section-title">Historia editorial</h2>
+        <h3>El desafío de reconstruir fragmentos</h3>
+
+        <p>Datos sobre la compilación:</p>
+
+        <ul>
+            <li>Textos escritos entre 1910-1973 en diferentes etapas</li>
+            <li>Christopher Tolkien dedicó 3 años a organizar el material</li>
+            <li>Incluye notas contradictorias entre versiones</li>
+            <li>Algunos relatos tienen múltiples versiones incompletas</li>
+            <li>Mapas y genealogías añadidos por el editor</li>
+            <li>Publicado 7 años después de El Silmarillion</li>
+        </ul>
+
+        <h3>Estructura del libro:</h3>
+        <table class="locations-table">
+            <tr>
+                <th>Parte</th>
+                <th>Época</th>
+                <th>Contenido principal</th>
+            </tr>
+            <tr>
+                <td>Primera Parte</td>
+                <td>Primera Edad</td>
+                <td>Tuor, Niënor, Los Hombres de Hithlum</td>
+            </tr>
+            <tr>
+                <td>Segunda Parte</td>
+                <td>Segunda Edad</td>
+                <td>Númenor, Aldarion y Erendis, Los Anillos</td>
+            </tr>
+            <tr>
+                <td>Tercera Parte</td>
+                <td>Tercera Edad</td>
+                <td>La Búsqueda de Erebor, Los Istari, Palantiri</td>
+            </tr>
+            <tr>
+                <td>Cuarta Parte</td>
+                <td>Variado</td>
+                <td>Drúedain, Los Silvanos, Batallas del Isen</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Sección: Recepción -->
+<section class="content-section" id="recepcion">
+    <div class="section-content">
+        <h2 class="section-title">Recepción y Valor</h2>
+        <h3>La cantera de la Tierra Media</h3>
+
+        <p>Considerado material esencial para estudiosos, aunque menos accesible para lectores casuales.</p>
+
+        <h3>Reconocimientos:</h3>
+        <table class="awards-table">
+            <tr>
+                <th>Reconocimiento</th>
+                <th>Año</th>
+            </tr>
+            <tr>
+                <td>Premio Mythopoeic (Scholarship)</td>
+                <td>1981</td>
+            </tr>
+            <tr>
+                <td>Incluido en "Biblioteca Tolkiniana Esencial"</td>
+                <td>1992</td>
+            </tr>
+            <tr>
+                <td>Edición especial 30° aniversario</td>
+                <td>2010</td>
+            </tr>
+        </table>
+
+        <h3>Opiniones destacadas:</h3>
+        <div class="reviews">
+            <blockquote>
+                "Un tesoro para quienes deseen excavar más profundo en el legendarium" - Tolkien Society
+            </blockquote>
+            <blockquote>
+                "Christopher Tolkien logra dar coherencia a fragmentos dispersos con notas magistrales" - The Guardian
+            </blockquote>
+            <blockquote>
+                "La mejor ventana al proceso creativo de Tolkien y sus cambios de concepción" - Mythlore Journal
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!--referencias-->
+<section class="content-section" id="Referencias">
+    <div class="section-content">
+        <h2 class="section-title">Referencias</h2>
+        <p class="section-text">Esta página utiliza los siguientes recursos externos:</p>
+
+        <div class="references-container">
+            <div class="reference-card">
+                <h3><i class="fas fa-image"></i> Imágenes utilizadas</h3>
+                <table class="references-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Fuente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portada ilustrada</td>
+                            <td><a href="https://www.tolkien.co.uk/products/unfinished-tales-illustrated-edition-9780008387952/" target="_blank">HarperCollins</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mapa de Númenor</td>
+                            <td><a href="https://www.tolkienestate.com/" target="_blank">Tolkien Estate</a></td>
+                        </tr>
+                        <tr>
+                            <td>Los Magos</td>
+                            <td><a href="https://tolkiengateway.net/wiki/Unfinished_Tales" target="_blank">Tolkien Gateway</a></td>
+                        </tr>
+                        <tr>
+                            <td>Manuscritos</td>
+                            <td><a href="https://www.bodleian.ox.ac.uk/" target="_blank">Bodleian Libraries</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-book"></i> Fuentes de información</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.tolkiengateway.net/wiki/Unfinished_Tales" target="_blank">Tolkien Gateway</a></li>
+                    <li><a href="https://www.tolkienestate.com/writing/unfinished-tales/" target="_blank">Tolkien Estate</a></li>
+                    <li><a href="https://www.tolkiensociety.org/author/books/unfinished-tales/" target="_blank">Tolkien Society</a></li>
+                </ul>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-video"></i> Material multimedia</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.youtube.com/watch?v=9GNiodlD1Xo" target="_blank">Documental sobre Tolkien</a> - YouTube</li>
+                    <li><a href="https://www.audible.com/pd/Unfinished-Tales-Audiobook/B004FV540Q" target="_blank">Audiolibro</a> - Audible</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer section-->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#trailer">Trailer</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#produccion">Produccion</a>
+                <a href="#recepcion">Recepcion</a>
+                <a href="#Referencias">Referencias</a>
+            </div>
+
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
