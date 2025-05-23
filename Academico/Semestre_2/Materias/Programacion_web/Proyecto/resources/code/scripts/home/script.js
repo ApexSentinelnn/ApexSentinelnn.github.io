@@ -56,7 +56,7 @@ document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
   });
 });
 
-  // Menú hamburguesa
+  // Menu
   const menuToggle = document.getElementById("mobile-menu");
   const sidebar = document.getElementById("sidebar");
   const overlay = document.createElement("div");
@@ -78,6 +78,15 @@ document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
     sidebar.classList.remove("active");
     this.style.display = "none";
     document.body.style.overflow = "auto";
+  });
+
+  // Cerrar menú al presionar la tecla "Esc"
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+      overlay.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
   });
 
   // Submenús desplegables
