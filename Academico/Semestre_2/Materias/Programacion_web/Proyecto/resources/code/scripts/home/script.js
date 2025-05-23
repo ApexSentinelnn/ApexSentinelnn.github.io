@@ -80,7 +80,7 @@ document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
     document.body.style.overflow = "auto";
   });
 
-  // Cerrar menú al presionar la tecla "Esc"
+  // Cerrar con "Esc"
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && sidebar.classList.contains("active")) {
       sidebar.classList.remove("active");
@@ -88,25 +88,44 @@ document.querySelectorAll(".nav-links a, .footer-links a").forEach((anchor) => {
       document.body.style.overflow = "auto";
     }
   });
-
-  // Submenús desplegables
+  // Submenús desplegables: solo uno abierto a la vez
   const sidebarTitles = document.querySelectorAll(".sidebar-title");
   sidebarTitles.forEach((title) => {
     title.addEventListener("click", function () {
+      // Cerrar todos los submenús excepto el actual
+      sidebarTitles.forEach((otherTitle) => {
+        if (otherTitle !== this) {
+          const otherSubmenu = otherTitle.nextElementSibling;
+          const otherIcon = otherTitle.querySelector("i");
+          if (otherSubmenu) otherSubmenu.classList.remove("active");
+          if (otherIcon) otherIcon.classList.remove("active");
+        }
+      });
+      // Alternar el submenú actual
       const submenu = this.nextElementSibling;
       const icon = this.querySelector("i");
-      submenu.classList.toggle("active");
-      icon.classList.toggle("active");
+      if (submenu) submenu.classList.toggle("active");
+      if (icon) icon.classList.toggle("active");
     });
   });
 
   const hasSubmenus = document.querySelectorAll(".has-submenu > h3");
   hasSubmenus.forEach((item) => {
     item.addEventListener("click", function () {
+      // Cerrar todos los submenús excepto el actual
+      hasSubmenus.forEach((otherItem) => {
+        if (otherItem !== this) {
+          const otherSubmenu = otherItem.nextElementSibling;
+          const otherIcon = otherItem.querySelector("i");
+          if (otherSubmenu) otherSubmenu.classList.remove("active");
+          if (otherIcon) otherIcon.classList.remove("active");
+        }
+      });
+      // Alternar el submenú actual
       const submenu = this.nextElementSibling;
       const icon = this.querySelector("i");
-      submenu.classList.toggle("active");
-      icon.classList.toggle("active");
+      if (submenu) submenu.classList.toggle("active");
+      if (icon) icon.classList.toggle("active");
     });
   });
 
