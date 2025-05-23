@@ -455,7 +455,8 @@ nav.scrolled {
   max-width: 800px;
 }
 
-#sinopsis .section-content {
+/* Homenaje a Tolkien - Estilos */
+#tolkien .section-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
@@ -467,20 +468,20 @@ nav.scrolled {
   overflow: hidden;
 }
 
-#sinopsis .section-content::before {
+#tolkien .section-content::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/old-map.png');
-  opacity: 0.15;
+  background: url('https://www.transparenttextures.com/patterns/parchment.png');
+  opacity: 0.2;
   z-index: -1;
 }
 
 /* Títulos */
-#sinopsis h1 {
+#tolkien h1 {
   font-family: "Cinzel", serif;
   font-size: 3.5rem;
   color: var(--primary-color);
@@ -488,32 +489,34 @@ nav.scrolled {
   text-align: center;
   position: relative;
   padding-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-#sinopsis h1::after {
+#tolkien h1::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
+  width: 150px;
   height: 3px;
-  background: var(--accent-color);
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-dark));
 }
 
-#sinopsis h2 {
+#tolkien h2 {
   font-family: "Cinzel", serif;
   font-size: 2.2rem;
   color: var(--secondary-color);
   margin: 25px 0 15px;
   text-align: center;
   font-weight: 500;
+  font-style: italic;
 }
 
-#sinopsis h3 {
+#tolkien h3 {
   font-family: "Cinzel", serif;
   font-size: 1.8rem;
-  color: var(--accent-color);
+  color: var(--gold-dark);
   margin: 30px 0 15px;
   border-bottom: 2px solid var(--gold-light);
   padding-bottom: 8px;
@@ -521,7 +524,7 @@ nav.scrolled {
 }
 
 /* Párrafos */
-#sinopsis p {
+#tolkien p {
   font-family: "EB Garamond", serif;
   font-size: 1.2rem;
   line-height: 1.8;
@@ -532,13 +535,13 @@ nav.scrolled {
 }
 
 /* Listas */
-#sinopsis ul {
+#tolkien .featured-list {
   margin: 25px 0;
   padding-left: 40px;
   list-style-type: none;
 }
 
-#sinopsis ul li {
+#tolkien .featured-list li {
   position: relative;
   margin-bottom: 12px;
   font-family: "EB Garamond", serif;
@@ -548,141 +551,91 @@ nav.scrolled {
   padding-left: 30px;
 }
 
-#sinopsis ul li::before {
-  content: "•";
+#tolkien .featured-list li::before {
+  content: "✍";
   position: absolute;
   left: 0;
   color: var(--gold-dark);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
-/* Galería de imágenes */
-#sinopsis .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 40px 0;
-}
-
-#sinopsis .gallery-item {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid var(--gold-dark);
-}
-
-#sinopsis .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-#sinopsis .gallery-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+/* Iconos */
+#tolkien .fas {
+  margin-right: 8px;
+  color: var(--gold-dark);
 }
 
 /* Tabla */
-#sinopsis .details-table {
+#tolkien .movie-facts {
   width: 100%;
   border-collapse: collapse;
   margin: 30px 0;
   font-family: "EB Garamond", serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#sinopsis .details-table th {
+#tolkien .movie-facts th {
   background-color: var(--gold-dark);
   color: white;
   padding: 12px;
   text-align: left;
   font-family: "Cinzel", serif;
+  width: 30%;
 }
 
-#sinopsis .details-table td {
-  padding: 10px 12px;
+#tolkien .movie-facts td {
+  padding: 12px;
   border-bottom: 1px solid var(--gold-light);
   color: var(--text-dark);
+  vertical-align: top;
 }
 
-#sinopsis .details-table tr:nth-child(even) {
+#tolkien .movie-facts tr:nth-child(even) {
   background-color: rgba(212, 175, 55, 0.1);
 }
 
-/* Enlaces */
-#sinopsis .content-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 30px 0;
-  justify-content: center;
-}
-
-#sinopsis .content-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--gold-light);
-  color: var(--primary-color);
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-  transition: all 0.3s;
-  border: 1px solid var(--gold-dark);
-}
-
-#sinopsis .content-link:hover {
-  background-color: var(--accent-color);
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* Iframe (para el tráiler) */
-#sinopsis .media-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  height: 0;
-  margin: 40px 0;
-  border: 5px solid var(--gold-dark);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-#sinopsis .media-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+#tolkien .movie-facts tr:last-child td {
+  border-bottom: none;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  #sinopsis h1 {
+  #tolkien h1 {
     font-size: 2.5rem;
   }
 
-  #sinopsis h2 {
+  #tolkien h2 {
     font-size: 1.8rem;
   }
 
-  #sinopsis h3 {
+  #tolkien h3 {
     font-size: 1.5rem;
   }
 
-  #sinopsis p {
+  #tolkien p {
     font-size: 1.1rem;
+    text-align: left;
   }
 
-  #sinopsis .gallery-container {
-    grid-template-columns: 1fr;
+  #tolkien .movie-facts th,
+  #tolkien .movie-facts td {
+    padding: 8px;
+    display: block;
+    width: 100%;
+  }
+
+  #tolkien .movie-facts th {
+    border-bottom: none;
+    background-color: var(--gold-dark);
+  }
+
+  #tolkien .movie-facts tr {
+    margin-bottom: 15px;
+    display: block;
+    border-bottom: 2px solid var(--gold-light);
   }
 }
-
 
 /* Galería */
 .gallery {
