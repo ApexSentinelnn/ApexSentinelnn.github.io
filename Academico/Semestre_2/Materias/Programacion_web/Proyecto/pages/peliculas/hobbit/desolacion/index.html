@@ -17,8 +17,25 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style_movies.css">
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/styles.css">
+    <!-- Estilo relacionado a la plantilla general -->
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/style_movies.css">
+    <!-- Estilo relacionado a la palntilla movies and series -->
+    <style>
+        .hero-tolkien {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+                url('https://www.gratistodo.com/wp-content/uploads/2017/04/El-Hobbit-Un-Viaje-Inesperado-Wallpapers-1-800x500.jpg') center/cover no-repeat;
+            padding: 0 10%;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -231,384 +248,395 @@
         </div>
     </div>
     <!-- Hero inicio de la pagina -->
-        <!-- Hero inicio de la pagina -->
-        <section class="hero hero-tolkien" id="inicio">
-            <div class="hero-film-content">
-                <div class="film-text-container">
-                    <h1 class="film-title">El hobbit<br><span>La desolación de Smaug</span></h1>
-                    <p class="film-subtitle">"El dragón guarda su tesoro... pero no para compartirlo"<br>La segunda entrega de la épica trilogía.</p>
-    
-                    <div class="film-meta">
-                        <span class="meta-item"><i class="fas fa-clock"></i> 161 min</span>
-                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2013</span>
-                        <span class="meta-item"><i class="fas fa-star"></i> 7.8/10</span>
-                    </div>
-    
-                    <a href="#sinopsis" class="btn-film">EXPLORAR</a>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Sección: Sinopsis -->
-    
-        <section class="content-section" id="sinopsis">
-            <div class="section-content">
-                <h1>El Hobbit: La Desolación de Smaug</h1>
-                <h2>El peligro aumenta en el camino a Erebor</h2>
-    
-                <p>La compañía de Thorin continúa su viaje hacia la Montaña Solitaria, enfrentando nuevos peligros como los arañas gigantes del Bosque Negro y los elfos del Reino del Bosque. Mientras tanto, Bilbo debe enfrentarse al temible dragón Smaug para reclamar el tesoro de los enanos.</p>
-    
-                <p>Esta segunda entrega introduce nuevos personajes clave como el arquero élfico Legolas y la guardiana elfa Tauriel, mientras la amenaza de Sauron crece en Dol Guldur.</p>
-    
-                <p>A medida que se acercan a Erebor, la tensión dentro del grupo crece, y las decisiones de Thorin comienzan a mostrar los efectos de la codicia por el oro. Bilbo, cada vez más marcado por el Anillo, debe equilibrar su lealtad a sus amigos con el peso de su creciente responsabilidad.</p>
+    <!-- Hero inicio de la pagina -->
+    <section class="hero hero-tolkien" id="inicio">
+        <div class="hero-film-content">
+            <div class="film-text-container">
+                <h1 class="film-title">El hobbit<br><span>La desolación de Smaug</span></h1>
+                <p class="film-subtitle">"El dragón guarda su tesoro... pero no para compartirlo"<br>La segunda entrega
+                    de la épica trilogía.</p>
 
-                <h3>Momentos clave</h3>
-                <ul class="featured-list">
-                    <li><i class="fas fa-spider"></i> El escape de las arañas del Bosque Negro</li>
-                    <li><i class="fas fa-arrows-alt-v"></i> La espectacular huida en barriles por el río</li>
-                    <li><i class="fas fa-dragon"></i> El enfrentamiento con Smaug en la sala del tesoro</li>
-                    <li><i class="fas fa-fire"></i> La desolación provocada por el dragón</li>
-                </ul>
-    
-                <h3>Datos cinematográficos</h3>
-                <table class="movie-facts">
-                    <tr>
-                        <th>Basada en</th>
-                        <td>El Hobbit de J.R.R. Tolkien (1937)</td>
-                    </tr>
-                    <tr>
-                        <th>Duración extendida</th>
-                        <td>186 minutos (versión extendida)</td>
-                    </tr>
-                    <tr>
-                        <th>Tecnología</th>
-                        <td>Continuación del uso de HFR 48 fps</td>
-                    </tr>
-                    <tr>
-                        <th>Banda sonora</th>
-                        <td>Compuesta por Howard Shore</td>
-                    </tr>
-                </table>
+                <div class="film-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> 161 min</span>
+                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2013</span>
+                    <span class="meta-item"><i class="fas fa-star"></i> 7.8/10</span>
+                </div>
+
+                <a href="#sinopsis" class="btn-film">EXPLORAR</a>
             </div>
-        </section>
-    
-        <!--Carrusel-->
-        <section class="content-section" id="galeria">
-            <div class="section-content">
-                <h2 class="section-title">Galería</h2>
-                <div class="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp" alt="Smaug el dragón" class="carousel-img">
-                            <div class="carousel-caption">
-                                <h3>Smaug el Dorado</h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources\\image\\rio.jpg" alt="Escena de los barriles" class="carousel-img">
-                            <div class="carousel-caption">
-                                <h3>Escape por el río</h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources\\image\\bosque.jpg" alt="El Bosque Negro" class="carousel-img">
-                            <div class="carousel-caption">
-                                <h3>El peligroso Bosque Negro</h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources\\image\\ciudad.jpg" alt="Ciudad del Lago" class="carousel-img">
-                            <div class="carousel-caption">
-                                <h3>La Ciudad del Lago</h3>
-                            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Sinopsis -->
+
+    <section class="content-section" id="sinopsis">
+        <div class="section-content">
+            <h1>El Hobbit: La Desolación de Smaug</h1>
+            <h2>El peligro aumenta en el camino a Erebor</h2>
+
+            <p>La compañía de Thorin continúa su viaje hacia la Montaña Solitaria, enfrentando nuevos peligros como los
+                arañas gigantes del Bosque Negro y los elfos del Reino del Bosque. Mientras tanto, Bilbo debe
+                enfrentarse al temible dragón Smaug para reclamar el tesoro de los enanos.</p>
+
+            <p>Esta segunda entrega introduce nuevos personajes clave como el arquero élfico Legolas y la guardiana elfa
+                Tauriel, mientras la amenaza de Sauron crece en Dol Guldur.</p>
+
+            <p>A medida que se acercan a Erebor, la tensión dentro del grupo crece, y las decisiones de Thorin comienzan
+                a mostrar los efectos de la codicia por el oro. Bilbo, cada vez más marcado por el Anillo, debe
+                equilibrar su lealtad a sus amigos con el peso de su creciente responsabilidad.</p>
+
+            <h3>Momentos clave</h3>
+            <ul class="featured-list">
+                <li><i class="fas fa-spider"></i> El escape de las arañas del Bosque Negro</li>
+                <li><i class="fas fa-arrows-alt-v"></i> La espectacular huida en barriles por el río</li>
+                <li><i class="fas fa-dragon"></i> El enfrentamiento con Smaug en la sala del tesoro</li>
+                <li><i class="fas fa-fire"></i> La desolación provocada por el dragón</li>
+            </ul>
+
+            <h3>Datos cinematográficos</h3>
+            <table class="movie-facts">
+                <tr>
+                    <th>Basada en</th>
+                    <td>El Hobbit de J.R.R. Tolkien (1937)</td>
+                </tr>
+                <tr>
+                    <th>Duración extendida</th>
+                    <td>186 minutos (versión extendida)</td>
+                </tr>
+                <tr>
+                    <th>Tecnología</th>
+                    <td>Continuación del uso de HFR 48 fps</td>
+                </tr>
+                <tr>
+                    <th>Banda sonora</th>
+                    <td>Compuesta por Howard Shore</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!--Carrusel-->
+    <section class="content-section" id="galeria">
+        <div class="section-content">
+            <h2 class="section-title">Galería</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp"
+                            alt="Smaug el dragón" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>Smaug el Dorado</h3>
                         </div>
                     </div>
-                    <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
-                    <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
-                    <div class="carousel-dots"></div>
+                    <div class="carousel-item">
+                        <img src="resources\\image\\rio.jpg" alt="Escena de los barriles" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>Escape por el río</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources\\image\\bosque.jpg" alt="El Bosque Negro" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>El peligroso Bosque Negro</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources\\image\\ciudad.jpg" alt="Ciudad del Lago" class="carousel-img">
+                        <div class="carousel-caption">
+                            <h3>La Ciudad del Lago</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Tráiler  -->
+    <section class="content-section dark-section" id="trailer">
+        <div class="section-content">
+            <h2 class="section-title">Tráiler Oficial</h2>
+            <p class="section-text">El tráiler que anunció el regreso a la Tierra Media:</p>
+
+            <div class="trailer-container">
+                <iframe src="https://www.youtube.com/embed/OPVWy1tFXuc?si=0j3x8y5vZ5Z9X9XG" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="youtube-embed"></iframe>
+            </div>
+
+            <div class="trailer-links">
+                <h3>Dónde ver la película:</h3>
+                <ul>
+                    <li><a href="https://www.max.com/us/es/movies/hobbit-the-desolation-of-smaug/1d1043fa-1388-4da0-a0dd-56d300441c1c"
+                            target="_blank"><i class="fas fa-play-circle"></i> HBO Max</a></li>
+                    <li><a href="https://www.primevideo.com/detail/The-Hobbit-The-Desolation-of-Smaug/0OWK01NX6K76UK4PIK6J6Y9QES"
+                            target="_blank"><i class="fab fa-amazon"></i> Amazon Prime</a></li>
+                    <li><a href="https://tv.apple.com/mx/movie/el-hobbit-la-desolacion-de-smaug/umc.cmc.37ggdl4fnin7wu7o010404oit"
+                            target="_blank"><i class="fab fa-apple"></i> Apple TV</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Personajes-->
+    <section class="content-section" id="personajes">
+        <div class="section-content">
+            <h2 class="section-title">Personajes Principales</h2>
+            <p>Conoce a los icónicos personajes que dan vida a esta aventura:</p>
+
+            <table class="characters-table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Actor</th>
+                        <th>Descripción</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bilbo Bolsón</td>
+                        <td>Martin Freeman</td>
+                        <td>El hobbit que debe enfrentar al dragón</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('bilbo')"></td>
+                    </tr>
+                    <tr>
+                        <td>Thorin</td>
+                        <td>Richard Armitage</td>
+                        <td>Obcecado por recuperar su reino</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('thorin')"></td>
+                    </tr>
+                    <tr>
+                        <td>Tauriel</td>
+                        <td>Evangeline Lilly</td>
+                        <td>Guardiana élfica del Bosque Negro</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('tauriel')"></td>
+                    </tr>
+                    <tr>
+                        <td>Legolas</td>
+                        <td>Orlando Bloom</td>
+                        <td>Príncipe élfico que regresa</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('legolas')"></td>
+                    </tr>
+                    <tr>
+                        <td>Smaug</td>
+                        <td>Benedict Cumberbatch</td>
+                        <td>El temible dragón de Erebor</td>
+                        <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
+                                onclick="showDetails('smaug')"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Ventana flotante -->
+            <div id="details-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDetails()">&times;</span>
+                    <img id="modal-image" src="" alt="Detalle del personaje" class="modal-image">
+                    <p id="modal-quote" class="modal-quote"></p>
                 </div>
             </div>
-        </section>
-    
-        <!-- Sección: Tráiler  -->
-        <section class="content-section dark-section" id="trailer">
-            <div class="section-content">
-                <h2 class="section-title">Tráiler Oficial</h2>
-                <p class="section-text">El tráiler que anunció el regreso a la Tierra Media:</p>
-    
-                <div class="trailer-container">
-                    <iframe src="https://www.youtube.com/embed/OPVWy1tFXuc?si=0j3x8y5vZ5Z9X9XG" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="youtube-embed"></iframe>
+
+            <h3>Nuevos personajes:</h3>
+            <ul class="dwarves-list">
+                <li>Bardo el Arquero (Luke Evans)</li>
+                <li>El Maestro de la Ciudad del Lago (Stephen Fry)</li>
+                <li>Alfrid (Ryan Gage)</li>
+                <li>Thranduil (Lee Pace)</li>
+            </ul>
+
+            <a href="#galeria" class="btn">Ver Galería</a>
+        </div>
+    </section>
+
+    <!-- Sección: Producción -->
+    <section class="content-section" id="produccion">
+        <div class="section-content">
+            <h2 class="section-title">Datos de Producción</h2>
+            <h3>Un dragón nunca visto</h3>
+
+            <p>La creación de Smaug requirió tecnología innovadora:</p>
+
+            <ul>
+                <li>Benedict Cumberbatch realizó motion capture y voz para Smaug</li>
+                <li>El diseño del dragón tomó más de 2 años de desarrollo</li>
+                <li>Se usaron 1.5 millones de polígonos para el modelo digital</li>
+                <li>La escena del tesoro se filmó en un set de 140 metros de largo</li>
+                <li>La escena de los barriles combinó acción real, CGI y acrobacias</li>
+            </ul>
+
+            <h3>Localizaciones principales:</h3>
+            <table class="locations-table">
+                <tr>
+                    <th>Lugar</th>
+                    <th>Escena</th>
+                </tr>
+                <tr>
+                    <td>Parque Nacional de Kaitoke, NZ</td>
+                    <td>Bosque Negro y Reino de los Elfos</td>
+                </tr>
+                <tr>
+                    <td>Lago Pukaki, NZ</td>
+                    <td>Ciudad del Lago (exteriores)</td>
+                </tr>
+                <tr>
+                    <td>Estudios Stone Street, Wellington</td>
+                    <td>Interiores de Erebor y Ciudad del Lago</td>
+                </tr>
+                <tr>
+                    <td>Parque Nacional de Fiordland</td>
+                    <td>Escenas del río y los barriles</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sección: Recepción -->
+    <section class="content-section" id="recepcion">
+        <div class="section-content">
+            <h2 class="section-title">Recepción y Premios</h2>
+            <h3>Un éxito en taquilla</h3>
+
+            <p>La película recaudó $958 millones mundialmente, siendo la 5ta más taquillera de 2013.</p>
+
+            <h3>Premios destacados:</h3>
+            <table class="awards-table">
+                <tr>
+                    <th>Premio</th>
+                    <th>Categoría</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejores Efectos Visuales</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>Oscar</td>
+                    <td>Mejor Edición de Sonido</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>BAFTA</td>
+                    <td>Mejores Efectos Visuales</td>
+                    <td>Nominada</td>
+                </tr>
+                <tr>
+                    <td>Saturn Awards</td>
+                    <td>Mejor Película de Fantasía</td>
+                    <td>Ganadora</td>
+                </tr>
+            </table>
+
+            <h3>Críticas destacadas:</h3>
+            <div class="reviews">
+                <blockquote>
+                    "Smaug es uno de los dragones más impresionantes jamás llevados al cine" - The Guardian
+                </blockquote>
+                <blockquote>
+                    "La escena de los barriles es una de las secuencias de acción más creativas del año" - Empire
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!--referencias-->
+    <section class="content-section" id="Referencias">
+        <div class="section-content">
+            <h2 class="section-title">Referencias</h2>
+            <p class="section-text">Esta página utiliza los siguientes recursos externos:</p>
+
+            <div class="references-container">
+                <div class="reference-card">
+                    <h3><i class="fas fa-image"></i> Imágenes utilizadas</h3>
+                    <table class="references-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Fuente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Smaug el dragón</td>
+                                <td><a href="https://www.themoviedb.org/movie/57158-the-hobbit-the-desolation-of-smaug/images/backdrops"
+                                        target="_blank">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Escena de los barriles</td>
+                                <td><a href="https://the-hobbit.tumblr.com/page/248" target="_blank">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Bosque Negro</td>
+                                <td><a href="https://www.google.com/url?sa=i&url=http%3A%2F%2Fmispeliculasyseries.blogspot.com%2F2015%2F02%2Fel-hobbit-la-desolacion-de-smaug.html&psig=AOvVaw1sUVA9f7WfoyfhU06Fg1SF&ust=1746599957833000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDD_YKejo0DFQAAAAAdAAAAABAE"
+                                        target="_blank">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ciudad del Lago</td>
+                                <td><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Felcadillacnegro.com%2F2013%2F12%2F14%2Fel-hobbit-la-desolacion-de-smaug-sentimientos-encontrados%2Fla-desolacion-de-smaug_la-ciudad-del-lago%2F&psig=AOvVaw00Yiul3CKATBZ1rZdSDQ7_&ust=1746600022297000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCvs6Kejo0DFQAAAAAdAAAAABAE"
+                                        target="_blank">Ver</a></td>
+                            </tr>
+                            <td>Portada de la película</td>
+                            <td><a href="https://es.best-wallpaper.net/The-Hobbit-The-Desolation-of-Smaug-2013_wallpapers.html"
+                                    target="_blank">Ver</a></td>
+                        </tbody>
+                    </table>
                 </div>
-    
-                <div class="trailer-links">
-                    <h3>Dónde ver la película:</h3>
-                    <ul>
-                        <li><a href="https://www.max.com/us/es/movies/hobbit-the-desolation-of-smaug/1d1043fa-1388-4da0-a0dd-56d300441c1c"
-                                target="_blank"><i class="fas fa-play-circle"></i> HBO Max</a></li>
-                        <li><a href="https://www.primevideo.com/detail/The-Hobbit-The-Desolation-of-Smaug/0OWK01NX6K76UK4PIK6J6Y9QES"
-                                target="_blank"><i class="fab fa-amazon"></i> Amazon Prime</a></li>
-                        <li><a href="https://tv.apple.com/mx/movie/el-hobbit-la-desolacion-de-smaug/umc.cmc.37ggdl4fnin7wu7o010404oit"
-                                target="_blank"><i class="fab fa-apple"></i> Apple TV</a></li>
+
+                <div class="reference-card">
+                    <h3><i class="fas fa-book"></i> Fuentes de información</h3>
+                    <ul class="sources-list">
+                        <li><a href="https://www.tolkiensociety.org/" target="_blank">Tolkien Society</a> - Biografía y
+                            obras</li>
+                        <li><a href="https://www.warnerbros.com/movies/hobbit-desolation-smaug" target="_blank">Warner
+                                Bros.</a> - Datos oficiales de la película</li>
+                        <li><a href="https://www.theonering.net/" target="_blank">The One Ring.net</a> - Comunidad de
+                            fans</li>
+                    </ul>
+                </div>
+
+                <div class="reference-card">
+                    <h3><i class="fas fa-video"></i> Material multimedia</h3>
+                    <ul class="sources-list">
+                        <li><a href="https://www.youtube.com/watch?v=OPVWy1tFXuc" target="_blank">Tráiler oficial</a> -
+                            YouTube</li>
+                        <li><a href="https://www.wetanz.com/brands/the-hobbit-the-desolation-of-smaug"
+                                target="_blank">Weta Workshop</a> - Efectos especiales</li>
                     </ul>
                 </div>
             </div>
-        </section>
-    
-        <!-- Sección: Personajes-->
-        <section class="content-section" id="personajes">
-            <div class="section-content">
-                <h2 class="section-title">Personajes Principales</h2>
-                <p>Conoce a los icónicos personajes que dan vida a esta aventura:</p>
-    
-                <table class="characters-table">
-                    <thead>
-                        <tr>
-                            <th>Personaje</th>
-                            <th>Actor</th>
-                            <th>Descripción</th>
-                            <th>Detalles</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Bilbo Bolsón</td>
-                            <td>Martin Freeman</td>
-                            <td>El hobbit que debe enfrentar al dragón</td>
-                            <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                                    onclick="showDetails('bilbo')"></td>
-                        </tr>
-                        <tr>
-                            <td>Thorin</td>
-                            <td>Richard Armitage</td>
-                            <td>Obcecado por recuperar su reino</td>
-                            <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                                    onclick="showDetails('thorin')"></td>
-                        </tr>
-                        <tr>
-                            <td>Tauriel</td>
-                            <td>Evangeline Lilly</td>
-                            <td>Guardiana élfica del Bosque Negro</td>
-                            <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                                    onclick="showDetails('tauriel')"></td>
-                        </tr>
-                        <tr>
-                            <td>Legolas</td>
-                            <td>Orlando Bloom</td>
-                            <td>Príncipe élfico que regresa</td>
-                            <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                                    onclick="showDetails('legolas')"></td>
-                        </tr>
-                        <tr>
-                            <td>Smaug</td>
-                            <td>Benedict Cumberbatch</td>
-                            <td>El temible dragón de Erebor</td>
-                            <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                                    onclick="showDetails('smaug')"></td>
-                        </tr>
-                    </tbody>
-                </table>
-    
-                <!-- Ventana flotante -->
-                <div id="details-modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeDetails()">&times;</span>
-                        <img id="modal-image" src="" alt="Detalle del personaje" class="modal-image">
-                        <p id="modal-quote" class="modal-quote"></p>
-                    </div>
-                </div>
-    
-                <h3>Nuevos personajes:</h3>
-                <ul class="dwarves-list">
-                    <li>Bardo el Arquero (Luke Evans)</li>
-                    <li>El Maestro de la Ciudad del Lago (Stephen Fry)</li>
-                    <li>Alfrid (Ryan Gage)</li>
-                    <li>Thranduil (Lee Pace)</li>
-                </ul>
-    
-                <a href="#galeria" class="btn">Ver Galería</a>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#trailer">Trailer</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#produccion">Produccion</a>
+                <a href="#recepcion">Recepcion</a>
+                <a href="#Referencias">Referencias</a>
             </div>
-        </section>
-    
-        <!-- Sección: Producción -->
-        <section class="content-section" id="produccion">
-            <div class="section-content">
-                <h2 class="section-title">Datos de Producción</h2>
-                <h3>Un dragón nunca visto</h3>
-    
-                <p>La creación de Smaug requirió tecnología innovadora:</p>
-    
-                <ul>
-                    <li>Benedict Cumberbatch realizó motion capture y voz para Smaug</li>
-                    <li>El diseño del dragón tomó más de 2 años de desarrollo</li>
-                    <li>Se usaron 1.5 millones de polígonos para el modelo digital</li>
-                    <li>La escena del tesoro se filmó en un set de 140 metros de largo</li>
-                    <li>La escena de los barriles combinó acción real, CGI y acrobacias</li>
-                </ul>
-    
-                <h3>Localizaciones principales:</h3>
-                <table class="locations-table">
-                    <tr>
-                        <th>Lugar</th>
-                        <th>Escena</th>
-                    </tr>
-                    <tr>
-                        <td>Parque Nacional de Kaitoke, NZ</td>
-                        <td>Bosque Negro y Reino de los Elfos</td>
-                    </tr>
-                    <tr>
-                        <td>Lago Pukaki, NZ</td>
-                        <td>Ciudad del Lago (exteriores)</td>
-                    </tr>
-                    <tr>
-                        <td>Estudios Stone Street, Wellington</td>
-                        <td>Interiores de Erebor y Ciudad del Lago</td>
-                    </tr>
-                    <tr>
-                        <td>Parque Nacional de Fiordland</td>
-                        <td>Escenas del río y los barriles</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-    
-        <!-- Sección: Recepción -->
-        <section class="content-section" id="recepcion">
-            <div class="section-content">
-                <h2 class="section-title">Recepción y Premios</h2>
-                <h3>Un éxito en taquilla</h3>
-    
-                <p>La película recaudó $958 millones mundialmente, siendo la 5ta más taquillera de 2013.</p>
-    
-                <h3>Premios destacados:</h3>
-                <table class="awards-table">
-                    <tr>
-                        <th>Premio</th>
-                        <th>Categoría</th>
-                        <th>Resultado</th>
-                    </tr>
-                    <tr>
-                        <td>Oscar</td>
-                        <td>Mejores Efectos Visuales</td>
-                        <td>Nominada</td>
-                    </tr>
-                    <tr>
-                        <td>Oscar</td>
-                        <td>Mejor Edición de Sonido</td>
-                        <td>Nominada</td>
-                    </tr>
-                    <tr>
-                        <td>BAFTA</td>
-                        <td>Mejores Efectos Visuales</td>
-                        <td>Nominada</td>
-                    </tr>
-                    <tr>
-                        <td>Saturn Awards</td>
-                        <td>Mejor Película de Fantasía</td>
-                        <td>Ganadora</td>
-                    </tr>
-                </table>
-    
-                <h3>Críticas destacadas:</h3>
-                <div class="reviews">
-                    <blockquote>
-                        "Smaug es uno de los dragones más impresionantes jamás llevados al cine" - The Guardian
-                    </blockquote>
-                    <blockquote>
-                        "La escena de los barriles es una de las secuencias de acción más creativas del año" - Empire
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-    
-        <!--referencias-->
-        <section class="content-section" id="Referencias">
-            <div class="section-content">
-                <h2 class="section-title">Referencias</h2>
-                <p class="section-text">Esta página utiliza los siguientes recursos externos:</p>
-    
-                <div class="references-container">
-                    <div class="reference-card">
-                        <h3><i class="fas fa-image"></i> Imágenes utilizadas</h3>
-                        <table class="references-table">
-                            <thead>
-                                <tr>
-                                    <th>Imagen</th>
-                                    <th>Fuente</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Smaug el dragón</td>
-                                    <td><a href="https://www.themoviedb.org/movie/57158-the-hobbit-the-desolation-of-smaug/images/backdrops"
-                                            target="_blank">Ver</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Escena de los barriles</td>
-                                    <td><a href="https://the-hobbit.tumblr.com/page/248"
-                                            target="_blank">Ver</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Bosque Negro</td>
-                                    <td><a href="https://www.google.com/url?sa=i&url=http%3A%2F%2Fmispeliculasyseries.blogspot.com%2F2015%2F02%2Fel-hobbit-la-desolacion-de-smaug.html&psig=AOvVaw1sUVA9f7WfoyfhU06Fg1SF&ust=1746599957833000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDD_YKejo0DFQAAAAAdAAAAABAE"
-                                            target="_blank">Ver</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Ciudad del Lago</td>
-                                    <td><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Felcadillacnegro.com%2F2013%2F12%2F14%2Fel-hobbit-la-desolacion-de-smaug-sentimientos-encontrados%2Fla-desolacion-de-smaug_la-ciudad-del-lago%2F&psig=AOvVaw00Yiul3CKATBZ1rZdSDQ7_&ust=1746600022297000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCvs6Kejo0DFQAAAAAdAAAAABAE"
-                                            target="_blank">Ver</a></td>
-                                </tr>
-                                    <td>Portada de la película</td>
-                                    <td><a href="https://es.best-wallpaper.net/The-Hobbit-The-Desolation-of-Smaug-2013_wallpapers.html"
-                                            target="_blank">Ver</a></td>
-                            </tbody>
-                        </table>
-                    </div>
-    
-                    <div class="reference-card">
-                        <h3><i class="fas fa-book"></i> Fuentes de información</h3>
-                        <ul class="sources-list">
-                            <li><a href="https://www.tolkiensociety.org/" target="_blank">Tolkien Society</a> - Biografía y obras</li>
-                            <li><a href="https://www.warnerbros.com/movies/hobbit-desolation-smaug" target="_blank">Warner Bros.</a> - Datos oficiales de la película</li>
-                            <li><a href="https://www.theonering.net/" target="_blank">The One Ring.net</a> - Comunidad de fans</li>
-                        </ul>
-                    </div>
-    
-                    <div class="reference-card">
-                        <h3><i class="fas fa-video"></i> Material multimedia</h3>
-                        <ul class="sources-list">
-                            <li><a href="https://www.youtube.com/watch?v=OPVWy1tFXuc" target="_blank">Tráiler oficial</a> - YouTube</li>
-                            <li><a href="https://www.wetanz.com/brands/the-hobbit-the-desolation-of-smaug"
-                                    target="_blank">Weta Workshop</a> - Efectos especiales</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!--Footer section-->
-        <footer id="contacto">
-            <div class="footer-content">
-                <div class="footer-logo">TOLKIEN</div>
-                <div class="footer-links">
-                    <a href="#sinopsis">Sinopsis</a>
-                    <a href="#galeria">Galeria</a>
-                    <a href="#trailer">Trailer</a>
-                    <a href="#personajes">Personajes</a>
-                    <a href="#produccion">Produccion</a>
-                    <a href="#recepcion">Recepcion</a>
-                    <a href="#Referencias">Referencias</a>
-                </div>
-    
-                <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
-            </div>
-        </footer>
+
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
 
-    <script src="script.js"></script>
+    <script
+        src="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/scripts/pages/movies/script.js"></script>
 </body>
 
 </html>
