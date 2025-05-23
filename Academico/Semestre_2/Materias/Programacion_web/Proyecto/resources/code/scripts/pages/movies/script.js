@@ -220,7 +220,7 @@ function initCarousel() {
 // Inicializar al cargar la página
 document.addEventListener("DOMContentLoaded", initCarousel);
 
-// ventana flotante de imagenes referente a los personajes de los libros
+// ventana flotante de imagenes para los personajes de las peliculas
 const details = {
   bilbo: {
     image:
