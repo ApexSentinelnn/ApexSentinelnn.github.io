@@ -237,13 +237,13 @@ const details = {
   },
   tauriel: {
     image:
-      "https://elanillounico.com/wp-content/uploads/2013/11/Poster-LDDS19-copia-300x300.jpg",
+      "https://elanillounico.com/wp-content/uploads/2013/11/Poster-LDDS19-copia.jpg",
   },
   legolas: {
     image:
-      "https://static.wikia.nocookie.net/bibliotecadelatierramedia/images/c/c0/Legolas.jpg/revision/latest?cb=20140322121446&path-prefix=es",
+      "https://preview.redd.it/lotr-legolas-my-1st-attempt-to-create-something-out-of-a-v0-g5x5kovel3kc1.jpg?width=2397&format=pjpg&auto=webp&s=ffe01c51941adda2f82aac3f05c5b92239c429ae",
   },
-  smug: {
+  smaug: {
     image:
       "https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp",
   },
