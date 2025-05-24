@@ -237,7 +237,7 @@ const details = {
   },
   tauriel: {
     image:
-      "https://elanillounico.com/wp-content/uploads/2013/11/Poster-LDDS19-copia.jpg",
+      "https://i.pinimg.com/564x/fa/1a/be/fa1abec791a075fa2d54ac8e858f8bd6.jpg",
   },
   legolas: {
     image:
