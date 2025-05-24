@@ -59,7 +59,6 @@
             <a href="#Referencias">Referencias</a>
         </div>
     </nav>
-
     <!-- Menú Lateral -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-content">
@@ -120,7 +119,7 @@
                             <li>
                                 <h4><a
                                         href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/rop/temporada2/index.html">Temporada
-                                        2 (Próximamente)</a>
+                                        2</a>
                                 </h4>
                             </li>
                         </ul>
@@ -380,53 +379,83 @@
         <h2 class="section-title">Personajes Principales</h2>
         <p>Los miembros de la Comunidad del Anillo:</p>
 
-        <table class="characters-table">
-            <thead>
-                <tr>
-                    <th>Personaje</th>
-                    <th>Actor</th>
-                    <th>Descripción</th>
-                    <th>Detalles</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frodo Bolsón</td>
-                    <td>Elijah Wood</td>
-                    <td>Portador del Anillo</td>
-                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                            onclick="showDetails('frodo')"></td>
-                </tr>
-                <tr>
-                    <td>Gandalf</td>
-                    <td>Ian McKellen</td>
-                    <td>El mago guía</td>
-                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                            onclick="showDetails('gandalf')"></td>
-                </tr>
-                <tr>
-                    <td>Aragorn</td>
-                    <td>Viggo Mortensen</td>
-                    <td>El heredero de Isildur</td>
-                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                            onclick="showDetails('aragorn')"></td>
-                </tr>
-                <tr>
-                    <td>Legolas</td>
-                    <td>Orlando Bloom</td>
-                    <td>Príncipe élfico</td>
-                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                            onclick="showDetails('legolas')"></td>
-                </tr>
-                <tr>
-                    <td>Boromir</td>
-                    <td>Sean Bean</td>
-                    <td>Guerrero de Gondor</td>
-                    <td><img src="resources\\ico\\icono_tabla.png" alt="Detalles" class="details-icon"
-                            onclick="showDetails('boromir')"></td>
-                </tr>
-            </tbody>
-        </table>
+    <table class="characters-table">
+        <thead>
+            <tr>
+                <th>Personaje</th>
+                <th>Actor</th>
+                <th>Descripción</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frodo Bolsón</td>
+                <td>Elijah Wood</td>
+                <td>Portador del Anillo</td>
+                <td><img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main//Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('frodo')"></td>
+            </tr>
+            <tr>
+                <td>Gandalf</td>
+                <td>Ian McKellen</td>
+                <td>El mago guía</td>
+                <td><img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main//Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('gandalf')"></td>
+            </tr>
+            <tr>
+                <td>Aragorn</td>
+                <td>Viggo Mortensen</td>
+                <td>El heredero de Isildur</td>
+                <td><img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main//Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('aragorn')"></td>
+            </tr>
+            <tr>
+                <td>Legolas</td>
+                <td>Orlando Bloom</td>
+                <td>Príncipe élfico</td>
+                <td><img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main//Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('legolas')"></td>
+            </tr>
+            <tr>
+                <td>Boromir</td>
+                <td>Sean Bean</td>
+                <td>Guerrero de Gondor</td>
+                <td><img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main//Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/icono_tabla.png" alt="Detalles" class="details-icon" onclick="showDetails('boromir')"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal para mostrar detalles del personaje -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Detalles del Personaje</h2>
+                <span class="close" onclick="closeDetails()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Personaje" class="character-image">
+                <div class="character-info">
+                    <h3 id="character-name"></h3>
+                    <p id="character-description"></p>
+                    <div class="character-stats">
+                        <div class="stat-item">
+                            <div class="stat-label">Actor</div>
+                            <div class="stat-value" id="character-actor"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Raza</div>
+                            <div class="stat-value" id="character-race"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Origen</div>
+                            <div class="stat-value" id="character-origin"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Arma</div>
+                            <div class="stat-value" id="character-weapon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <h3>Otros personajes clave:</h3>
         <ul class="dwarves-list">

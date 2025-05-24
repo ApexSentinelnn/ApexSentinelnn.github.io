@@ -186,7 +186,8 @@
 /* Iframe (para el tráiler) */
 #sinopsis .media-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
     margin: 40px 0;
     border: 5px solid var(--gold-dark);
@@ -208,24 +209,63 @@
     #sinopsis h1 {
         font-size: 2.5rem;
     }
-    
+
     #sinopsis h2 {
         font-size: 1.8rem;
     }
-    
+
     #sinopsis h3 {
         font-size: 1.5rem;
     }
-    
+
     #sinopsis p {
         font-size: 1.1rem;
     }
-    
+
     #sinopsis .gallery-container {
         grid-template-columns: 1fr;
     }
 }
+
 /* Ventana flotante */
+.characters-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.characters-table th,
+.characters-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.characters-table th {
+    background: linear-gradient(135deg, #d4af37, #b8941f);
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.characters-table tr:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.details-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.details-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del Modal */
 .modal {
     display: none;
     position: fixed;
@@ -234,82 +274,121 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-content {
-    background-color: #ffffff;
-    margin: 10% auto;
-    padding: 25px;
-    border-radius: 12px;
-    width: 70%;
-    max-width: 800px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2c1810, #1a1a1a);
+    margin: 5% auto;
+    padding: 0;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #d4af37, #b8941f);
+    color: #1a1a1a;
+    padding: 20px;
     text-align: center;
-    animation: slideDown 0.4s ease-in-out;
+    position: relative;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .close {
-    color: #333;
-    float: right;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1a1a1a;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .close:hover {
-    color: #ff4d4d;
+    transform: translateY(-50%) scale(1.2);
 }
 
-.modal-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.modal-body {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.character-image {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.character-info {
+    flex: 1;
+}
+
+.character-info h3 {
+    color: #d4af37;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.character-info p {
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.modal-quote {
+.character-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin-top: 20px;
-    font-style: italic;
-    font-family: "EB Garamond", serif;
-    font-size: 1.2rem;
-    color: var(--text-dark);
 }
 
-.details-icon {
-    cursor: pointer;
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+.stat-item {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #d4af37;
 }
 
-.details-icon:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
+.stat-label {
+    font-weight: bold;
+    color: #d4af37;
+    font-size: 0.9em;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+.stat-value {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+        text-align: center;
     }
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
+    .character-image {
+        width: 150px;
+        height: 200px;
+        margin: 0 auto;
     }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+
+    .character-stats {
+        grid-template-columns: 1fr;
     }
 }

@@ -222,63 +222,108 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 
 // ventana flotante de imagenes para los personajes de las peliculas
 const details = {
-  //iamges de los personajes the hobbit & the lord of the rings & rings of power
-  //The hobbit
-  bilbo: {
+  frodo: {
+    name: "Frodo Bolsón",
+    actor: "Elijah Wood",
+    race: "Hobbit",
+    origin: "La Comarca",
+    weapon: "Dardo (Sting)",
     image:
-      "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
+      "https://latierramedia.com/wp-content/uploads/2022/01/frodo-edad.jpeg",
+    description:
+      "Frodo Bolsón es un hobbit de la Comarca que hereda el Anillo Único de su tío Bilbo. A pesar de su naturaleza pacífica, acepta la peligrosa misión de destruir el Anillo en el Monte del Destino. Su valentía y determinación, junto con la ayuda de sus amigos, lo convierten en el héroe más improbable de la Tierra Media.",
   },
   gandalf: {
+    name: "Gandalf el Gris",
+    actor: "Ian McKellen",
+    race: "Maia (Istar)",
+    origin: "Valinor",
+    weapon: "Glamdring y Bastón",
     image:
       "https://th.bing.com/th/id/R.1de9fd651c8456e9f331519c24251a96?rik=IrS1Mgz4s4uDxA&riu=http%3a%2f%2fimages.wikia.com%2flotr%2fimages%2f8%2f8d%2fGandalf-2.jpg&ehk=Nm3tJ5SK6z6MbERxfYI6yqcd3virc6P6FuI9Uv1fxxw%3d&risl=&pid=ImgRaw&r=0",
+    description:
+      "Gandalf es uno de los cinco Istari enviados a la Tierra Media para ayudar en la lucha contra el mal. Sabio y poderoso, guía a Frodo en su misión y se sacrifica luchando contra el Balrog en las Minas de Moria. Su sabiduría y magia son fundamentales para el éxito de la Comunidad.",
   },
-  thorin: {
+  aragorn: {
+    name: "Aragorn",
+    actor: "Viggo Mortensen",
+    race: "Hombre (Dúnadan)",
+    origin: "Gondor",
+    weapon: "Andúril",
     image:
-      "https://th.bing.com/th/id/R.372adfeb6b9678d4510cc8d3c217c430?rik=OTbScvAyebYrtw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33300000%2fThorin-thorin-oakenshield-33325333-777-1024.jpg&ehk=ouyqgG7qZYbEiDM19u3iz0TeExjdiga5vVS8u1F05Uo%3d&risl=&pid=ImgRaw&r=0",
-  },
-  tauriel: {
-    image:
-      "https://i.pinimg.com/564x/fa/1a/be/fa1abec791a075fa2d54ac8e858f8bd6.jpg",
+      "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1531160000046-N7XRKI9XXWY36XU95GY9/aragorn.jpg",
+    description:
+      "Aragorn es el heredero legítimo del trono de Gondor, aunque vive como un Montaraz en el norte. Inicialmente reacio a aceptar su destino, se convierte en el protector de los hobbits y un líder valiente. Su amor por Arwen y su deber hacia su pueblo lo impulsan a reclamar su herencia.",
   },
   legolas: {
+    name: "Legolas",
+    actor: "Orlando Bloom",
+    race: "Elfo",
+    origin: "Reino del Bosque",
+    weapon: "Arco Élfico",
     image:
       "https://preview.redd.it/lotr-legolas-my-1st-attempt-to-create-something-out-of-a-v0-g5x5kovel3kc1.jpg?width=2397&format=pjpg&auto=webp&s=ffe01c51941adda2f82aac3f05c5b92239c429ae",
+    description:
+      "Legolas es un príncipe élfico del Reino del Bosque, hijo del Rey Thranduil. Posee una puntería excepcional con el arco y una agilidad sobrenatural. Su amistad con Gimli representa la reconciliación entre elfos y enanos, dos razas históricamente enfrentadas.",
   },
-  smaug: {
+  boromir: {
+    name: "Boromir",
+    actor: "Sean Bean",
+    race: "Hombre",
+    origin: "Gondor",
+    weapon: "Espada y Escudo",
     image:
-      "https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp",
-  },
-  bardo: {
-    image:
-      "https://www.elfenomeno.com/imag/usuarios/5/imagenes_hobbitactores_167.jpg"
-  },
-  thranduil: {
-    image:
-      "https://i.redd.it/thranduil-vs-elrond-v0-2b0n6y9h8qpc1.jpg?width=1280&format=pjpg&auto=webp&s=37d0e4636e4d2768738fc422e8c5f45d203e365f",
-  },
-  azog: {
-    image:
-      "https://i.pinimg.com/originals/b8/15/a8/b815a875e62b732cb15d3dcd85c76722.png",
-  },
-  //The lord of the rings
-  frodo: {
-    image:
-      "https://static.wikia.nocookie.net/lotr/images/3/32/Frodo_%28FotR%29.png/revision/latest?cb=20221006065757",
+      "https://static.wikia.nocookie.net/lotr/images/7/78/Boromir_-_FOTR.png/revision/latest?cb=20221006035252",
+    description:
+      "Boromir es el hijo mayor del Senescal de Gondor, un guerrero valiente pero orgulloso. Su amor por su ciudad natal y su desesperación por protegerla lo llevan a intentar tomar el Anillo de Frodo. Sin embargo, se redime sacrificando su vida para proteger a Merry y Pippin de los Uruk-hai.",
   },
 };
 
 function showDetails(character) {
   const modal = document.getElementById("details-modal");
-  const image = document.getElementById("modal-image");
-  const quote = document.getElementById("modal-quote");
+  const characterData = details[character];
 
-  image.src = details[character].image;
-  quote.textContent = details[character].quote;
+  if (!characterData) {
+    console.error(`No se encontraron datos para el personaje: ${character}`);
+    return;
+  }
 
+  // Actualizar contenido del modal
+  document.getElementById("modal-title").textContent =
+    `Detalles de ${characterData.name}`;
+  document.getElementById("modal-image").src = characterData.image;
+  document.getElementById("character-name").textContent = characterData.name;
+  document.getElementById("character-description").textContent =
+    characterData.description;
+  document.getElementById("character-actor").textContent = characterData.actor;
+  document.getElementById("character-race").textContent = characterData.race;
+  document.getElementById("character-origin").textContent =
+    characterData.origin;
+  document.getElementById("character-weapon").textContent =
+    characterData.weapon;
+
+  // Mostrar modal
   modal.style.display = "block";
+  document.body.style.overflow = "hidden"; // Prevenir scroll del body
 }
 
 function closeDetails() {
   const modal = document.getElementById("details-modal");
   modal.style.display = "none";
+  document.body.style.overflow = "auto"; // Restaurar scroll del body
 }
+
+// Cerrar modal al hacer clic fuera de él
+window.onclick = function (event) {
+  const modal = document.getElementById("details-modal");
+  if (event.target === modal) {
+    closeDetails();
+  }
+};
+
+// Cerrar modal con la tecla Escape
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeDetails();
+  }
+});
