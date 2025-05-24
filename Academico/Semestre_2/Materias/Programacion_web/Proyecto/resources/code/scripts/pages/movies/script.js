@@ -274,7 +274,7 @@ const details = {
     origin: "Erebor",
     weapon: "Aliento de fuego",
     image:
-      "https://www.cinemascomics.com/wp-content/uploads/2022/01/smaug.jpg",
+      "https://i.pinimg.com/564x/44/af/fa/44affae24e16fb5112460f05c44c1099.jpg",
     description:
       "Smaug es un dragón temido que ocupa la Montaña Solitaria y guarda un vasto tesoro. Es astuto y manipulador, capaz de hablar y engañar a sus enemigos. Su avaricia lo lleva a atacar la ciudad de Esgaroth, lo que desencadena una serie de eventos que afectan a toda la Tierra Media.",
   },
@@ -341,7 +341,7 @@ const details = {
     origin: "Gondor",
     weapon: "Andúril",
     image:
-      "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1531160000046-N7XRKI9XXWY36XU95GY9/aragorn.jpg",
+      "https://i.pinimg.com/236x/b8/10/e3/b810e3cb96f10652c24c8603abec4924.jpg",
     description:
       "Aragorn es el heredero legítimo del trono de Gondor, aunque vive como un Montaraz en el norte. Inicialmente reacio a aceptar su destino, se convierte en el protector de los hobbits y un líder valiente. Su amor por Arwen y su deber hacia su pueblo lo impulsan a reclamar su herencia.",
   },
@@ -352,9 +352,42 @@ const details = {
     origin: "Gondor",
     weapon: "Espada y Escudo",
     image:
-      "https://static.wikia.nocookie.net/lotr/images/7/78/Boromir_-_FOTR.png/revision/latest?cb=20221006035252",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbgAKUtuduiE585n9vruobH0ov3kpMPr91d6aG3cfv92_KUmPpimc7MnspVp3Fbs6o5UgZr59Lxu20qn5zAuD2qbrNvCF56wtneGsbjyACasvX3IchMNQsu1ovq70Uc5zi3RvJVu-S5TI/s1600/3496930-7724158094-32095.jpg",
     description:
       "Boromir es el hijo mayor del Senescal de Gondor, un guerrero valiente pero orgulloso. Su amor por su ciudad natal y su desesperación por protegerla lo llevan a intentar tomar el Anillo de Frodo. Sin embargo, se redime sacrificando su vida para proteger a Merry y Pippin de los Uruk-hai.",
+  },
+  eowyn: {
+    name: "Éowyn",
+    actor: "Miranda Otto",
+    race: "Mujer (Rohan)",
+    origin: "Rohan",
+    weapon: "Espada",
+    image:
+      "https://i.pinimg.com/474x/8d/4b/8e/8d4b8e774a02593c2017a54d6df40d2a.jpg",
+    description:
+      "Éowyn es una noble mujer de Rohan que anhela la gloria y la batalla. A pesar de las restricciones de su sociedad, se disfraza de hombre para unirse a la lucha contra Sauron. Su valentía y determinación la llevan a enfrentarse al Rey Brujo de Angmar, demostrando que el coraje no tiene género.",
+  },
+  denerthor: {
+    name: "Denethor II",
+    actor: "John Noble",
+    race: "Hombre",
+    origin: "Gondor",
+    weapon: "Espada",
+    image:
+      "https://i.pinimg.com/736x/39/d2/13/39d2131c3e9c4af9e993d5b775d078b1.jpg",
+    description:
+      "Denethor II es el Senescal de Gondor y padre de Boromir y Faramir. Su desesperación por la caída de su ciudad lo lleva a la locura, y se convierte en un líder cínico y pesimista. A pesar de su gran inteligencia y habilidades estratégicas, su falta de fe en la victoria lo lleva a tomar decisiones trágicas.",
+  },
+  mouth: {
+    name: "Boca de Sauron",
+    actor: "Bruce Spence",
+    race: "Hombre",
+    origin: "Mordor",
+    weapon: "Espada",
+    image:
+      "https://i.pinimg.com/736x/fe/38/a9/fe38a933276b321302e9b1b59266ddcb.jpg",
+    description:
+      "La Boca de Sauron es un sirviente oscuro y embajador de Sauron. Es un guerrero astuto y manipulador, que utiliza su lengua afilada para sembrar el miedo y la confusión entre sus enemigos. Su lealtad a Sauron lo convierte en un adversario formidable en la lucha por la Tierra Media.",
   },
 };
 

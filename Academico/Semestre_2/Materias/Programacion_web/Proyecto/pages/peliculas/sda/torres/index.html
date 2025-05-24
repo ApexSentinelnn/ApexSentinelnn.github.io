@@ -10,15 +10,21 @@
     <meta name="Descripcion" content="Proyecto">
     <title>Las 2 torres</title>
     <!--icono -->
-    <link rel="icon" href="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/ico_pageall.ico" type="image/ico">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/ico_pageall.ico"
+        type="image/ico">
     <!-- Fuentes y estilos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/styles.css"> <!-- Estilo relacionado a la plantilla general -->
-    <link rel="stylesheet" href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/style_movies.css"> <!-- Estilo relacionado a la palntilla movies and series -->
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/styles.css">
+    <!-- Estilo relacionado a la plantilla general -->
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/movies/style_movies.css">
+    <!-- Estilo relacionado a la palntilla movies and series -->
     <!-- Estilo relacionado a la palntilla movies and series -->
     <style>
         .hero-tolkien {
@@ -369,12 +375,9 @@
             <div class="trailer-links">
                 <h3>Dónde ver la película:</h3>
                 <ul>
-                    <li><a href="#"
-                            target="_blank"><i class="fas fa-play-circle"></i> HBO Max</a></li>
-                    <li><a href="#"
-                            target="_blank"><i class="fab fa-amazon"></i> Amazon Prime</a></li>
-                    <li><a href="#"
-                            target="_blank"><i class="fab fa-apple"></i> Apple TV</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-play-circle"></i> HBO Max</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-amazon"></i> Amazon Prime</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-apple"></i> Apple TV</a></li>
                 </ul>
             </div>
         </div>
@@ -433,6 +436,40 @@
                     </tr>
                 </tbody>
             </table>
+            <!-- Modal para mostrar detalles del personaje -->
+            <div id="details-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 id="modal-title">Detalles del Personaje</h2>
+                        <span class="close" onclick="closeDetails()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modal-image" src="" alt="Personaje" class="character-image">
+                        <div class="character-info">
+                            <h3 id="character-name"></h3>
+                            <p id="character-description"></p>
+                            <div class="character-stats">
+                                <div class="stat-item">
+                                    <div class="stat-label">Actor</div>
+                                    <div class="stat-value" id="character-actor"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Raza</div>
+                                    <div class="stat-value" id="character-race"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Origen</div>
+                                    <div class="stat-value" id="character-origin"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Arma</div>
+                                    <div class="stat-value" id="character-weapon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <h3>Otros personajes clave:</h3>
             <ul class="dwarves-list">
@@ -560,23 +597,19 @@
                         <tbody>
                             <tr>
                                 <td>Helm's Deep</td>
-                                <td><a href="#"
-                                        target="_blank">Ver</a></td>
+                                <td><a href="#" target="_blank">Ver</a></td>
                             </tr>
                             <tr>
                                 <td>Gollum</td>
-                                <td><a href="#"
-                                        target="_blank">Ver</a></td>
+                                <td><a href="#" target="_blank">Ver</a></td>
                             </tr>
                             <tr>
                                 <td>Ents</td>
-                                <td><a href="#"
-                                        target="_blank">Ver</a></td>
+                                <td><a href="#" target="_blank">Ver</a></td>
                             </tr>
                             <tr>
                                 <td>Gandalf Blanco</td>
-                                <td><a href="#"
-                                        target="_blank">Ver</a></td>
+                                <td><a href="#" target="_blank">Ver</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -626,7 +659,8 @@
         </div>
     </footer>
 
-    <script src="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/scripts/pages/movies/script.js"></script>
+    <script
+        src="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/scripts/pages/movies/script.js"></script>
 </body>
 
 </html>

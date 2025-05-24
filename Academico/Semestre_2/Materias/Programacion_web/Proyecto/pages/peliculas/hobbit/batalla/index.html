@@ -441,14 +441,41 @@
                 </tbody>
             </table>
 
-            <!-- Ventana flotante -->
+                        <!-- Modal para mostrar detalles del personaje -->
             <div id="details-modal" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeDetails()">&times;</span>
-                    <img id="modal-image" src="" alt="Detalle del personaje" class="modal-image">
-                    <p id="modal-quote" class="modal-quote"></p>
+                    <div class="modal-header">
+                        <h2 id="modal-title">Detalles del Personaje</h2>
+                        <span class="close" onclick="closeDetails()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modal-image" src="" alt="Personaje" class="character-image">
+                        <div class="character-info">
+                            <h3 id="character-name"></h3>
+                            <p id="character-description"></p>
+                            <div class="character-stats">
+                                <div class="stat-item">
+                                    <div class="stat-label">Actor</div>
+                                    <div class="stat-value" id="character-actor"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Raza</div>
+                                    <div class="stat-value" id="character-race"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Origen</div>
+                                    <div class="stat-value" id="character-origin"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Arma</div>
+                                    <div class="stat-value" id="character-weapon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
 
             <h3>Personajes clave en la batalla:</h3>
             <ul class="dwarves-list">
@@ -625,8 +652,8 @@
                     <ul class="sources-list">
                         <li><a href="https://www.youtube.com/watch?v=iVAgTiBrrDA" target="_blank">Tráiler oficial</a> -
                             YouTube</li>
-                        <li><a href="https://www.wetanz.com/brands/the-hobbit-the-battle-of-the-five-armies"
-                                target="_blank">Weta Workshop</a> - Efectos especiales</li>
+                        <li><a href="https://www.wetanz.com/brands/the-hobbit-motion-picture-trilogy?p=10"
+                                target="_blank">Weta Workshop</a> - Tienda de articulos</li>
                         <li><a href="https://www.youtube.com/watch?v=ZSzeFFsKEt4" target="_blank">Documental "The
                                 Gathering Storm"</a> - Detrás de escenas</li>
                     </ul>
