@@ -237,7 +237,7 @@ const details = {
   },
   tauriel: {
     image:
-      "https://i.pinimg.com/564x/fa/1a/be/fa1abec791a075fa2d54ac8e858f8bd6.jpg",
+      "https://i.redd.it/1uhxiy1chpk91.jpg",
   },
   legolas: {
     image:
