@@ -237,7 +237,7 @@ const details = {
   },
   tauriel: {
     image:
-      "https://i.redd.it/1uhxiy1chpk91.jpg",
+      "https://i.pinimg.com/564x/fa/1a/be/fa1abec791a075fa2d54ac8e858f8bd6.jpg",
   },
   legolas: {
     image:
@@ -247,7 +247,18 @@ const details = {
     image:
       "https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp",
   },
-
+  bardo: {
+    image:
+      "https://www.elfenomeno.com/imag/usuarios/5/imagenes_hobbitactores_167.jpg"
+  },
+  thranduil: {
+    image:
+      "https://i.redd.it/thranduil-vs-elrond-v0-2b0n6y9h8qpc1.jpg?width=1280&format=pjpg&auto=webp&s=37d0e4636e4d2768738fc422e8c5f45d203e365f",
+  },
+  azog: {
+    image:
+      "https://i.pinimg.com/originals/b8/15/a8/b815a875e62b732cb15d3dcd85c76722.png",
+  },
 };
 
 function showDetails(character) {
