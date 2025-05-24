@@ -222,6 +222,7 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 
 // ventana flotante de imagenes para los personajes de las peliculas
 const details = {
+  //iamges de los personajes the hobbit & the lord of the rings & rings of power
   bilbo: {
     image:
       "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
