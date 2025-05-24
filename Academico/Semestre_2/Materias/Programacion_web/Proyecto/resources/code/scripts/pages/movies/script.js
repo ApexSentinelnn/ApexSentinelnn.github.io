@@ -367,7 +367,7 @@ const details = {
     description:
       "Éowyn es una noble mujer de Rohan que anhela la gloria y la batalla. A pesar de las restricciones de su sociedad, se disfraza de hombre para unirse a la lucha contra Sauron. Su valentía y determinación la llevan a enfrentarse al Rey Brujo de Angmar, demostrando que el coraje no tiene género.",
   },
-  denerthor: {
+  denethor: {
     name: "Denethor II",
     actor: "John Noble",
     race: "Hombre",
@@ -388,6 +388,139 @@ const details = {
       "https://i.pinimg.com/736x/fe/38/a9/fe38a933276b321302e9b1b59266ddcb.jpg",
     description:
       "La Boca de Sauron es un sirviente oscuro y embajador de Sauron. Es un guerrero astuto y manipulador, que utiliza su lengua afilada para sembrar el miedo y la confusión entre sus enemigos. Su lealtad a Sauron lo convierte en un adversario formidable en la lucha por la Tierra Media.",
+  },
+  gollum: {
+    name: "Gollum",
+    actor: "Andy Serkis",
+    race: "Hobbit (Corrompido)",
+    origin: "La Comarca",
+    weapon: "Daga",
+    image:
+      "https://i.namu.wiki/i/Ws-zgqB70PPD4X7J1DQi6iKD-lBzKNv89YNIgaCTLvBnKMwckGw2ySUUjMBlG_F-ZfL35Cpz6HdqA78t6QXlJg.webp",
+    description:
+      "Gollum, originalmente conocido como Sméagol, es un hobbit que fue corrompido por el Anillo Único. Su personalidad se divide entre su lado oscuro (Gollum) y su lado más humano (Sméagol). A lo largo de la historia, Gollum busca recuperar el Anillo, lo que lo lleva a traicionar a Frodo y Sam en su viaje.",
+  },
+  theoden: {
+    name: "Théoden",
+    actor: "Bernard Hill",
+    race: "Hombre (Rohan)",
+    origin: "Rohan",
+    weapon: "Espada",
+    image:
+      "https://i.pinimg.com/474x/2c/b1/c1/2cb1c1f405f4b062cd8d79b75d4438ef.jpg",
+    description:
+      "Théoden es el rey de Rohan, un líder noble y valiente que lucha por su pueblo. Al principio de la historia, está bajo la influencia del Rey Brujo, pero con la ayuda de Gandalf y Éowyn, recupera su fuerza y liderazgo. Su valentía en la batalla y su amor por su pueblo lo convierten en un héroe.",
+  },
+  faramir: {
+    name: "Faramir",
+    actor: "David Wenham",
+    race: "Hombre",
+    origin: "Gondor",
+    weapon: "Espada",
+    image:
+      "https://i.pinimg.com/736x/01/e7/6a/01e76af057e37b8a503aff67249cf3ba.jpg",
+    description:
+      "Faramir es el hermano menor de Boromir y un capitán valiente de Gondor. A lo largo de la historia, demuestra su lealtad a su pueblo y su deseo de protegerlo, incluso si eso significa sacrificar su propia vida. Su amor por Éowyn y su relación con Frodo y Sam muestran su humanidad y nobleza.",
+  },
+  treebeard: {
+    name: "Barbárbol",
+    actor: "John Rhys-Davies",
+    race: "Ent",
+    origin: "Bosque de Fangorn",
+    weapon: "Ramas y raíces",
+    image:
+      "https://preview.redd.it/what-happened-to-treebeard-and-his-kind-after-the-ring-was-v0-3ob074ejrshd1.jpeg?width=640&crop=smart&auto=webp&s=b68d7bbcc25c02da456c445ce93e5c6e4c9a4708",
+    description:
+      "Barbárbol es un Ent, un ser antiguo y sabio que protege los bosques de la Tierra Media. A lo largo de la historia, se une a la lucha contra Saruman y su ejército de orcos. Su conexión con la naturaleza y su sabiduría lo convierten en un aliado valioso para los héroes en su lucha contra el mal.",
+  },
+  // Personajes de "Los Anillos de Poder"
+  galadriel: {
+    name: "Galadriel",
+    actor: "Morfydd Clark",
+    race: "Elfo",
+    origin: "Valinor",
+    weapon: "Espada Élfica",
+    image:
+      "https://dunesjedi.wordpress.com/wp-content/uploads/2018/09/14e1cbd2a60f970981fd4cc4756359b2.jpg",
+    description:
+      "Galadriel es una poderosa elfa y líder de Lothlórien. A lo largo de la historia, muestra su sabiduría y habilidades mágicas, guiando a los héroes en su lucha contra Sauron. Su conexión con la naturaleza y su deseo de proteger a su pueblo la convierten en un personaje clave en la lucha por la Tierra Media.",
+  },
+  sauron: {
+    name: "Sauron",
+    actor: "Charlie Vickers",
+    race: "Maia (Corrompido)",
+    origin: "Valinor",
+    weapon: "Anillo Único",
+    image:
+      "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/05/anillos-poder-temporada-2-3312105.jpg?tf=3840x",
+    description:
+      "Sauron es el principal antagonista de la historia, un Maia corrompido que busca dominar la Tierra Media a través del Anillo Único. A lo largo de la historia, Sauron manipula a sus seguidores y utiliza su poder oscuro para sembrar el caos y la destrucción. Su ambición y sed de poder lo convierten en un enemigo formidable.",
+  },
+  elrond: {
+    name: "Elrond",
+    actor: "Robert Aramayo",
+    race: "Elfo",
+    origin: "Rivendel",
+    weapon: "Espada Élfica",
+    image:
+      "https://elcomercio.pe/resizer/v2/URTIJCIUCNGGPI5IAW4EHUCPIQ.jpg?auth=bc25e2a82011a7d0ac9d42dd7d414ee332bc00aaf2a0b8822a40862792e859dc&width=1200&height=1200&quality=90&smart=true",
+    description:
+      "Elrond es el señor de Rivendel y un elfo sabio y poderoso. A lo largo de la historia, actúa como un guía y mentor para los héroes, ayudándolos en su lucha contra Sauron. Su conexión con la historia de la Tierra Media y su deseo de proteger a su pueblo lo convierten en un personaje clave en la lucha contra el mal.",
+  },
+  stranger: {
+    name: "El extraño",
+    actor: "Daniel Weyman",
+    race: "Maia (Istar)",
+    origin: "Valinor",
+    weapon: "Bastón",
+    image:
+      "https://cdn01.justjared.com/wp-content/uploads/headlines/2022/08/daniel-weyman-talks-stranger-lotr-rings-power.jpg",
+    description:
+      "El extraño es un misterioso personaje que aparece en la historia, con habilidades mágicas y un pasado desconocido. A lo largo de la historia, su verdadera identidad y propósito se revelan, mostrando su conexión con los Istari y su papel en la lucha contra Sauron. Su viaje de autodescubrimiento y redención lo convierten en un personaje intrigante.",
+  },
+  miriel: {
+    name: "Míriel",
+    actor: "Cynthia Addai-Robinson",
+    race: "Humana",
+    origin: "Numenor",
+    weapon: "Espada",
+    image:
+      "https://www.blackgate.com/wp-content/uploads/2022/11/RoP_MirelShowEDITED.jpg",
+    description:
+      "Míriel es la reina de Númenor y un personaje clave en la historia. A lo largo de la historia, muestra su valentía y determinación al enfrentarse a los desafíos que amenazan a su pueblo. Su conexión con la historia de Númenor y su deseo de proteger a su gente la convierten en un personaje importante en la lucha contra Sauron.",
+  },
+  pharazon: {
+    name: "Pharazon",
+    actor: "Trystan Gravel",
+    race: "Humano",
+    origin: "Numenor",
+    weapon: "Espada",
+    image:
+      "https://cdn.justjared.com/wp-content/uploads/headlines/2022/08/lotr-pharazon.jpg",
+    description:
+      "Faraón es un personaje ambicioso y manipulador que busca el poder en Númenor. A lo largo de la historia, su deseo de controlar a Sauron y su influencia sobre Míriel lo convierten en un antagonista formidable. Su ambición y falta de escrúpulos lo llevan a tomar decisiones trágicas que afectan a su pueblo y al destino de la Tierra Media.",
+  },
+  cirdan: {
+    name: "Círdan",
+    actor: "Alex Tarrant",
+    race: "Elfo",
+    origin: "Los Puertos Grises",
+    weapon: "Barco Élfico",
+    image:
+      "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/08/30/rings-of-power-cirdan.jpg",
+    description:
+      "Círdan es un elfo sabio y anciano que vive en los Puertos Grises. A lo largo de la historia, actúa como un guía y mentor para los héroes, ayudándolos en su lucha contra Sauron. Su conexión con la historia de la Tierra Media y su deseo de proteger a su pueblo lo convierten en un personaje clave en la lucha contra el mal.",
+  },
+  celebrimbor: {
+    name: "Celebrimbor",
+    actor: "Charles Edwards",
+    race: "Elfo",
+    origin: "Eregion",
+    weapon: "Martillo de Forja",
+    image:
+      "https://i.pinimg.com/736x/0c/3f/1b/0c3f1b2d8e4a5d6e7f9c8a4b6c5d2f3b.jpg",
+    description:
+      "Celebrimbor es un elfo herrero y el creador de los Anillos de Poder. A lo largo de la historia, muestra su habilidad para la forja y su deseo de proteger a su pueblo. Su conexión con la historia de los Anillos y su lucha contra Sauron lo convierten en un personaje clave en la lucha por la Tierra Media.",
   },
 };
 
