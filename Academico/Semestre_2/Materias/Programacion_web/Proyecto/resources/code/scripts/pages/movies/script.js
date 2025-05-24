@@ -518,7 +518,7 @@ const details = {
     origin: "Eregion",
     weapon: "Martillo de Forja",
     image:
-      "https://i.pinimg.com/736x/0c/3f/1b/0c3f1b2d8e4a5d6e7f9c8a4b6c5d2f3b.jpg",
+      "https://imgix.bustle.com/uploads/image/2024/8/29/09b2c59b/celebrimbor-3.jpg?w=394&h=600&fit=crop&crop=focalpoint&dpr=2&fp-x=0.4495&fp-y=0.3865",
     description:
       "Celebrimbor es un elfo herrero y el creador de los Anillos de Poder. A lo largo de la historia, muestra su habilidad para la forja y su deseo de proteger a su pueblo. Su conexión con la historia de los Anillos y su lucha contra Sauron lo convierten en un personaje clave en la lucha por la Tierra Media.",
   },
