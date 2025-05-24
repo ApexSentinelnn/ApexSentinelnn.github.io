@@ -235,6 +235,19 @@ const details = {
     image:
       "https://th.bing.com/th/id/R.372adfeb6b9678d4510cc8d3c217c430?rik=OTbScvAyebYrtw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33300000%2fThorin-thorin-oakenshield-33325333-777-1024.jpg&ehk=ouyqgG7qZYbEiDM19u3iz0TeExjdiga5vVS8u1F05Uo%3d&risl=&pid=ImgRaw&r=0",
   },
+  tauriel: {
+    image:
+      "https://elanillounico.com/wp-content/uploads/2013/11/Poster-LDDS19-copia-300x300.jpg",
+  },
+  legolas: {
+    image:
+      "https://static.wikia.nocookie.net/bibliotecadelatierramedia/images/c/c0/Legolas.jpg/revision/latest?cb=20140322121446&path-prefix=es",
+  },
+  smug: {
+    image:
+      "https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/Personajes/smug.webp",
+  },
+
 };
 
 function showDetails(character) {
