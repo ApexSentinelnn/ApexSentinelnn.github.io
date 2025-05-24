@@ -227,45 +227,7 @@
     }
 }
 
-/* Ventana flotante */
-.characters-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.characters-table th,
-.characters-table td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-}
-
-.characters-table th {
-    background: linear-gradient(135deg, #d4af37, #b8941f);
-    color: #1a1a1a;
-    font-weight: bold;
-}
-
-.characters-table tr:hover {
-    background: rgba(212, 175, 55, 0.1);
-}
-
-.details-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.details-icon:hover {
-    transform: scale(1.2);
-}
-
-/* Estilos del Modal */
+/* Ventana flotante *//* Estilos del Modal */
 .modal {
     display: none;
     position: fixed;
