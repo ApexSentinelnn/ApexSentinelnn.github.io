@@ -324,7 +324,57 @@ const details = {
     description:
       "Gollum es un ser atormentado por el Anillo Único, que busca recuperar su 'precioso' y juega un papel crucial en la historia de Bilbo.",
   },
-  //personajes del libro "El señor de los anillos"
+  //personajes del libro "gondolin"
+  tuor: {
+    name: "Tuor",
+    actor: "Tuor",
+    race: "Hombre",
+    origin: "Gondolin",
+    weapon: "Espada",
+    image: "https://i.pinimg.com/736x/41/b2/0e/41b20ea6e87b5dfa9dc0cb85fbfbc7e1.jpg",
+    description:
+      "Tuor es un héroe humano que juega un papel crucial en la historia de Gondolin y su caída, conocido por su valentía y determinación.",
+  },
+  turgon: {
+    name: "Turgon",
+    actor: "Turgon",
+    race: "Elfo",
+    origin: "Gondolin",
+    weapon: "Espada",
+    image: "https://i.redd.it/mc3ygpne82lb1.jpg",
+    description:
+      "Turgon es el rey de Gondolin y un líder elfo que defiende su ciudad contra las fuerzas de Morgoth.",
+  },
+  idril: {
+    name: "Idril",
+    actor: "Idril",
+    race: "Elfa",
+    origin: "Gondolin",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/736x/08/6d/6c/086d6c5218949dfe159a259c9b739e97.jpg",
+    description:
+      "Idril es una elfa noble de Gondolin, conocida por su belleza y su papel en la historia de su ciudad y su familia.",
+  },
+  maeglin: {
+    name: "Maeglin",
+    actor: "Maeglin",
+    race: "Elfo",
+    origin: "Gondolin",
+    weapon: "Espada",
+    image: "https://historiaspulp.com/wp-content/uploads/e84ad5cdc0e8d01db304a0a12d77c1b01fc6d097_00.jpg",
+    description:
+      "Maeglin es un elfo trágico de Gondolin, conocido por su amor no correspondido y su traición a su ciudad natal.",
+  },
+  glorfindel: {
+    name: "Glorfindel",
+    actor: "Glorfindel",
+    race: "Elfo",
+    origin: "Gondolin",
+    weapon: "Espada",
+    image: "https://tolkiendili.com/w/images/thumb/0/00/Lotr_glorfindel_by_artalais_d3dfu74.jpg/640px-Lotr_glorfindel_by_artalais_d3dfu74.jpg",
+    description:
+      "Glorfindel es un elfo valiente de Gondolin, conocido por su sacrificio en la defensa de su ciudad y su regreso en la Segunda Edad.",
+  },
 };
 
 function showDetails(character) {
