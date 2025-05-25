@@ -168,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkScroll);
 });
 
-//Carrusel
 // Carrusel de imágenes
 function initCarousel() {
   const carousel = document.querySelector(".carousel-inner");
