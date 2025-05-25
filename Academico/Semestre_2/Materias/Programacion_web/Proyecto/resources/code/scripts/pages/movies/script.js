@@ -229,7 +229,7 @@ const details = {
     origin: "La Comarca",
     weapon: "Dardo (Sting)",
     image:
-      "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
+      "https://pbs.twimg.com/profile_images/2731224578/07b7cf170fbbb3e9f61bdcecc0cf7f64_400x400.jpeg",
     description:
       "Bilbo Bolsón es un hobbit que vive en la Comarca. Es el protagonista de 'El Hobbit', donde se embarca en una aventura inesperada con un grupo de enanos y el mago Gandalf. A lo largo de su viaje, Bilbo demuestra ser valiente y astuto, enfrentándose a dragones y trolls, y descubriendo su propio potencial.",
   },
@@ -240,7 +240,7 @@ const details = {
     origin: "Valinor",
     weapon: "Glamdring y Bastón",
     image:
-      "https://th.bing.com/th/id/R.1de9fd651c8456e9f331519c24251a96?rik=IrS1Mgz4s4uDxA&riu=http%3a%2f%2fimages.wikia.com%2flotr%2fimages%2f8%2f8d%2fGandalf-2.jpg&ehk=Nm3tJ5SK6z6MbERxfYI6yqcd3virc6P6FuI9Uv1fxxw%3d&risl=&pid=ImgRaw&r=0",
+      "https://i.blogs.es/eebf3c/balrog-gandalf/375_375.webp",
     description:
       "Gandalf es un poderoso mago que juega un papel crucial en la historia de 'El Hobbit'. Es el mentor de Bilbo y guía a la compañía de enanos en su misión para recuperar Erebor. Su sabiduría y habilidades mágicas son fundamentales para enfrentar los peligros que encuentran en su camino.",
   },
@@ -251,7 +251,7 @@ const details = {
     origin: "Erebor",
     weapon: "Hacha",
     image:
-      "https://th.bing.com/th/id/R.372adfeb6b9678d4510cc8d3c217c430?rik=OTbScvAyebYrtw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33300000%2fThorin-thorin-oakenshield-33325333-777-1024.jpg&ehk=ouyqgG7qZYbEiDM19u3iz0TeExjdiga5vVS8u1F05Uo%3d&risl=&pid=ImgRaw&r=0",
+      "https://atolkienistperspective.wordpress.com/wp-content/uploads/2013/08/thorin-2.jpg",
     description:
       "Thorin Escudo de Roble es el líder de la compañía de enanos que busca recuperar su hogar y tesoros del dragón Smaug. Es un guerrero valiente y noble, pero su deseo de recuperar Erebor lo lleva a la locura. A lo largo de la historia, Thorin aprende sobre la importancia de la amistad y la lealtad.",
   },
