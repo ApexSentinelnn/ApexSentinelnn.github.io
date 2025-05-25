@@ -222,28 +222,51 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 
 // ventana flotante de imagenes referente a los personajes de los libros
 const details = {
-  // Personajes de "El hobbit"
-  bilbo: {
-    name: "Bilbo Bolsón",
-    actor: "Martin Freeman",
-    race: "Hobbit",
-    origin: "La Comarca",
-    weapon: "Dardo (Sting)",
-    image:
-      "https://th.bing.com/th/id/R.8edb42c54c7d4bf201551b549dab9825?rik=6jser9NMXBbHqg&riu=http%3a%2f%2fwww.elfenomeno.com%2fimag%2fusuarios%2f5%2fimagenes_hobbitactores_125.jpg&ehk=GZbv7910RbKlZF4Y1jk96yoLiqStTS1ZHmusfUsU1pg%3d&risl=&pid=ImgRaw&r=0",
-    description:
-      "Bilbo Bolsón es un hobbit que vive en la Comarca. Es el protagonista de 'El Hobbit', donde se embarca en una aventura inesperada con un grupo de enanos y el mago Gandalf. A lo largo de su viaje, Bilbo demuestra ser valiente y astuto, enfrentándose a dragones y trolls, y descubriendo su propio potencial.",
-  },
-  gandalf: {
-    name: "Gandalf el Gris",
-    actor: "Ian McKellen",
-    race: "Maia (Istar)",
+  //personajes del libro "El silmarillion"
+  feanor: {
+    name: "Fëanor",
+    race: "Elfo",
     origin: "Valinor",
-    weapon: "Glamdring y Bastón",
-    image:
-      "https://th.bing.com/th/id/R.1de9fd651c8456e9f331519c24251a96?rik=IrS1Mgz4s4uDxA&riu=http%3a%2f%2fimages.wikia.com%2flotr%2fimages%2f8%2f8d%2fGandalf-2.jpg&ehk=Nm3tJ5SK6z6MbERxfYI6yqcd3virc6P6FuI9Uv1fxxw%3d&risl=&pid=ImgRaw&r=0",
+    weapon: "Espada",
+    image: "https://i.pinimg.com/736x/3f/7c/89/3f7c890e9d760e2aa0fd7df696cb3dd6.jpg",
     description:
-      "Gandalf es un poderoso mago que juega un papel crucial en la historia de 'El Hobbit'. Es el mentor de Bilbo y guía a la compañía de enanos en su misión para recuperar Erebor. Su sabiduría y habilidades mágicas son fundamentales para enfrentar los peligros que encuentran en su camino.",
+      "Fëanor fue un príncipe elfo de los Noldor, conocido por su gran habilidad en la forja y su papel central en la historia de los Silmarils.",
+  },
+  morgoth: {
+    name: "Morgoth",
+    race: "Vala",
+    origin: "Aman",
+    weapon: "Espada",
+    image: "https://preview.redd.it/what-makes-the-fallen-valar-melkor-morgoth-stand-out-v0-2uwkh63gsnqb1.jpg?auto=webp&s=73eb5b955b403211b8794453b72ce448ac6cd1cf",
+    description:
+      "Morgoth, originalmente conocido como Melkor, fue el primer Señor Oscuro y el principal antagonista de la historia de la Tierra Media.",
+  },
+  beren: {
+    name: "Beren",
+    race: "Hombre",
+    origin: "Beleriand",
+    weapon: "Espada",
+    image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1684512085i/34269641._SX540_.jpg",
+    description:
+      "Beren fue un hombre mortal que se enamoró de Lúthien, una elfa, y juntos emprendieron una peligrosa misión para recuperar un Silmaril.",
+  },
+  luthien: {
+    name: "Lúthien",
+    race: "Elfa",
+    origin: "Beleriand",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpghttps://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpg",
+    description:
+      "Lúthien fue una elfa de gran belleza y poder, conocida por su amor por Beren y su valentía al enfrentarse a Morgoth.",
+  },
+  turin: {
+    name: "Túrin Turambar",
+    race: "Hombre",
+    origin: "Beleriand",
+    weapon: "Espada",
+    image: "https://external-preview.redd.it/ISHkqa2stMoaG1JeLUqRWk3rlakJs4ZSz7enPmlOHjU.jpg?auto=webp&s=01049d3948bf978adf13a76b7af2b9ee572ff348",
+    description:
+      "Túrin Turambar fue un héroe trágico de la Primera Edad, conocido por su valentía y su desafortunada historia llena de maldiciones.",
   },
 };
 
