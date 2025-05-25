@@ -333,7 +333,7 @@ function showDetails(character) {
   document.getElementById("character-name").textContent = characterData.name;
   document.getElementById("character-description").textContent =
     characterData.description;
-  //document.getElementById("character-actor").textContent = characterData.actor;
+  document.getElementById("character-name").textContent = characterData.name;
   document.getElementById("character-race").textContent = characterData.race;
   document.getElementById("character-origin").textContent =
     characterData.origin;
