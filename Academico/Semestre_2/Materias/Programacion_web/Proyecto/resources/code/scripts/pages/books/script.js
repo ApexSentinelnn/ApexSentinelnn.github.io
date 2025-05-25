@@ -225,6 +225,7 @@ const details = {
   //personajes del libro "El silmarillion"
   feanor: {
     name: "Fëanor",
+    actor: "Fëanor",
     race: "Elfo",
     origin: "Valinor",
     weapon: "Espada",
@@ -234,6 +235,7 @@ const details = {
   },
   morgoth: {
     name: "Morgoth",
+    actor: "Morgoth",
     race: "Vala",
     origin: "Aman",
     weapon: "Espada",
@@ -243,6 +245,7 @@ const details = {
   },
   beren: {
     name: "Beren",
+    actor: "Beren",
     race: "Hombre",
     origin: "Beleriand",
     weapon: "Espada",
@@ -252,6 +255,7 @@ const details = {
   },
   luthien: {
     name: "Lúthien",
+    actor: "Lúthien",
     race: "Elfa",
     origin: "Beleriand",
     weapon: "Ninguno",
@@ -261,6 +265,7 @@ const details = {
   },
   turin: {
     name: "Túrin Turambar",
+    actor: "Túrin",
     race: "Hombre",
     origin: "Beleriand",
     weapon: "Espada",
@@ -271,6 +276,7 @@ const details = {
   //personajes del libro "El hobbit"
   bilbo: {
     name: "Bilbo Bolsón",
+    actor: "Bilbo",
     race: "Hobbit",
     origin: "La Comarca",
     weapon: "Daga",
@@ -280,6 +286,7 @@ const details = {
   },
   gandalf: {
     name: "Gandalf",
+    actor: "Gandalf",
     race: "Maya",
     origin: "Aman",
     weapon: "Bastón",
@@ -289,6 +296,7 @@ const details = {
   },
   thorin: {
     name: "Thorin Escudo de Roble",
+    actor: "Thorin",
     race: "Enano",
     origin: "Erebor",
     weapon: "Hacha",
@@ -298,6 +306,7 @@ const details = {
   },
   smaug: {
     name: "Smaug",
+    actor: "Smaug",
     race: "Dragón",
     origin: "Erebor",
     weapon: "Fuego",
@@ -307,6 +316,7 @@ const details = {
   },
   gollum: {
     name: "Gollum",
+    actor: "Gollum",
     race: "Hobbit",
     origin: "Las Montañas Nubladas",
     weapon: "Ninguno",
@@ -333,7 +343,7 @@ function showDetails(character) {
   document.getElementById("character-name").textContent = characterData.name;
   document.getElementById("character-description").textContent =
     characterData.description;
-  document.getElementById("character-name").textContent = characterData.name;
+  document.getElementById("character-actor").textContent = characterData.actor;
   document.getElementById("character-race").textContent = characterData.race;
   document.getElementById("character-origin").textContent =
     characterData.origin;
