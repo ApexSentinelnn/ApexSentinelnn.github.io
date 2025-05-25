@@ -268,6 +268,53 @@ const details = {
     description:
       "Túrin Turambar fue un héroe trágico de la Primera Edad, conocido por su valentía y su desafortunada historia llena de maldiciones.",
   },
+  //personajes del libro "El hobbit"
+  bilbo: {
+    name: "Bilbo Bolsón",
+    race: "Hobbit",
+    origin: "La Comarca",
+    weapon: "Daga",
+    image: "https://i.pinimg.com/736x/c7/c9/29/c7c9294b80cecd61df6c010971d1cf52.jpg",
+    description:
+      "Bilbo Bolsón es un hobbit que se embarca en una aventura inesperada con un grupo de enanos y el mago Gandalf.",
+  },
+  gandalf: {
+    name: "Gandalf",
+    race: "Maya",
+    origin: "Aman",
+    weapon: "Bastón",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/GANDALF.jpg",
+    description:
+      "Gandalf es un mago sabio y poderoso que guía a Bilbo y los enanos en su búsqueda para recuperar el Reino de Erebor.",
+  },
+  thorin: {
+    name: "Thorin Escudo de Roble",
+    race: "Enano",
+    origin: "Erebor",
+    weapon: "Hacha",
+    image: "https://tolkiendili.com/w/images/thumb/0/0f/Jenny_Dolfen_-_Thorin.jpg/250px-Jenny_Dolfen_-_Thorin.jpg",
+    description:
+      "Thorin es el líder de la compañía de enanos que busca recuperar su hogar y tesoros perdidos en la Montaña Solitaria.",
+  },
+  smaug: {
+    name: "Smaug",
+    race: "Dragón",
+    origin: "Erebor",
+    weapon: "Fuego",
+    image: "https://i.pinimg.com/736x/f6/da/f5/f6daf51ee4d45067c1f907a53adbbd21.jpg",
+    description:
+      "Smaug es un dragón temido que ocupa la Montaña Solitaria y guarda un vasto tesoro, siendo el principal antagonista de la historia.",
+  },
+  gollum: {
+    name: "Gollum",
+    race: "Hobbit",
+    origin: "Las Montañas Nubladas",
+    weapon: "Ninguno",
+    image: "https://tolkiengateway.net/w/images/b/bb/John_Howe_-_Gollum.jpg",
+    description:
+      "Gollum es un ser atormentado por el Anillo Único, que busca recuperar su 'precioso' y juega un papel crucial en la historia de Bilbo.",
+  },
+  //personajes del libro "El señor de los anillos"
 };
 
 function showDetails(character) {
