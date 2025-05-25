@@ -255,7 +255,7 @@ const details = {
     race: "Elfa",
     origin: "Beleriand",
     weapon: "Ninguno",
-    image: "https://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpghttps://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpg",
+    image: "https://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpg",
     description:
       "Lúthien fue una elfa de gran belleza y poder, conocida por su amor por Beren y su valentía al enfrentarse a Morgoth.",
   },
