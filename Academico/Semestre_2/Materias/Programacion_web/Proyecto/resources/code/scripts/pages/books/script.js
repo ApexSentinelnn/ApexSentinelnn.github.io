@@ -375,6 +375,57 @@ const details = {
     description:
       "Glorfindel es un elfo valiente de Gondolin, conocido por su sacrificio en la defensa de su ciudad y su regreso en la Segunda Edad.",
   },
+  //personajes del libro "El libro de los cuentos perdidos"
+  melko: {
+    name: "Melko",
+    actor: "Melko",
+    race: "Vala",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdY64CfCZkMnk9G7IczCvd7k-l0DIHRxwjZpYlHvyrMISsVEjnSCbwJ8FE2OPUU0W5Q3GPp-ec4A9r9RX4jaVp0bxAdIa3UH8zpp0MGpjJfevSemkSqVGCNfKUc3xgA-RFZzW8Y0wo_6Rt/s1600/melkor2.jpg",
+    description:
+      "Melko es una de las primeras encarnaciones de Morgoth, conocido por su ambición y deseo de poder en la Tierra Media.",
+  },
+  tulkas: {
+    name: "Tulkas",
+    actor: "Tulkas",
+    race: "Vala",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://pm1.aminoapps.com/6713/d0d68a6e72ea2b5be445d90591d0abf3fdbd9637_hq.jpg",
+    description:
+      "Tulkas es un Vala conocido por su fuerza y valentía, que lucha contra Melko y sus fuerzas en la Tierra Media.",
+  },
+  eriol: {
+    name: "Eriol",
+    actor: "Eriol",
+    race: "Hombre",
+    origin: "La Tierra Media",
+    weapon: "Ninguno",
+    image: "https://tolkiengateway.net/w/images/thumb/0/01/Vinyatar_-_Limp%C3%AB.png/640px-Vinyatar_-_Limp%C3%AB.png",
+    description:
+      "Eriol es un viajero humano que se encuentra con los elfos y escucha las historias de la Tierra Media, incluyendo las de Melko y Tulkas.",
+  },
+  vaire: {
+    name: "Vaire",
+    actor: "Vaire",
+    race: "Vala",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/736x/74/e8/6b/74e86b01e60da8ca9fa780b84e0c8904.jpg",
+    description:
+      "Vaire es una Vala conocida por su habilidad para tejer historias y su papel en la creación de la historia de la Tierra Media.",
+  },
+  teleri: {
+    name: "Teleri",
+    actor: "Teleri",
+    race: "Elfo",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://64.media.tumblr.com/04caa573a73ab99bbaa0cb1eddbc75d5/35bb1ecfcc0209e5-8a/s2048x3072/93807e9b79fcb3b38ec20ee0aee32b396490295a.jpg",
+    description:
+      "Teleri es una de las razas élficas que habitan en Aman, conocida por su belleza y conexión con la naturaleza.",
+  },
 };
 
 function showDetails(character) {
