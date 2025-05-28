@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor1" content="Noe Castillo Gaytan">
+    <meta name="Autor2" content="Miguel Angel Flores Gonzales">
+    <meta name="Fecha" content="27/03/25">
+    <meta name="Descripcion" content="Proyecto">
+    <title>Literatura Mediaval</title>
+    <!--icono -->
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/refs/heads/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/icono/ico_pageall.ico"
+        type="image/ico">
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/books/styles.css">
+    <link rel="stylesheet"
+        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/styles/pages/books/style_books.css">
+    <!-- Este style se inserta en index principal ya que si se engloba para todos seria redundancia de codigo y repeticion de contenido -->
+    <style>
+        .hero-tolkien {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+                url('https://pymstatic.com/121836/conversions/literatura-medieval-wide_webp.webp') center/cover no-repeat;
+            padding: 0 10%;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/index.html"
+                style="text-decoration: none; margin-right: 10px;">
+                <img src="https://raw.githubusercontent.com/ApexSentinelnn/ApexSentinelnn.github.io/main/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/image/ico/ico_house.png"
+                    style="height: 35px;" alt="img">
+            </a>
+            <a href="#inicio" class="logo" style="text-decoration: none;">TOLKIEN</a>
+        </div>
+        <div class="nav-links">
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#trailer">Documental</a>
+            <a href="#produccion">Trabajo</a>
+            <a href="#recepcion">Recepcion</a>
+            <a href="#Referencias">Referencias</a>
+        </div>
+    </nav>
+
+    <!-- Menú Lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Películas y Series -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Películas y Series <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li class="has-submenu">
+                        <h3>El Hobbit (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/viaje/index.html">Un
+                                        viaje inesperado</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/desolacion/index.html">La
+                                        desolación de Smaug</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/hobbit/batalla/index.html">La
+                                        batalla de los cinco
+                                        ejércitos</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>El Señor de los Anillos (Trilogía) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/comunidad/index.html">La
+                                        Comunidad del Anillo</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/torres/index.html">Las
+                                        dos torres</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/peliculas/sda/rey/index.html">El
+                                        retorno del Rey</a></h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <h3>Los Anillos de Poder (Serie) <i class="fas fa-chevron-right"></i></h3>
+                        <ul class="nested-submenu">
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/rop/temporada1/index.html">Temporada
+                                        1</a></h4>
+                            </li>
+                            <li>
+                                <h4><a
+                                        href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/series/rop/temporada2/index.html">Temporada
+                                        2</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Inspiración -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Inspiración para sus obras <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/inspiracion/medieval/index.html">Literatura
+                                medieval</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bibliografía -->
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Obras literarias <i class="fas fa-chevron-down"></i></h2>
+                <ul class="sidebar-submenu">
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hobbit/index.html">El
+                                Hobbit</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/sda/index.html">El
+                                Señor de los Anillos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/silmarillo/index.html">El
+                                Silmarillion</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos/index.html">Cuentos
+                                inconclusos</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/hurin/index.html">Los
+                                hijos de Húrin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/beren/index.html">Beren
+                                y Lúthien</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/gondolin/index.html">La
+                                caída de Gondolin</a></h3>
+                    </li>
+                    <li>
+                        <h3><a
+                                href="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/pages/libros/cuentos-perdidos/index.html">El
+                                libro de los cuentos perdidos</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Hero inicio de la pagina -->
+<section class="hero hero-tolkien" id="inicio">
+    <div class="hero-film-content">
+        <div class="film-text-container">
+            <h1 class="film-title">Literatura Medieval<br><span>La inspiración de Tolkien</span></h1>
+            <p class="film-subtitle">"Los ecos del medievo que resuenan<br>en la Tierra Media"</p>
+
+            <div class="film-meta">
+                <span class="meta-item"><i class="fas fa-book"></i> Fuentes clásicas</span>
+                <span class="meta-item"><i class="fas fa-scroll"></i> Manuscritos</span>
+                <span class="meta-item"><i class="fas fa-university"></i> Tradición académica</span>
+            </div>
+
+            <a href="#sinopsis" class="btn-film">EXPLORAR</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sinopsis -->
+<section class="content-section" id="sinopsis">
+    <div class="section-content">
+        <h1>Inspiración Medieval</h1>
+        <h2>Las raíces literarias del legendarium</h2>
+
+        <p>Como profesor de anglosajón en Oxford, J.R.R. Tolkien bebía directamente de las fuentes medievales que estudiaba. Desde Beowulf hasta Sir Gawain, pasando por las sagas artúricas y la poesía aliterativa, la literatura medieval dejó una profunda huella en su obra creativa.</p>
+
+        <h3>Elementos destacados:</h3>
+        <ul class="featured-list">
+            <li><i class="fas fa-chess-knight"></i> La tradición caballeresca</li>
+            <li><i class="fas fa-dragon"></i> Bestiarios medievales</li>
+            <li><i class="fas fa-flag"></i> Épica heroica</li>
+            <li><i class="fas fa-church"></i> Cristianismo medieval</li>
+            <li><i class="fas fa-language"></i> Lenguas históricas</li>
+        </ul>
+
+        <h3>Datos clave</h3>
+        <table class="movie-facts">
+            <tr>
+                <th>Obra fundamental</th>
+                <td>Beowulf (traducción de Tolkien)</td>
+            </tr>
+            <tr>
+                <th>Periodo histórico</th>
+                <td>Siglos V-XV d.C.</td>
+            </tr>
+            <tr>
+                <th>Géneros influyentes</th>
+                <td>Épica, romances, alegorías</td>
+            </tr>
+            <tr>
+                <th>Relación</th>
+                <td>Base estructural y temática</td>
+            </tr>
+            <tr>
+                <th>Estudio académico</th>
+                <td>Tolkien como medievalista</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Carrusel-->
+<section class="content-section" id="galeria">
+    <div class="section-content">
+        <h2 class="section-title">Galería</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://windumanoth.com/wp-content/uploads/2024/12/La-Guerra-de-los-Rohirrim-744x420.jpg"
+                        alt="Manuscrito de Beowulf" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Beowulf y los Rohirrim</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP-CC39uooDk-omhZOt_c8HusmeM983kEXwZ7-Ap8s_-TrYdgPxZfPZo2Ss_4DrkJbicOHItwGzAFBjU_iPnvZyTlCxRl4ke5VTutxwGLoKcpxd6n7O0H9vgggEuxLrMKel3p/s320/GWAIN.JPG"
+                        alt="Sir Gawain y el Caballero Verde" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Gawain y los caballeros de Gondor</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__1b945686-b2bd-41f1-9491-a5c96b1fad7f&w=3840&q=75"
+                        alt="La Divina Comedia" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>El viaje alegórico</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://espacioforos.miarroba.st/1176583/upload/imagenes_img_cabecera.jpeg"
+                        alt="Manuscritos iluminados" class="carousel-img">
+                    <div class="carousel-caption">
+                        <h3>Arte caligráfico y élfico</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Documental -->
+<section class="content-section dark-section" id="trailer">
+    <div class="section-content">
+        <h2 class="section-title">Documental</h2>
+        <p class="section-text">Sobre las conexiones medievales:</p>
+
+        <div class="trailer-container">
+            <iframe src="https://www.youtube.com/embed/B6jtEbn2s-w?si=VfS57SmDcsK6eQVM" title="Documental sobre influencia medieval"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="youtube-embed"></iframe>
+        </div>
+
+        <div class="trailer-links">
+            <h3>Fuentes académicas:</h3>
+            <ul>
+                <li><a href="https://www.jstor.org/" target="_blank"><i class="fas fa-book-open"></i> Estudios comparativos</a></li>
+                <li><a href="https://www.tolkiensociety.org" target="_blank"><i class="fas fa-scroll"></i> Tolkien Society</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--  Producción -->
+<section class="content-section" id="produccion">
+    <div class="section-content">
+        <h2 class="section-title">Trabajo Académico</h2>
+        <h3>Tolkien como medievalista</h3>
+
+        <p>Contribuciones académicas de Tolkien al estudio de la literatura medieval:</p>
+
+        <ul>
+            <li>Traducción y comentario de Beowulf (publicada póstumamente)</li>
+            <li>Edición crítica de Sir Gawain y el Caballero Verde</li>
+            <li>Conferencia "Beowulf: Los Monstruos y los Críticos" (1936)</li>
+            <li>Estudios sobre el inglés medio y la filología comparada</li>
+            <li>Uso de formas métricas medievales en sus poemas</li>
+            <li>Recreación de estilos narrativos medievales</li>
+        </ul>
+
+        <h3>Estructura comparativa:</h3>
+        <table class="locations-table">
+            <tr>
+                <th>Elemento Medieval</th>
+                <th>Adaptación Tolkien</th>
+                <th>Obra donde aparece</th>
+            </tr>
+            <tr>
+                <td>Métrica aliterativa</td>
+                <td>Cantos de los Rohirrim</td>
+                <td>El Señor de los Anillos</td>
+            </tr>
+            <tr>
+                <td>Bestiarios</td>
+                <td>Criaturas de la Tierra Media</td>
+                <td>El Hobbit/Silmarillion</td>
+            </tr>
+            <tr>
+                <td>Romances artúricos</td>
+                <td>Historia de Aragorn y Arwen</td>
+                <td>Apéndices ESDLA</td>
+            </tr>
+            <tr>
+                <td>Poesía elegíaca</td>
+                <td>Lament for Boromir</td>
+                <td>Las Dos Torres</td>
+            </tr>
+            <tr>
+                <td>Allegoría cristiana</td>
+                <td>Athrabeth Finrod ah Andreth</td>
+                <td>Cuentos Inconclusos</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Recepción -->
+<section class="content-section" id="recepcion">
+    <div class="section-content">
+        <h2 class="section-title">Recepción Académica</h2>
+        <h3>El legado medieval en la fantasía moderna</h3>
+
+        <p>La influencia medieval en Tolkien ha sido fundamental para entender su obra y su impacto en la literatura fantástica.</p>
+
+        <h3>Reconocimientos:</h3>
+        <table class="awards-table">
+            <tr>
+                <th>Estudio</th>
+                <th>Año</th>
+            </tr>
+            <tr>
+                <td>"Tolkien Medievalista" (Chance)</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>Simposio de Estudios Medievales</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>Edición crítica de "Beowulf"</td>
+                <td>2014</td>
+            </tr>
+        </table>
+
+        <h3>Opiniones destacadas:</h3>
+        <div class="reviews">
+            <blockquote>
+                "Tolkien no simplemente estudiaba la literatura medieval; la habitaba y la recreaba con autenticidad sin igual" - Jane Chance
+            </blockquote>
+            <blockquote>
+                "El Beowulf de Tolkien es tanto una traducción como una ventana a su propio proceso creativo" - Revista de Estudios Medievales
+            </blockquote>
+            <blockquote>
+                "Ningún autor moderno ha entendido tan profundamente el espíritu de la narrativa medieval" - Sociedad de Literatura Comparada
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!--referencias-->
+<section class="content-section" id="Referencias">
+    <div class="section-content">
+        <h2 class="section-title">Referencias</h2>
+        <p class="section-text">Esta página utiliza los siguientes recursos académicos:</p>
+
+        <div class="references-container">
+            <div class="reference-card">
+                <h3><i class="fas fa-book"></i> Fuentes primarias</h3>
+                <table class="references-table">
+                    <thead>
+                        <tr>
+                            <th>Obra</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beowulf (trad. Tolkien)</td>
+                            <td><a href="https://windumanoth.com/wp-content/uploads/2024/12/La-Guerra-de-los-Rohirrim-744x420.jpg" target="_blank">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sir Gawain (ed. Tolkien)</td>
+                            <td><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-RrkyS9r7d8cGPD-Zb9L1ZXhyAbVg-FSgw&s" target="_blank">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Divina Comedia</td>
+                            <td><a href="https://www.worldofdante.org/" target="_blank">Ver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-graduation-cap"></i> Estudios académicos</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.jstor.org/stable/medieval-tolkien" target="_blank">Tolkien and the Medieval</a> - J. Chance</li>
+                    <li><a href="https://www.tolkiensociety.org/author/medieval/" target="_blank">Influencias Medievales</a> - Tolkien Society</li>
+                    <li><a href="https://www.medievalacademy.org/" target="_blank">Academia Medieval</a></li>
+                </ul>
+            </div>
+
+            <div class="reference-card">
+                <h3><i class="fas fa-video"></i> Material multimedia</h3>
+                <ul class="sources-list">
+                    <li><a href="https://www.youtube.com/embed/B6jtEbn2s-w?si=VfS57SmDcsK6eQVM" target="_blank">YouTube</a></li>
+                    <li><a href="https://open.spotify.com/show/lectures-medieval-literature" target="_blank">Audio</a> - Spotify</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">TOLKIEN</div>
+            <div class="footer-links">
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#trailer">Documental</a>
+                <a href="#produccion">Produccion</a>
+                <a href="#recepcion">Recepcion</a>
+                <a href="#Referencias">Referencias</a>
+            </div>
+
+            <p class="copyright">© 2025 El Legado de Tolkien(Proyecto academico). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script
+        src="https://apexsentinelnn.github.io/Academico/Semestre_2/Materias/Programacion_web/Proyecto/resources/code/scripts/pages/books/script.js"></script>
+</body>
+
+</html>

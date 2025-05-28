@@ -580,6 +580,16 @@ const details = {
     description:
       "Glaurung es un dragón temido que juega un papel crucial en la historia de Túrin y Nienor, conocido por su astucia y poder destructivo.",
   },
+  beleg: {
+    name: "Beleg",
+    actor: "Beleg",
+    race: "Elfo",
+    origin: "Beleriand",
+    weapon: "Espada",
+    image: "https://i.pinimg.com/736x/6d/91/cd/6d91cdd1456de3b4501ca8d7cb25b755.jpg",
+    description:
+      "Beleg es un elfo leal y amigo de Túrin, conocido por su valentía y su trágica muerte en la historia de los hijos de Húrin.",
+  },
 };
 
 function showDetails(character) {
