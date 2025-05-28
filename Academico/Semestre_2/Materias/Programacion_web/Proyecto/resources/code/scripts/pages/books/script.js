@@ -468,6 +468,56 @@ const details = {
     description:
       "Ghân-buri-Ghân es un líder de los hombres de Dunland que ayuda a los Rohirrim en su lucha contra Saruman durante la Guerra del Anillo.",
   },
+  //personajes del libro "El Señor de los Anillos"
+  frodo: {
+    name: "Frodo Bolsón",
+    actor: "Frodo",
+    race: "Hobbit",
+    origin: "La Comarca",
+    weapon: "Daga",
+    image: "https://i.pinimg.com/736x/9f/a7/83/9fa783719f98ada553f92c1f9ecff2ea.jpg",
+    description:
+      "Frodo Bolsón es el portador del Anillo Único, encargado de llevarlo a Mordor para destruirlo y salvar la Tierra Media.",
+  },
+  aragon2: {
+    name: "Aragorn",
+    actor: "Aragorn",
+    race: "Hombre",
+    origin: "Gondor",
+    weapon: "Espada",
+    image: "https://i.redd.it/3kkeou0vh8y51.jpg",
+    description:
+      "Aragorn es el heredero al trono de Gondor y un líder valiente que lucha contra Sauron y ayuda a Frodo en su misión.",
+  },gandalf2: {
+    name: "Gandalf",
+    actor: "Gandalf",
+    race: "Maya",
+    origin: "Aman",
+    weapon: "Bastón",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/GANDALF.jpg",
+    description:
+      "Gandalf es un mago sabio y poderoso que guía a Frodo y sus compañeros en su lucha contra Sauron y la destrucción del Anillo Único.",
+  },
+  gollum2: {
+    name: "Gollum",
+    actor: "Gollum",
+    race: "Hobbit",
+    origin: "Las Montañas Nubladas",
+    weapon: "Ninguno",
+    image: "https://tolkiengateway.net/w/images/b/bb/John_Howe_-_Gollum.jpg",
+    description:
+      "Gollum es un ser atormentado por el Anillo Único, que busca recuperar su 'precioso' y juega un papel crucial en la historia de Frodo.",
+  },
+  galadriel: {
+    name: "Galadriel",
+    actor: "Galadriel",
+    race: "Elfa",
+    origin: "Lothlórien",
+    weapon: "Ninguno",
+    image: "https://dunesjedi.wordpress.com/wp-content/uploads/2018/09/335edc107a86ee79850583e799469e0d.jpg",
+    description:
+      "Galadriel es una poderosa elfa y líder de Lothlórien, que ayuda a Frodo y sus compañeros con su sabiduría y regalos mágicos.",
+  },
 };
 
 function showDetails(character) {
