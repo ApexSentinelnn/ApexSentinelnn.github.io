@@ -518,6 +518,68 @@ const details = {
     description:
       "Galadriel es una poderosa elfa y líder de Lothlórien, que ayuda a Frodo y sus compañeros con su sabiduría y regalos mágicos.",
   },
+  //personajes del libro "beren y lúthien"
+  thingol: {
+    name: "Thingol",
+    actor: "Thingol",
+    race: "Elfo",
+    origin: "Doriath",
+    weapon: "Espada",
+    image: "https://i.pinimg.com/736x/3f/7c/89/3f7c890e9d760e2aa0fd7df696cb3dd6.jpg",
+    description:
+      "Thingol es el rey de Doriath y un elfo poderoso que juega un papel importante en la historia de Beren y Lúthien.",
+  },
+  melian: {
+    name: "Melian",
+    actor: "Melian",
+    race: "Vala",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/736x/60/9e/79/609e79083157cd14b0ea131a72f31433.jpg",
+    description:
+      "Melian es una Vala que se convierte en la reina de Doriath y madre de Lúthien, conocida por su belleza y poder mágico.",
+  },
+  huan: {
+    name: "Huan",
+    actor: "Huan",
+    race: "Perro",
+    origin: "Doriath",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/736x/08/6d/6c/086d6c5218949dfe159a259c9b739e97.jpg",
+    description:
+      "Huan es un gran perro de caza que ayuda a Beren y Lúthien en su misión para recuperar el Silmaril de Morgoth.",
+  },
+  //los personajes del libro "Los hijos de Húrin"
+  nienor: {
+    name: "Nienor",
+    actor: "Nienor",
+    race: "Elfa",
+    origin: "Beleriand",
+    weapon: "Ninguno",
+    image: "https://i.pinimg.com/474x/0c/41/72/0c4172ee3cf130b6033f840f89080ed5.jpg",
+    description:
+      "Nienor es la hermana de Túrin Turambar, una elfa trágica que sufre una serie de desgracias en su vida, incluyendo un trágico encuentro con su hermano.",
+  },
+  hurin: {
+    name: "Húrin",
+    actor: "Húrin",
+    race: "Hombre",
+    origin: "Beleriand",
+    weapon: "Espada",
+    image: "https://i.pinimg.com/736x/79/9a/4c/799a4c704270089bfb53f5c070724c30.jpg",
+    description:
+      "Húrin es el padre de Túrin y Nienor, un hombre valiente que lucha contra Morgoth y su maldición, enfrentándose a un destino trágico.",
+  },
+  glaurung: {
+    name: "Glaurung",
+    actor: "Glaurung",
+    race: "Dragón",
+    origin: "Beleriand",
+    weapon: "Fuego",
+    image: "https://i.pinimg.com/736x/b4/49/1b/b4491baf53740a1ac2d312fbe6a27df9.jpg",
+    description:
+      "Glaurung es un dragón temido que juega un papel crucial en la historia de Túrin y Nienor, conocido por su astucia y poder destructivo.",
+  },
 };
 
 function showDetails(character) {
