@@ -426,6 +426,48 @@ const details = {
     description:
       "Teleri es una de las razas élficas que habitan en Aman, conocida por su belleza y conexión con la naturaleza.",
   },
+  //personajes del libro "Cuentos inconclusos"
+
+  celebrimor: {
+    name: "Celebrimbor",
+    actor: "Celebrimbor",
+    race: "Elfo",
+    origin: "Eregion",
+    weapon: "Ninguno",
+    image: "https://tolkiendili.com/w/images/8/8d/Jenny_Dolfen_-_Celebrimbor.jpg",
+    description:
+      "Celebrimbor es un elfo herrero conocido por su habilidad en la forja de anillos de poder, incluyendo los Anillos Élficos.",
+  },
+  magos_azules: {
+    name: "Magos Azules",
+    actor: "Magos Azules",
+    race: "Maya",
+    origin: "Aman",
+    weapon: "Ninguno",
+    image: "https://sm.ign.com/ign_es/screenshot/default/magos_7ud8.jpg",
+    description:
+      "Los Magos Azules son dos Maiar que fueron enviados a la Tierra Media para ayudar a los pueblos libres en su lucha contra Sauron, aunque su historia es menos conocida.",
+  },
+  aladarion: {
+    name: "Aladarion",
+    actor: "Aladarion",
+    race: "Hombre",
+    origin: "Númenor",
+    weapon: "Espada",
+    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f6de1ab-d464-4e8f-9f83-946e413d1c1a/d8jymlf-e548a1d7-a9d2-4b04-870b-1e6dff7aa1d4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNmRlMWFiLWQ0NjQtNGU4Zi05ZjgzLTk0NmU0MTNkMWMxYVwvZDhqeW1sZi1lNTQ4YTFkNy1hOWQyLTRiMDQtODcwYi0xZTZkZmY3YWExZDQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.l8Yu8jupccvket8cW-7d5aakPsQWSnULY6X94Kt6ODA",
+    description:
+      "Aladarion es un rey de Númenor conocido por su ambición y su deseo de explorar más allá de las fronteras de su reino, lo que eventualmente llevó a la caída de Númenor.",
+  },
+  ghân: {
+    name: "Ghân-buri-Ghân",
+    actor: "Ghân-buri-Ghân",
+    race: "Hombre",
+    origin: "Dunland",
+    weapon: "Ninguno",
+    image: "https://lotro-wiki.com/images/thumb/f/f2/Kh%C3%B4r-buri-Gh%C3%A2n.jpg/189px-Kh%C3%B4r-buri-Gh%C3%A2n.jpg",
+    description:
+      "Ghân-buri-Ghân es un líder de los hombres de Dunland que ayuda a los Rohirrim en su lucha contra Saruman durante la Guerra del Anillo.",
+  },
 };
 
 function showDetails(character) {
